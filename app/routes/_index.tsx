@@ -1,6 +1,10 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Button } from "@/components/ui/button";
+import { json, type MetaFunction } from "@remix-run/node";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ThemeToggle";
+import { getErrorMessage } from "~/services/utils";
+import { ReadTournaments } from "~/services/firebase";
+import { Link, useLoaderData } from "@remix-run/react";
+import { cn } from "@/lib/utils";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,7 +16,20 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export async function loader() {
+  try {
+    const tournaments = await ReadTournaments();
+    return json({ data: tournaments?.data ?? null });
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
 export default function Index() {
+  const { data: tournaments } = useLoaderData<typeof loader>();
+  const hasTournaments =
+    tournaments && Array.isArray(tournaments) && tournaments.length;
+
   return (
     <main style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <header className="container py-4 px-2 sm:px-8">
@@ -48,30 +65,36 @@ export default function Index() {
         </section>
 
         <section className="px-2 sm:px-6 lg:px-8">
-          <div className="border-b border-primary pb-5 mb-5 sm:flex sm:items-center sm:justify-between">
-            <h3 className="text-base font-semibold leading-6 text-primary">
-              Tournaments
-            </h3>
-          </div>
-          <Button
-            className="w-full py-8 justify-between"
-            variant="secondary"
-            onClick={() => console.log("clicked on tournament button")}
-          >
-            some name
-            <div>
-              <Button
-                variant="outline"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  console.log("clicked on tournament edit button");
-                }}
-              >
-                Edit
-              </Button>
-            </div>
-          </Button>
-          {/* <TournamentsEmptyState /> */}
+          {hasTournaments ? (
+            <>
+              <div className="border-b border-primary pb-5 mb-5 sm:flex sm:items-center sm:justify-between">
+                <h3 className="text-base font-semibold leading-6 text-primary">
+                  Tournaments
+                </h3>
+              </div>
+              {tournaments.map((t) => (
+                <Link
+                  className={cn(
+                    buttonVariants({ variant: "secondary" }),
+                    "w-full py-8 justify-between flex"
+                  )}
+                  to="/"
+                >
+                  {t.name}
+                  <div>
+                    <Link
+                      className={cn(buttonVariants({ variant: "secondary" }))}
+                      to="/some-path"
+                    >
+                      Edit
+                    </Link>
+                  </div>
+                </Link>
+              ))}
+            </>
+          ) : (
+            <TournamentsEmptyState />
+          )}
         </section>
       </div>
     </main>
