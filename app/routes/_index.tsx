@@ -72,24 +72,28 @@ export default function Index() {
                   Tournaments
                 </h3>
               </div>
-              {tournaments.map((t) => (
-                <Link
-                  className={cn(
-                    buttonVariants({ variant: "secondary" }),
-                    "w-full py-8 justify-between flex"
-                  )}
-                  to="/"
-                >
-                  {t.name}
-                  <div>
-                    <Link
-                      className={cn(buttonVariants({ variant: "secondary" }))}
-                      to="/some-path"
-                    >
-                      Edit
-                    </Link>
-                  </div>
-                </Link>
+              {tournaments.map((t, index) => (
+                <div className="flex gap-6">
+                  <Link
+                    className={cn(
+                      buttonVariants({ variant: "secondary" }),
+                      "py-8 justify-between flex grow"
+                    )}
+                    key={index}
+                    to="/"
+                  >
+                    {t.name}
+                  </Link>
+                  <Link
+                    className={cn(
+                      buttonVariants({ variant: "secondary" }),
+                      "py-8"
+                    )}
+                    to="/some-path"
+                  >
+                    Edit
+                  </Link>
+                </div>
               ))}
             </>
           ) : (
