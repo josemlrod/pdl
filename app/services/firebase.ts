@@ -143,9 +143,9 @@ export async function ReadTournament({ id }: { id: string }) {
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-      return { success: true, data: docSnap.data() };
+      return { ok: true, data: docSnap.data() };
     } else {
-      return { success: true, data: {} };
+      return { ok: true, data: {} };
     }
   } catch (error) {
     return getErrorMessage(error);

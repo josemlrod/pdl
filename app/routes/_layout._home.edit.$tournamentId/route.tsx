@@ -1,4 +1,4 @@
-import { useFetcher, useNavigate } from "@remix-run/react";
+import { useFetcher, useLoaderData, useNavigate } from "@remix-run/react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -19,12 +19,45 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ActionFunctionArgs, redirect } from "@remix-run/node";
-import { AddTournament } from "~/services/firebase";
+import {
+  ActionFunctionArgs,
+  LoaderFunctionArgs,
+  json,
+  redirect,
+} from "@remix-run/node";
+import { AddTournament, ReadTournament } from "~/services/firebase";
+import { getErrorMessage } from "~/services/utils";
 
-export default function NewTournament() {
+export async function loader({ params }: LoaderFunctionArgs) {
+  const { tournamentId } = params;
+  if (tournamentId) {
+    try {
+      const readTournamentResponse = await ReadTournament({ id: tournamentId });
+      const tournament =
+        typeof readTournamentResponse !== "string" &&
+        readTournamentResponse.data &&
+        Object.entries(readTournamentResponse.data).length &&
+        readTournamentResponse.data;
+
+      if (tournament) {
+        return json({
+          data: tournament,
+        });
+      }
+    } catch (e) {
+      getErrorMessage(e);
+    }
+  }
+
+  return redirect("/home");
+}
+
+export default function EditTournament() {
   const navigate = useNavigate();
   const fetcher = useFetcher();
+  const {
+    data: { name, player_num: playerNum, format },
+  } = useLoaderData<typeof loader>();
 
   return (
     <Dialog open onOpenChange={() => navigate("/home")}>
@@ -45,7 +78,7 @@ export default function NewTournament() {
                 id="name"
                 name="name"
                 placeholder="Last Hope"
-                defaultValue=""
+                defaultValue={name}
                 className="col-span-3"
                 required
                 type="text"
@@ -59,14 +92,14 @@ export default function NewTournament() {
                 id="player_num"
                 name="player_num"
                 placeholder="12"
-                defaultValue=""
+                defaultValue={playerNum}
                 className="col-span-3"
                 type="number"
               />
               <Label htmlFor="format" className="text-right">
                 Select a format
               </Label>
-              <Select defaultValue="knockout" name="format" required>
+              <Select defaultValue={format} name="format" required>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue />
                 </SelectTrigger>
@@ -92,27 +125,30 @@ export default function NewTournament() {
   );
 }
 
-export async function action({ request }: ActionFunctionArgs) {
-  const body = await request.formData();
-  const bodyData = Object.fromEntries(body);
+export async function action({ request, params }: ActionFunctionArgs) {
+  const { tournamentId } = params;
+  if (tournamentId) {
+    const body = await request.formData();
+    const bodyData = Object.fromEntries(body);
 
-  /**
-   * TODO:
-   * add data validation here
-   * name - required, 3 letter min length
-   * player_number - required, 2 min players
-   */
+    /**
+     * TODO:
+     * add data validation here
+     * name - required, 3 letter min length
+     * player_number - required, 2 min players
+     */
 
-  const name = String(bodyData.name);
-  const playerNum = String(bodyData.player_num);
-  const format = String(bodyData.format);
+    const name = String(bodyData.name);
+    const playerNum = String(bodyData.player_num);
+    const format = String(bodyData.format);
 
-  await AddTournament({
-    id: crypto.randomUUID(),
-    name,
-    player_num: playerNum,
-    format,
-  });
+    await AddTournament({
+      id: tournamentId,
+      name,
+      player_num: playerNum,
+      format,
+    });
+  }
 
   return redirect("/home");
 }

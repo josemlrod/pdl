@@ -53,7 +53,7 @@ export async function logInNewUser({ email, password }: LogInUserProps) {
       email,
       password,
     });
-    console.log({ data, error });
+
     const userId = data && data.user ? data.user.id : "";
 
     return userId;

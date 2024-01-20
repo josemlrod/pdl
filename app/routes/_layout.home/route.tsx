@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export async function loader({ request }: LoaderFunctionArgs) {
+export async function loader() {
   try {
     const tournaments = await ReadTournaments();
 
@@ -82,7 +82,7 @@ export default function Home() {
                       buttonVariants({ variant: "secondary" }),
                       "py-8"
                     )}
-                    to="/some-path"
+                    to={`../edit/${t.id}`}
                   >
                     Edit
                   </Link>

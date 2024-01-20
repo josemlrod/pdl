@@ -60,28 +60,30 @@ export default function Home() {
                 Tournaments
               </h3>
             </div>
-            {tournaments.map((t, index) => (
-              <div className="flex gap-6" key={index}>
-                <Link
-                  className={cn(
-                    buttonVariants({ variant: "secondary" }),
-                    "py-8 justify-between flex grow"
-                  )}
-                  to="/"
-                >
-                  {t.name}
-                </Link>
-                <Link
-                  className={cn(
-                    buttonVariants({ variant: "secondary" }),
-                    "py-8"
-                  )}
-                  to="/some-path"
-                >
-                  Edit
-                </Link>
-              </div>
-            ))}
+            <div className="flex flex-col gap-4">
+              {tournaments.map((t, index) => (
+                <div className="flex gap-6" key={index}>
+                  <Link
+                    className={cn(
+                      buttonVariants({ variant: "secondary" }),
+                      "py-8 justify-between flex grow"
+                    )}
+                    to="/"
+                  >
+                    {t.name}
+                  </Link>
+                  <Link
+                    className={cn(
+                      buttonVariants({ variant: "secondary" }),
+                      "py-8"
+                    )}
+                    to={`../edit/${t.id}`}
+                  >
+                    Edit
+                  </Link>
+                </div>
+              ))}
+            </div>
           </>
         ) : (
           <TournamentsEmptyState />
