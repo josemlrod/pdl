@@ -48,9 +48,12 @@ export default function Home() {
               players' transactions!
             </p>
           </div>
-          <Button className="w-fit" variant="default">
+          <Link
+            className={cn(buttonVariants({ variant: "default" }), "w-fit")}
+            to="../new-tournament"
+          >
             New
-          </Button>
+          </Link>
         </div>
       </section>
 
@@ -62,28 +65,30 @@ export default function Home() {
                 Tournaments
               </h3>
             </div>
-            {tournaments.map((t, index) => (
-              <div className="flex gap-6" key={index}>
-                <Link
-                  className={cn(
-                    buttonVariants({ variant: "secondary" }),
-                    "py-8 justify-between flex grow"
-                  )}
-                  to="/"
-                >
-                  {t.name}
-                </Link>
-                <Link
-                  className={cn(
-                    buttonVariants({ variant: "secondary" }),
-                    "py-8"
-                  )}
-                  to="/some-path"
-                >
-                  Edit
-                </Link>
-              </div>
-            ))}
+            <div className="flex flex-col gap-4">
+              {tournaments.map((t, index) => (
+                <div className="flex gap-6" key={index}>
+                  <Link
+                    className={cn(
+                      buttonVariants({ variant: "secondary" }),
+                      "py-8 justify-between flex grow"
+                    )}
+                    to="/"
+                  >
+                    {t.name}
+                  </Link>
+                  <Link
+                    className={cn(
+                      buttonVariants({ variant: "secondary" }),
+                      "py-8"
+                    )}
+                    to="/some-path"
+                  >
+                    Edit
+                  </Link>
+                </div>
+              ))}
+            </div>
           </>
         ) : (
           <TournamentsEmptyState />

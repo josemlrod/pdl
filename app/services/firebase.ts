@@ -34,6 +34,8 @@ type Tournament = {
   players: Player[];
 };
 
+type AddTournamentProps = Omit<Tournament, "players">;
+
 type Player = {
   id: string;
   initialDraftPoints: number;
@@ -100,6 +102,53 @@ export async function ReadUser({ userId }: { userId: string }) {
     }
   } catch (e) {
     return getErrorMessage(e);
+  }
+}
+
+export async function AddTournament({ id, ...rest }: AddTournamentProps) {
+  try {
+    const readTournamentResponse = await ReadTournament({ id });
+    const tournamentExists =
+      readTournamentResponse &&
+      typeof readTournamentResponse !== "string" &&
+      readTournamentResponse.data &&
+      Object.entries(readTournamentResponse.data).length;
+
+    if (tournamentExists) {
+      await setDoc(doc(db, "tournaments", id), {
+        id,
+        ...readTournamentResponse.data,
+        ...rest,
+      });
+    } else {
+      await setDoc(doc(db, "tournaments", id), {
+        id,
+        ...rest,
+        start_date: Date.now(),
+        end_date: null,
+        players: [],
+        matches: [],
+      });
+    }
+
+    return { success: true };
+  } catch (error) {
+    return getErrorMessage(error);
+  }
+}
+
+export async function ReadTournament({ id }: { id: string }) {
+  try {
+    const docRef = doc(db, "tournaments", id);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      return { success: true, data: docSnap.data() };
+    } else {
+      return { success: true, data: {} };
+    }
+  } catch (error) {
+    return getErrorMessage(error);
   }
 }
 
