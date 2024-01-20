@@ -63,9 +63,9 @@ export default function EditTournament() {
     <Dialog open onOpenChange={() => navigate("/home")}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Create new tournament</DialogTitle>
+          <DialogTitle>Edit tournament</DialogTitle>
           <DialogDescription>
-            Add a new tournament to start tracking players and their teams!
+            Update the details of an already existing tournament!
           </DialogDescription>
         </DialogHeader>
         <fetcher.Form method="post">
