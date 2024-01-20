@@ -1,5 +1,14 @@
 import { initializeApp } from "firebase/app";
-import { collection, getDocs, getFirestore } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  setDoc,
+  doc,
+  getDoc,
+} from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+
 import { getErrorMessage } from "./utils";
 
 const firebaseConfig = {
@@ -15,6 +24,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
+export const auth = getAuth(app);
 
 type Tournament = {
   format: string;
@@ -49,7 +59,51 @@ type Pokemon = {
   };
 };
 
-async function ReadTournaments() {
+export async function AddUser({
+  email,
+  displayName,
+  userId,
+}: {
+  email: string;
+  displayName: string;
+  userId: string;
+}) {
+  try {
+    await setDoc(doc(db, "app_users", userId), {
+      id: userId,
+      email,
+      displayName,
+    });
+    return {
+      ok: true,
+    };
+  } catch (e) {
+    return getErrorMessage(e);
+  }
+}
+
+export async function ReadUser({ userId }: { userId: string }) {
+  try {
+    const docRef = doc(db, "app_users", userId);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      return {
+        ok: true,
+        data: docSnap.data(),
+      };
+    } else {
+      return {
+        ok: true,
+        data: null,
+      };
+    }
+  } catch (e) {
+    return getErrorMessage(e);
+  }
+}
+
+export async function ReadTournaments() {
   try {
     const tournaments: Tournament[] = [];
     const querySnapshot = await getDocs(collection(db, "tournaments"));
@@ -71,5 +125,3 @@ async function ReadTournaments() {
     getErrorMessage(error);
   }
 }
-
-export { ReadTournaments };

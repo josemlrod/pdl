@@ -18,4 +18,17 @@ const sessionStorage = createCookieSessionStorage({
   },
 });
 
+export const authCookie = createCookieSessionStorage({
+  // a Cookie from `createCookie` or the CookieOptions to create one
+  cookie: {
+    name: "app_session",
+    secrets: ["r3m1xr0ck5"],
+    httpOnly: true,
+    maxAge: 15_780_000,
+    path: "/",
+    sameSite: "lax",
+    secure: true,
+  },
+});
+
 export const themeSessionResolver = createThemeSessionResolver(sessionStorage);
