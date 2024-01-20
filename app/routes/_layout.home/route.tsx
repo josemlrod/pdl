@@ -1,7 +1,7 @@
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
-import { json, LoaderFunctionArgs, type MetaFunction } from "@remix-run/node";
+import { json, type MetaFunction } from "@remix-run/node";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { getErrorMessage } from "~/services/utils";
 import { ReadTournaments } from "~/services/firebase";
 import { cn } from "@/lib/utils";
@@ -73,7 +73,7 @@ export default function Home() {
                       buttonVariants({ variant: "secondary" }),
                       "py-8 justify-between flex grow"
                     )}
-                    to="/"
+                    to={`../tournament/${t.id}`}
                   >
                     {t.name}
                   </Link>
