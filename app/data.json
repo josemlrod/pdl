@@ -1,0 +1,6124 @@
+{
+  "data": [
+    {
+      "github_name": "alcremie",
+      "smogon_name": "alcremie",
+      "name": "Alcremie",
+      "pts": "7",
+      "dexNumber": "869",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/869.png"
+    },
+    {
+      "github_name": "exeggutor-alola",
+      "smogon_name": "exeggutor-alola",
+      "name": "Alolan Exeggutor",
+      "pts": "8",
+      "dexNumber": "103",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/103-a.png"
+    },
+    {
+      "github_name": "araquanid",
+      "smogon_name": "araquanid",
+      "name": "Araquanid",
+      "pts": "8",
+      "dexNumber": "752",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/752.png"
+    },
+    {
+      "github_name": "archaludon",
+      "smogon_name": "archaludon",
+      "name": "Archaludon",
+      "pts": "14",
+      "dexNumber": "1018",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1018.png"
+    },
+    {
+      "github_name": "bastiodon",
+      "smogon_name": "bastiodon",
+      "name": "Bastiodon",
+      "pts": "4",
+      "dexNumber": "411",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/411.png"
+    },
+    {
+      "github_name": "bayleef",
+      "smogon_name": "bayleef",
+      "name": "Bayleef",
+      "pts": "1",
+      "dexNumber": "153",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/153.png"
+    },
+    {
+      "github_name": "beldum",
+      "smogon_name": "beldum",
+      "name": "Beldum",
+      "pts": "1",
+      "dexNumber": "374",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/374.png"
+    },
+    {
+      "github_name": "bellossom",
+      "smogon_name": "bellossom",
+      "name": "Bellossom",
+      "pts": "5",
+      "dexNumber": "182",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/182.png"
+    },
+    {
+      "github_name": "blastoise",
+      "smogon_name": "blastoise",
+      "name": "Blastoise",
+      "pts": "10",
+      "dexNumber": "009",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/009.png"
+    },
+    {
+      "github_name": "blaziken",
+      "smogon_name": "blaziken",
+      "name": "Blaziken",
+      "pts": "17",
+      "dexNumber": "257",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/257.png"
+    },
+    {
+      "github_name": "blitzle",
+      "smogon_name": "blitzle",
+      "name": "Blitzle",
+      "pts": "1",
+      "dexNumber": "522",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/522.png"
+    },
+    {
+      "github_name": "brionne",
+      "smogon_name": "brionne",
+      "name": "Brionne",
+      "pts": "1",
+      "dexNumber": "729",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/729.png"
+    },
+    {
+      "github_name": "bulbasaur",
+      "smogon_name": "bulbasaur",
+      "name": "Bulbasaur",
+      "pts": "1",
+      "dexNumber": "001",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/001.png"
+    },
+    {
+      "github_name": "chikorita",
+      "smogon_name": "chikorita",
+      "name": "Chikorita",
+      "pts": "1",
+      "dexNumber": "152",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/152.png"
+    },
+    {
+      "github_name": "chinchou",
+      "smogon_name": "chinchou",
+      "name": "Chinchou",
+      "pts": "1",
+      "dexNumber": "170",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/170.png"
+    },
+    {
+      "github_name": "cinccino",
+      "smogon_name": "cinccino",
+      "name": "Cinccino",
+      "pts": "7",
+      "dexNumber": "573",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/573.png"
+    },
+    {
+      "github_name": "cobalion",
+      "smogon_name": "cobalion",
+      "name": "Cobalion",
+      "pts": "12",
+      "dexNumber": "638",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/638.png"
+    },
+    {
+      "github_name": "combusken",
+      "smogon_name": "combusken",
+      "name": "Combusken",
+      "pts": "5",
+      "dexNumber": "256",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/256.png"
+    },
+    {
+      "github_name": "comfey",
+      "smogon_name": "comfey",
+      "name": "Comfey",
+      "pts": "8",
+      "dexNumber": "764",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/764.png"
+    },
+    {
+      "github_name": "cosmoem",
+      "smogon_name": "cosmoem",
+      "name": "Cosmoem",
+      "pts": "1",
+      "dexNumber": "790",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/790.png"
+    },
+    {
+      "github_name": "cosmog",
+      "smogon_name": "cosmog",
+      "name": "Cosmog",
+      "pts": "1",
+      "dexNumber": "789",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/789.png"
+    },
+    {
+      "github_name": "cottonee",
+      "smogon_name": "cottonee",
+      "name": "Cottonee",
+      "pts": "1",
+      "dexNumber": "546",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/546.png"
+    },
+    {
+      "github_name": "cranidos",
+      "smogon_name": "cranidos",
+      "name": "Cranidos",
+      "pts": "1",
+      "dexNumber": "408",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/408.png"
+    },
+    {
+      "github_name": "croconaw",
+      "smogon_name": "croconaw",
+      "name": "Croconaw",
+      "pts": "1",
+      "dexNumber": "159",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/159.png"
+    },
+    {
+      "github_name": "dewgong",
+      "smogon_name": "dewgong",
+      "name": "Dewgong",
+      "pts": "2",
+      "dexNumber": "087",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/087.png"
+    },
+    {
+      "github_name": "dewpider",
+      "smogon_name": "dewpider",
+      "name": "Dewpider",
+      "pts": "2",
+      "dexNumber": "751",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/751.png"
+    },
+    {
+      "github_name": "dodrio",
+      "smogon_name": "dodrio",
+      "name": "Dodrio",
+      "pts": "5",
+      "dexNumber": "085",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/085.png"
+    },
+    {
+      "github_name": "doduo",
+      "smogon_name": "doduo",
+      "name": "Doduo",
+      "pts": "1",
+      "dexNumber": "084",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/084.png"
+    },
+    {
+      "github_name": "drilbur",
+      "smogon_name": "drilbur",
+      "name": "Drilbur",
+      "pts": "1",
+      "dexNumber": "529",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/529.png"
+    },
+    {
+      "github_name": "duosion",
+      "smogon_name": "duosion",
+      "name": "Duosion",
+      "pts": "6",
+      "dexNumber": "578",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/578.png"
+    },
+    {
+      "github_name": "duraludon",
+      "smogon_name": "duraludon",
+      "name": "Duraludon",
+      "pts": "9",
+      "dexNumber": "884",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/884.png"
+    },
+    {
+      "github_name": "electabuzz",
+      "smogon_name": "electabuzz",
+      "name": "Electabuzz",
+      "pts": "5",
+      "dexNumber": "125",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/125.png"
+    },
+    {
+      "github_name": "electivire",
+      "smogon_name": "electivire",
+      "name": "Electivire",
+      "pts": "8",
+      "dexNumber": "466",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/466.png"
+    },
+    {
+      "github_name": "elekid",
+      "smogon_name": "elekid",
+      "name": "Elekid",
+      "pts": "1",
+      "dexNumber": "239",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/239.png"
+    },
+    {
+      "github_name": "emboar",
+      "smogon_name": "emboar",
+      "name": "Emboar",
+      "pts": "9",
+      "dexNumber": "500",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/500.png"
+    },
+    {
+      "github_name": "entei",
+      "smogon_name": "entei",
+      "name": "Entei",
+      "pts": "11",
+      "dexNumber": "244",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/244.png"
+    },
+    {
+      "github_name": "espurr",
+      "smogon_name": "espurr",
+      "name": "Espurr",
+      "pts": "1",
+      "dexNumber": "677",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/677.png"
+    },
+    {
+      "github_name": "excadrill",
+      "smogon_name": "excadrill",
+      "name": "Excadrill",
+      "pts": "16",
+      "dexNumber": "530",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/530.png"
+    },
+    {
+      "github_name": "exeggcute",
+      "smogon_name": "exeggcute",
+      "name": "Exeggcute",
+      "pts": "1",
+      "dexNumber": "102",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/102.png"
+    },
+    {
+      "github_name": "exeggutor",
+      "smogon_name": "exeggutor",
+      "name": "Exeggutor",
+      "pts": "5",
+      "dexNumber": "103",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/103.png"
+    },
+    {
+      "github_name": "feraligatr",
+      "smogon_name": "feraligatr",
+      "name": "Feraligatr",
+      "pts": "12",
+      "dexNumber": "160",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/160.png"
+    },
+    {
+      "github_name": "flygon",
+      "smogon_name": "flygon",
+      "name": "Flygon",
+      "pts": "9",
+      "dexNumber": "330",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/330.png"
+    },
+    {
+      "github_name": "galvantula",
+      "smogon_name": "galvantula",
+      "name": "Galvantula",
+      "pts": "9",
+      "dexNumber": "596",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/596.png"
+    },
+    {
+      "github_name": "gloom",
+      "smogon_name": "gloom",
+      "name": "Gloom",
+      "pts": "1",
+      "dexNumber": "044",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/044.png"
+    },
+    {
+      "github_name": "golett",
+      "smogon_name": "golett",
+      "name": "Golett",
+      "pts": "1",
+      "dexNumber": "622",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/622.png"
+    },
+    {
+      "github_name": "golurk",
+      "smogon_name": "golurk",
+      "name": "Golurk",
+      "pts": "7",
+      "dexNumber": "623",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/623.png"
+    },
+    {
+      "github_name": "gouging-fire",
+      "smogon_name": "gouging-fire",
+      "name": "Gouging Fire",
+      "pts": "18",
+      "dexNumber": "1020",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1020.png"
+    },
+    {
+      "github_name": "granbull",
+      "smogon_name": "granbull",
+      "name": "Granbull",
+      "pts": "5",
+      "dexNumber": "210",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/210.png"
+    },
+    {
+      "github_name": "grovyle",
+      "smogon_name": "grovyle",
+      "name": "Grovyle",
+      "pts": "1",
+      "dexNumber": "253",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/253.png"
+    },
+    {
+      "github_name": "hitmonchan",
+      "smogon_name": "hitmonchan",
+      "name": "Hitmonchan",
+      "pts": "7",
+      "dexNumber": "107",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/107.png"
+    },
+    {
+      "github_name": "hitmonlee",
+      "smogon_name": "hitmonlee",
+      "name": "Hitmonlee",
+      "pts": "9",
+      "dexNumber": "106",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/106.png"
+    },
+    {
+      "github_name": "hitmontop",
+      "smogon_name": "hitmontop",
+      "name": "Hitmontop",
+      "pts": "8",
+      "dexNumber": "237",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/237.png"
+    },
+    {
+      "github_name": "horsea",
+      "smogon_name": "horsea",
+      "name": "Horsea",
+      "pts": "1",
+      "dexNumber": "116",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/116.png"
+    },
+    {
+      "github_name": "hydrapple",
+      "smogon_name": "hydrapple",
+      "name": "Hydrapple",
+      "pts": "11",
+      "dexNumber": "1019",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1019.png"
+    },
+    {
+      "github_name": "incineroar",
+      "smogon_name": "incineroar",
+      "name": "Incineroar",
+      "pts": "10",
+      "dexNumber": "727",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/727.png"
+    },
+    {
+      "github_name": "inkay",
+      "smogon_name": "inkay",
+      "name": "Inkay",
+      "pts": "1",
+      "dexNumber": "686",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/686.png"
+    },
+    {
+      "github_name": "iron-boulder",
+      "smogon_name": "iron-boulder",
+      "name": "Iron Boulder",
+      "pts": "17",
+      "dexNumber": "1022",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1022.png"
+    },
+    {
+      "github_name": "iron-crown",
+      "smogon_name": "iron-crown",
+      "name": "Iron Crown",
+      "pts": "15",
+      "dexNumber": "1023",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1023.png"
+    },
+    {
+      "github_name": "ivysaur",
+      "smogon_name": "ivysaur",
+      "name": "Ivysaur",
+      "pts": "1",
+      "dexNumber": "002",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/002.png"
+    },
+    {
+      "github_name": "joltik",
+      "smogon_name": "joltik",
+      "name": "Joltik",
+      "pts": "1",
+      "dexNumber": "595",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/595.png"
+    },
+    {
+      "github_name": "keldeo",
+      "smogon_name": "keldeo",
+      "name": "Keldeo",
+      "pts": "15",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/647.png",
+      "dexNumber": "647"
+    },
+    {
+      "github_name": "kingdra",
+      "smogon_name": "kingdra",
+      "name": "Kingdra",
+      "pts": "12",
+      "dexNumber": "230",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/230.png"
+    },
+    {
+      "github_name": "kyurem",
+      "smogon_name": "kyurem",
+      "name": "Kyurem",
+      "pts": "18",
+      "dexNumber": "646",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/646.png"
+    },
+    {
+      "github_name": "lanturn",
+      "smogon_name": "lanturn",
+      "name": "Lanturn",
+      "pts": "6",
+      "dexNumber": "171",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/171.png"
+    },
+    {
+      "github_name": "lapras",
+      "smogon_name": "lapras",
+      "name": "Lapras",
+      "pts": "6",
+      "dexNumber": "131",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/131.png"
+    },
+    {
+      "github_name": "latias",
+      "smogon_name": "latias",
+      "name": "Latias",
+      "pts": "18",
+      "dexNumber": "380",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/380.png"
+    },
+    {
+      "github_name": "latios",
+      "smogon_name": "latios",
+      "name": "Latios",
+      "pts": "19",
+      "dexNumber": "381",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/381.png"
+    },
+    {
+      "github_name": "litten",
+      "smogon_name": "litten",
+      "name": "Litten",
+      "pts": "1",
+      "dexNumber": "725",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/725.png"
+    },
+    {
+      "github_name": "magby",
+      "smogon_name": "magby",
+      "name": "Magby",
+      "pts": "1",
+      "dexNumber": "240",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/240.png"
+    },
+    {
+      "github_name": "magmar",
+      "smogon_name": "magmar",
+      "name": "Magmar",
+      "pts": "5",
+      "dexNumber": "126",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/126.png"
+    },
+    {
+      "github_name": "magmortar",
+      "smogon_name": "magmortar",
+      "name": "Magmortar",
+      "pts": "9",
+      "dexNumber": "467",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/467.png"
+    },
+    {
+      "github_name": "malamar",
+      "smogon_name": "malamar",
+      "name": "Malamar",
+      "pts": "9",
+      "dexNumber": "687",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/687.png"
+    },
+    {
+      "github_name": "marshtomp",
+      "smogon_name": "marshtomp",
+      "name": "Marshtomp",
+      "pts": "1",
+      "dexNumber": "259",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/259.png"
+    },
+    {
+      "github_name": "meganium",
+      "smogon_name": "meganium",
+      "name": "Meganium",
+      "pts": "4",
+      "dexNumber": "154",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/154.png"
+    },
+    {
+      "github_name": "meowstic-f",
+      "smogon_name": "meowstic-f",
+      "name": "Meowstic",
+      "pts": "4",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/678.png",
+      "dexNumber": "678"
+    },
+    {
+      "github_name": "metagross",
+      "smogon_name": "metagross",
+      "name": "Metagross",
+      "pts": "14",
+      "dexNumber": "376",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/376.png"
+    },
+    {
+      "github_name": "metang",
+      "smogon_name": "metang",
+      "name": "Metang",
+      "pts": "2",
+      "dexNumber": "375",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/375.png"
+    },
+    {
+      "github_name": "milcery",
+      "smogon_name": "milcery",
+      "name": "Milcery",
+      "pts": "1",
+      "dexNumber": "868",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/868.png"
+    },
+    {
+      "github_name": "minccino",
+      "smogon_name": "minccino",
+      "name": "Minccino",
+      "pts": "1",
+      "dexNumber": "572",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/572.png"
+    },
+    {
+      "github_name": "minior-red",
+      "smogon_name": "minior-red",
+      "name": "Minior",
+      "pts": "10",
+      "dexNumber": "774",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/774-r.png"
+    },
+    {
+      "github_name": "minun",
+      "smogon_name": "minun",
+      "name": "Minun",
+      "pts": "2",
+      "dexNumber": "312",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/312.png"
+    },
+    {
+      "github_name": "mudkip",
+      "smogon_name": "mudkip",
+      "name": "Mudkip",
+      "pts": "1",
+      "dexNumber": "258",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/258.png"
+    },
+    {
+      "github_name": "necrozma",
+      "smogon_name": "necrozma",
+      "name": "Necrozma",
+      "pts": "15",
+      "dexNumber": "800",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/800.png"
+    },
+    {
+      "github_name": "oddish",
+      "smogon_name": "oddish",
+      "name": "Oddish",
+      "pts": "1",
+      "dexNumber": "043",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/043.png"
+    },
+    {
+      "github_name": "pignite",
+      "smogon_name": "pignite",
+      "name": "Pignite",
+      "pts": "2",
+      "dexNumber": "499",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/499.png"
+    },
+    {
+      "github_name": "pikipek",
+      "smogon_name": "pikipek",
+      "name": "Pikipek",
+      "pts": "1",
+      "dexNumber": "731",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/731.png"
+    },
+    {
+      "github_name": "plusle",
+      "smogon_name": "plusle",
+      "name": "Plusle",
+      "pts": "2",
+      "dexNumber": "311",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/311.png"
+    },
+    {
+      "github_name": "popplio",
+      "smogon_name": "popplio",
+      "name": "Popplio",
+      "pts": "1",
+      "dexNumber": "728",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/728.png"
+    },
+    {
+      "github_name": "porygon",
+      "smogon_name": "porygon",
+      "name": "Porygon",
+      "pts": "1",
+      "dexNumber": "137",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/137.png"
+    },
+    {
+      "github_name": "porygon-z",
+      "smogon_name": "porygon-z",
+      "name": "Porygon-Z",
+      "pts": "11",
+      "dexNumber": "474",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/474.png"
+    },
+    {
+      "github_name": "porygon2",
+      "smogon_name": "porygon2",
+      "name": "Porygon2",
+      "pts": "8",
+      "dexNumber": "233",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/233.png"
+    },
+    {
+      "github_name": "primarina",
+      "smogon_name": "primarina",
+      "name": "Primarina",
+      "pts": "14",
+      "dexNumber": "730",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/730.png"
+    },
+    {
+      "github_name": "raging-bolt",
+      "smogon_name": "raging-bolt",
+      "name": "Raging Bolt",
+      "pts": "14",
+      "dexNumber": "1021",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1021.png"
+    },
+    {
+      "github_name": "raikou",
+      "smogon_name": "raikou",
+      "name": "Raikou",
+      "pts": "14",
+      "dexNumber": "243",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/243.png"
+    },
+    {
+      "github_name": "rampardos",
+      "smogon_name": "rampardos",
+      "name": "Rampardos",
+      "pts": "4",
+      "dexNumber": "409",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/409.png"
+    },
+    {
+      "github_name": "regice",
+      "smogon_name": "regice",
+      "name": "Regice",
+      "pts": "5",
+      "dexNumber": "378",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/378.png"
+    },
+    {
+      "github_name": "regigigas",
+      "smogon_name": "regigigas",
+      "name": "Regigigas",
+      "pts": "5",
+      "dexNumber": "486",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/486.png"
+    },
+    {
+      "github_name": "regirock",
+      "smogon_name": "regirock",
+      "name": "Regirock",
+      "pts": "6",
+      "dexNumber": "377",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/377.png"
+    },
+    {
+      "github_name": "registeel",
+      "smogon_name": "registeel",
+      "name": "Registeel",
+      "pts": "8",
+      "dexNumber": "379",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/379.png"
+    },
+    {
+      "github_name": "reuniclus",
+      "smogon_name": "reuniclus",
+      "name": "Reuniclus",
+      "pts": "13",
+      "dexNumber": "579",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/579.png"
+    },
+    {
+      "github_name": "rhydon",
+      "smogon_name": "rhydon",
+      "name": "Rhydon",
+      "pts": "7",
+      "dexNumber": "112",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/112.png"
+    },
+    {
+      "github_name": "rhyhorn",
+      "smogon_name": "rhyhorn",
+      "name": "Rhyhorn",
+      "pts": "1",
+      "dexNumber": "111",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/111.png"
+    },
+    {
+      "github_name": "rhyperior",
+      "smogon_name": "rhyperior",
+      "name": "Rhyperior",
+      "pts": "10",
+      "dexNumber": "464",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/464.png"
+    },
+    {
+      "github_name": "sceptile",
+      "smogon_name": "sceptile",
+      "name": "Sceptile",
+      "pts": "9",
+      "dexNumber": "254",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/254.png"
+    },
+    {
+      "github_name": "scrafty",
+      "smogon_name": "scrafty",
+      "name": "Scrafty",
+      "pts": "10",
+      "dexNumber": "560",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/560.png"
+    },
+    {
+      "github_name": "scraggy",
+      "smogon_name": "scraggy",
+      "name": "Scraggy",
+      "pts": "1",
+      "dexNumber": "559",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/559.png"
+    },
+    {
+      "github_name": "seadra",
+      "smogon_name": "seadra",
+      "name": "Seadra",
+      "pts": "2",
+      "dexNumber": "117",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/117.png"
+    },
+    {
+      "github_name": "seel",
+      "smogon_name": "seel",
+      "name": "Seel",
+      "pts": "1",
+      "dexNumber": "086",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/086.png"
+    },
+    {
+      "github_name": "serperior",
+      "smogon_name": "serperior",
+      "name": "Serperior",
+      "pts": "10",
+      "dexNumber": "497",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/497.png"
+    },
+    {
+      "github_name": "servine",
+      "smogon_name": "servine",
+      "name": "Servine",
+      "pts": "4",
+      "dexNumber": "496",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/496.png"
+    },
+    {
+      "github_name": "shieldon",
+      "smogon_name": "shieldon",
+      "name": "Shieldon",
+      "pts": "1",
+      "dexNumber": "410",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/410.png"
+    },
+    {
+      "github_name": "skarmory",
+      "smogon_name": "skarmory",
+      "name": "Skarmory",
+      "pts": "13",
+      "dexNumber": "227",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/227.png"
+    },
+    {
+      "github_name": "smeargle",
+      "smogon_name": "smeargle",
+      "name": "Smeargle",
+      "pts": "10",
+      "dexNumber": "235",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/235.png"
+    },
+    {
+      "github_name": "snivy",
+      "smogon_name": "snivy",
+      "name": "Snivy",
+      "pts": "1",
+      "dexNumber": "495",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/495.png"
+    },
+    {
+      "github_name": "snubbull",
+      "smogon_name": "snubbull",
+      "name": "Snubbull",
+      "pts": "1",
+      "dexNumber": "209",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/209.png"
+    },
+    {
+      "github_name": "solosis",
+      "smogon_name": "solosis",
+      "name": "Solosis",
+      "pts": "1",
+      "dexNumber": "577",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/577.png"
+    },
+    {
+      "github_name": "squirtle",
+      "smogon_name": "squirtle",
+      "name": "Squirtle",
+      "pts": "1",
+      "dexNumber": "007",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/007.png"
+    },
+    {
+      "github_name": "suicune",
+      "smogon_name": "suicune",
+      "name": "Suicune",
+      "pts": "13",
+      "dexNumber": "245",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/245.png"
+    },
+    {
+      "github_name": "swampert",
+      "smogon_name": "swampert",
+      "name": "Swampert",
+      "pts": "13",
+      "dexNumber": "260",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/260.png"
+    },
+    {
+      "github_name": "tentacool",
+      "smogon_name": "tentacool",
+      "name": "Tentacool",
+      "pts": "1",
+      "dexNumber": "072",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/072.png"
+    },
+    {
+      "github_name": "tentacruel",
+      "smogon_name": "tentacruel",
+      "name": "Tentacruel",
+      "pts": "12",
+      "dexNumber": "073",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/073.png"
+    },
+    {
+      "github_name": "tepig",
+      "smogon_name": "tepig",
+      "name": "Tepig",
+      "pts": "1",
+      "dexNumber": "498",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/498.png"
+    },
+    {
+      "github_name": "terrakion",
+      "smogon_name": "terrakion",
+      "name": "Terrakion",
+      "pts": "14",
+      "dexNumber": "639",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/639.png"
+    },
+    {
+      "github_name": "torchic",
+      "smogon_name": "torchic",
+      "name": "Torchic",
+      "pts": "1",
+      "dexNumber": "255",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/255.png"
+    },
+    {
+      "github_name": "torracat",
+      "smogon_name": "torracat",
+      "name": "Torracat",
+      "pts": "2",
+      "dexNumber": "726",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/726.png"
+    },
+    {
+      "github_name": "totodile",
+      "smogon_name": "totodile",
+      "name": "Totodile",
+      "pts": "1",
+      "dexNumber": "158",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/158.png"
+    },
+    {
+      "github_name": "toucannon",
+      "smogon_name": "toucannon",
+      "name": "Toucannon",
+      "pts": "3",
+      "dexNumber": "733",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/733.png"
+    },
+    {
+      "github_name": "trapinch",
+      "smogon_name": "trapinch",
+      "name": "Trapinch",
+      "pts": "2",
+      "dexNumber": "328",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/328.png"
+    },
+    {
+      "github_name": "treecko",
+      "smogon_name": "treecko",
+      "name": "Treecko",
+      "pts": "1",
+      "dexNumber": "252",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/252.png"
+    },
+    {
+      "github_name": "trumbeak",
+      "smogon_name": "trumbeak",
+      "name": "Trumbeak",
+      "pts": "1",
+      "dexNumber": "732",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/732.png"
+    },
+    {
+      "github_name": "tyrogue",
+      "smogon_name": "tyrogue",
+      "name": "Tyrogue",
+      "pts": "1",
+      "dexNumber": "236",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/236.png"
+    },
+    {
+      "github_name": "venusaur",
+      "smogon_name": "venusaur",
+      "name": "Venusaur",
+      "pts": "10",
+      "dexNumber": "003",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/003.png"
+    },
+    {
+      "github_name": "vibrava",
+      "smogon_name": "vibrava",
+      "name": "Vibrava",
+      "pts": "1",
+      "dexNumber": "329",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/329.png"
+    },
+    {
+      "github_name": "vileplume",
+      "smogon_name": "vileplume",
+      "name": "Vileplume",
+      "pts": "5",
+      "dexNumber": "045",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/045.png"
+    },
+    {
+      "github_name": "virizion",
+      "smogon_name": "virizion",
+      "name": "Virizion",
+      "pts": "10",
+      "dexNumber": "640",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/640.png"
+    },
+    {
+      "github_name": "wartortle",
+      "smogon_name": "wartortle",
+      "name": "Wartortle",
+      "pts": "2",
+      "dexNumber": "008",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/008.png"
+    },
+    {
+      "github_name": "whimsicott",
+      "smogon_name": "whimsicott",
+      "name": "Whimsicott",
+      "pts": "6",
+      "dexNumber": "547",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/547.png"
+    },
+    {
+      "github_name": "zebstrika",
+      "smogon_name": "zebstrika",
+      "name": "Zebstrika",
+      "pts": "6",
+      "dexNumber": "523",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/523.png"
+    },
+    {
+      "github_name": "darkrai",
+      "smogon_name": "darkrai",
+      "name": "Darkrai",
+      "pts": "19",
+      "dexNumber": "491",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/491.png"
+    },
+    {
+      "github_name": "landorus",
+      "smogon_name": "landorus",
+      "name": "Landorus-Incarnate",
+      "pts": "17",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/645.png",
+      "dexNumber": "645"
+    },
+    {
+      "github_name": "dragapult",
+      "smogon_name": "dragapult",
+      "name": "Dragapult",
+      "pts": "19",
+      "dexNumber": "887",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/887.png"
+    },
+    {
+      "github_name": "iron-valiant",
+      "smogon_name": "iron-valiant",
+      "name": "Iron Valiant",
+      "pts": "19",
+      "dexNumber": "1006",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1006.png"
+    },
+    {
+      "github_name": "baxcalibur",
+      "smogon_name": "baxcalibur",
+      "name": "Baxcalibur",
+      "pts": "17",
+      "dexNumber": "998",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/998.png"
+    },
+    {
+      "github_name": "chi-yu",
+      "smogon_name": "chi-yu",
+      "name": "Chi-Yu",
+      "pts": "18",
+      "dexNumber": "1004",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1004.png"
+    },
+    {
+      "github_name": "garchomp",
+      "smogon_name": "garchomp",
+      "name": "Garchomp",
+      "pts": "17",
+      "dexNumber": "445",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/445.png"
+    },
+    {
+      "github_name": "great-tusk",
+      "smogon_name": "great-tusk",
+      "name": "Great Tusk",
+      "pts": "18",
+      "dexNumber": "984",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/984.png"
+    },
+    {
+      "github_name": "greninja",
+      "smogon_name": "greninja",
+      "name": "Greninja",
+      "pts": "18",
+      "dexNumber": "658",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/658.png"
+    },
+    {
+      "github_name": "iron-bundle",
+      "smogon_name": "iron-bundle",
+      "name": "Iron Bundle",
+      "pts": "18",
+      "dexNumber": "991",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/991.png"
+    },
+    {
+      "github_name": "cinderace",
+      "smogon_name": "cinderace",
+      "name": "Cinderace",
+      "pts": "17",
+      "dexNumber": "815",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/815.png"
+    },
+    {
+      "github_name": "enamorus",
+      "smogon_name": "enamorus",
+      "name": "Enamorus-Incarnate",
+      "pts": "17",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/905.png",
+      "dexNumber": "905"
+    },
+    {
+      "github_name": "landorus-therian",
+      "smogon_name": "landorus-therian",
+      "name": "Landorus-Therian",
+      "pts": "16",
+      "dexNumber": "645",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/645-t.png"
+    },
+    {
+      "github_name": "roaring-moon",
+      "smogon_name": "roaring-moon",
+      "name": "Roaring Moon",
+      "pts": "17",
+      "dexNumber": "1005",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1005.png"
+    },
+    {
+      "github_name": "tornadus-therian",
+      "smogon_name": "tornadus-therian",
+      "name": "Tornadus-Therian",
+      "pts": "17",
+      "dexNumber": "641",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/641-t.png"
+    },
+    {
+      "github_name": "annihilape",
+      "smogon_name": "annihilape",
+      "name": "Annihilape",
+      "pts": "16",
+      "dexNumber": "979",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/979.png"
+    },
+    {
+      "github_name": "dragonite",
+      "smogon_name": "dragonite",
+      "name": "Dragonite",
+      "pts": "15",
+      "dexNumber": "149",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/149.png"
+    },
+    {
+      "github_name": "slowking-galar",
+      "smogon_name": "slowking-galar",
+      "name": "Galarian Slowking",
+      "pts": "16",
+      "dexNumber": "199",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/199-g.png"
+    },
+    {
+      "github_name": "gholdengo",
+      "smogon_name": "gholdengo",
+      "name": "Gholdengo",
+      "pts": "16",
+      "dexNumber": "1000",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1000.png"
+    },
+    {
+      "github_name": "samurott-hisui",
+      "smogon_name": "samurott-hisui",
+      "name": "Hisuian Samurott",
+      "pts": "16",
+      "dexNumber": "503",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/503-h.png"
+    },
+    {
+      "github_name": "infernape",
+      "smogon_name": "infernape",
+      "name": "Infernape",
+      "pts": "15",
+      "dexNumber": "392",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/392.png"
+    },
+    {
+      "github_name": "iron-treads",
+      "smogon_name": "iron-treads",
+      "name": "Iron Treads",
+      "pts": "16",
+      "dexNumber": "990",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/990.png"
+    },
+    {
+      "github_name": "jirachi",
+      "smogon_name": "jirachi",
+      "name": "Jirachi",
+      "pts": "15",
+      "dexNumber": "385",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/385.png"
+    },
+    {
+      "github_name": "kommo-o",
+      "smogon_name": "kommo-o",
+      "name": "Kommo-o",
+      "pts": "16",
+      "dexNumber": "784",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/784.png"
+    },
+    {
+      "github_name": "manaphy",
+      "smogon_name": "manaphy",
+      "name": "Manaphy",
+      "pts": "16",
+      "dexNumber": "490",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/490.png"
+    },
+    {
+      "github_name": "meowscarada",
+      "smogon_name": "meowscarada",
+      "name": "Meowscarada",
+      "pts": "18",
+      "dexNumber": "908",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/908.png"
+    },
+    {
+      "github_name": "sneasler",
+      "smogon_name": "sneasler",
+      "name": "Sneasler",
+      "pts": "17",
+      "dexNumber": "903",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/903.png"
+    },
+    {
+      "github_name": "ursaluna-bloodmoon",
+      "smogon_name": "ursaluna-bloodmoon",
+      "name": "Ursaluna-Bloodmoon",
+      "pts": "16",
+      "dexNumber": "901",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/901-b.png"
+    },
+    {
+      "github_name": "walking-wake",
+      "smogon_name": "walking-wake",
+      "name": "Walking Wake",
+      "pts": "16",
+      "dexNumber": "1009",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1009.png"
+    },
+    {
+      "github_name": "clefable",
+      "smogon_name": "clefable",
+      "name": "Clefable",
+      "pts": "15",
+      "dexNumber": "036",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/036.png"
+    },
+    {
+      "github_name": "zapdos-galar",
+      "smogon_name": "zapdos-galar",
+      "name": "Galarian Zapdos",
+      "pts": "15",
+      "dexNumber": "145",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/145-g.png"
+    },
+    {
+      "github_name": "gengar",
+      "smogon_name": "gengar",
+      "name": "Gengar",
+      "pts": "15",
+      "dexNumber": "094",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/094.png"
+    },
+    {
+      "github_name": "heatran",
+      "smogon_name": "heatran",
+      "name": "Heatran",
+      "pts": "15",
+      "dexNumber": "485",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/485.png"
+    },
+    {
+      "github_name": "hydreigon",
+      "smogon_name": "hydreigon",
+      "name": "Hydreigon",
+      "pts": "14",
+      "dexNumber": "635",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/635.png"
+    },
+    {
+      "github_name": "iron-moth",
+      "smogon_name": "iron-moth",
+      "name": "Iron Moth",
+      "pts": "15",
+      "dexNumber": "994",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/994.png"
+    },
+    {
+      "github_name": "lycanroc-dusk",
+      "smogon_name": "lycanroc-dusk",
+      "name": "Lycanroc-Dusk",
+      "pts": "14",
+      "dexNumber": "745",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/745-d.png"
+    },
+    {
+      "github_name": "mamoswine",
+      "smogon_name": "mamoswine",
+      "name": "Mamoswine",
+      "pts": "15",
+      "dexNumber": "473",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/473.png"
+    },
+    {
+      "github_name": "mandibuzz",
+      "smogon_name": "mandibuzz",
+      "name": "Mandibuzz",
+      "pts": "15",
+      "dexNumber": "630",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/630.png"
+    },
+    {
+      "github_name": "mew",
+      "smogon_name": "mew",
+      "name": "Mew",
+      "pts": "15",
+      "dexNumber": "151",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/151.png"
+    },
+    {
+      "github_name": "munkidori",
+      "smogon_name": "munkidori",
+      "name": "Munkidori",
+      "pts": "13",
+      "dexNumber": "1015",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1015.png"
+    },
+    {
+      "github_name": "ogerpon-hearthflame",
+      "smogon_name": "ogerpon-hearthflame",
+      "name": "Ogerpon-Heartflame",
+      "pts": "16",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1017-h.png",
+      "dexNumber": "1017"
+    },
+    {
+      "github_name": "quaquaval",
+      "smogon_name": "quaquaval",
+      "name": "Quaquaval",
+      "pts": "16",
+      "dexNumber": "914",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/914.png"
+    },
+    {
+      "github_name": "slowking",
+      "smogon_name": "slowking",
+      "name": "Slowking",
+      "pts": "15",
+      "dexNumber": "199",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/199.png"
+    },
+    {
+      "github_name": "thundurus",
+      "smogon_name": "thundurus",
+      "name": "Thundurus-Incarnate",
+      "pts": "14",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/642.png",
+      "dexNumber": "642"
+    },
+    {
+      "github_name": "tyranitar",
+      "smogon_name": "tyranitar",
+      "name": "Tyranitar",
+      "pts": "15",
+      "dexNumber": "248",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/248.png"
+    },
+    {
+      "github_name": "ursaluna",
+      "smogon_name": "ursaluna",
+      "name": "Ursaluna",
+      "pts": "15",
+      "dexNumber": "901",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/901.png"
+    },
+    {
+      "github_name": "weavile",
+      "smogon_name": "weavile",
+      "name": "Weavile",
+      "pts": "17",
+      "dexNumber": "461",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/461.png"
+    },
+    {
+      "github_name": "zapdos",
+      "smogon_name": "zapdos",
+      "name": "Zapdos",
+      "pts": "15",
+      "dexNumber": "145",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/145.png"
+    },
+    {
+      "github_name": "ninetales-alola",
+      "smogon_name": "ninetales-alola",
+      "name": "Alolan Ninetales",
+      "pts": "14",
+      "dexNumber": "038",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/038-a.png"
+    },
+    {
+      "github_name": "azumarill",
+      "smogon_name": "azumarill",
+      "name": "Azumarill",
+      "pts": "14",
+      "dexNumber": "184",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/184.png"
+    },
+    {
+      "github_name": "corviknight",
+      "smogon_name": "corviknight",
+      "name": "Corviknight",
+      "pts": "14",
+      "dexNumber": "823",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/823.png"
+    },
+    {
+      "github_name": "espathra",
+      "smogon_name": "espathra",
+      "name": "Espathra",
+      "pts": "13",
+      "dexNumber": "956",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/956.png"
+    },
+    {
+      "github_name": "gliscor",
+      "smogon_name": "gliscor",
+      "name": "Gliscor",
+      "pts": "16",
+      "dexNumber": "472",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/472.png"
+    },
+    {
+      "github_name": "lilligant-hisui",
+      "smogon_name": "lilligant-hisui",
+      "name": "Hisuian Lilligant",
+      "pts": "13",
+      "dexNumber": "549",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/549-h.png"
+    },
+    {
+      "github_name": "hoopa-unbound",
+      "smogon_name": "hoopa-unbound",
+      "name": "Hoopa-Unbound",
+      "pts": "14",
+      "dexNumber": "720",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/720-u.png"
+    },
+    {
+      "github_name": "iron-hands",
+      "smogon_name": "iron-hands",
+      "name": "Iron Hands",
+      "pts": "14",
+      "dexNumber": "992",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/992.png"
+    },
+    {
+      "github_name": "kingambit",
+      "smogon_name": "kingambit",
+      "name": "Kingambit",
+      "pts": "14",
+      "dexNumber": "983",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/983.png"
+    },
+    {
+      "github_name": "ogerpon",
+      "smogon_name": "ogerpon",
+      "name": "Ogerpon-Teal",
+      "pts": "13",
+      "dexNumber": "1017",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1017.png"
+    },
+    {
+      "github_name": "ogerpon-wellspring",
+      "smogon_name": "ogerpon-wellspring",
+      "name": "Ogerpon-Wellspring",
+      "pts": "14",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1017-w.png",
+      "dexNumber": "1017"
+    },
+    {
+      "github_name": "okidogi",
+      "smogon_name": "okidogi",
+      "name": "Okidogi",
+      "pts": "13",
+      "dexNumber": "1014",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1014.png"
+    },
+    {
+      "github_name": "rillaboom",
+      "smogon_name": "rillaboom",
+      "name": "Rillaboom",
+      "pts": "14",
+      "dexNumber": "812",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/812.png"
+    },
+    {
+      "github_name": "rotom-wash",
+      "smogon_name": "rotom-wash",
+      "name": "Rotom-Wash",
+      "pts": "15",
+      "dexNumber": "479",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/479-w.png"
+    },
+    {
+      "github_name": "salamence",
+      "smogon_name": "salamence",
+      "name": "Salamence",
+      "pts": "14",
+      "dexNumber": "373",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/373.png"
+    },
+    {
+      "github_name": "scizor",
+      "smogon_name": "scizor",
+      "name": "Scizor",
+      "pts": "14",
+      "dexNumber": "212",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/212.png"
+    },
+    {
+      "github_name": "slowbro",
+      "smogon_name": "slowbro",
+      "name": "Slowbro",
+      "pts": "14",
+      "dexNumber": "080",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/080.png"
+    },
+    {
+      "github_name": "thundurus-therian",
+      "smogon_name": "thundurus-therian",
+      "name": "Thundurus-Therian",
+      "pts": "14",
+      "dexNumber": "642",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/642-t.png"
+    },
+    {
+      "github_name": "ting-lu",
+      "smogon_name": "ting-lu",
+      "name": "Ting-Lu",
+      "pts": "14",
+      "dexNumber": "1003",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1003.png"
+    },
+    {
+      "github_name": "volcarona",
+      "smogon_name": "volcarona",
+      "name": "Volcarona",
+      "pts": "14",
+      "dexNumber": "637",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/637.png"
+    },
+    {
+      "github_name": "ceruledge",
+      "smogon_name": "ceruledge",
+      "name": "Ceruledge",
+      "pts": "14",
+      "dexNumber": "937",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/937.png"
+    },
+    {
+      "github_name": "conkeldurr",
+      "smogon_name": "conkeldurr",
+      "name": "Conkeldurr",
+      "pts": "12",
+      "dexNumber": "534",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/534.png"
+    },
+    {
+      "github_name": "crawdaunt",
+      "smogon_name": "crawdaunt",
+      "name": "Crawdaunt",
+      "pts": "12",
+      "dexNumber": "342",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/342.png"
+    },
+    {
+      "github_name": "moltres-galar",
+      "smogon_name": "moltres-galar",
+      "name": "Galarian Moltres",
+      "pts": "12",
+      "dexNumber": "146",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/146-g.png"
+    },
+    {
+      "github_name": "gothitelle",
+      "smogon_name": "gothitelle",
+      "name": "Gothitelle",
+      "pts": "13",
+      "dexNumber": "576",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/576.png"
+    },
+    {
+      "github_name": "grimmsnarl",
+      "smogon_name": "grimmsnarl",
+      "name": "Grimmsnarl",
+      "pts": "13",
+      "dexNumber": "861",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/861.png"
+    },
+    {
+      "github_name": "hawlucha",
+      "smogon_name": "hawlucha",
+      "name": "Hawlucha",
+      "pts": "13",
+      "dexNumber": "701",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/701.png"
+    },
+    {
+      "github_name": "haxorus",
+      "smogon_name": "haxorus",
+      "name": "Haxorus",
+      "pts": "13",
+      "dexNumber": "612",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/612.png"
+    },
+    {
+      "github_name": "arcanine-hisui",
+      "smogon_name": "arcanine-hisui",
+      "name": "Hisuian Arcanine",
+      "pts": "13",
+      "dexNumber": "059",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/059-h.png"
+    },
+    {
+      "github_name": "goodra-hisui",
+      "smogon_name": "goodra-hisui",
+      "name": "Hisuian Goodra",
+      "pts": "13",
+      "dexNumber": "706",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/706-h.png"
+    },
+    {
+      "github_name": "zoroark-hisui",
+      "smogon_name": "zoroark-hisui",
+      "name": "Hisuian Zoroark",
+      "pts": "13",
+      "dexNumber": "571",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/571-h.png"
+    },
+    {
+      "github_name": "iron-leaves",
+      "smogon_name": "iron-leaves",
+      "name": "Iron Leaves",
+      "pts": "13",
+      "dexNumber": "1010",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1010.png"
+    },
+    {
+      "github_name": "kleavor",
+      "smogon_name": "kleavor",
+      "name": "Kleavor",
+      "pts": "13",
+      "dexNumber": "900",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/900.png"
+    },
+    {
+      "github_name": "krookodile",
+      "smogon_name": "krookodile",
+      "name": "Krookodile",
+      "pts": "13",
+      "dexNumber": "553",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/553.png"
+    },
+    {
+      "github_name": "mienshao",
+      "smogon_name": "mienshao",
+      "name": "Mienshao",
+      "pts": "13",
+      "dexNumber": "620",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/620.png"
+    },
+    {
+      "github_name": "ogerpon-cornerstone",
+      "smogon_name": "ogerpon-cornerstone",
+      "name": "Ogerpon-Cornerstone",
+      "pts": "13",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1017-c.png",
+      "dexNumber": "1017"
+    },
+    {
+      "github_name": "skeledirge",
+      "smogon_name": "skeledirge",
+      "name": "Skeledirge",
+      "pts": "13",
+      "dexNumber": "911",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/911.png"
+    },
+    {
+      "github_name": "slither-wing",
+      "smogon_name": "slither-wing",
+      "name": "Slither Wing",
+      "pts": "13",
+      "dexNumber": "988",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/988.png"
+    },
+    {
+      "github_name": "zarude",
+      "smogon_name": "zarude",
+      "name": "Zarude",
+      "pts": "13",
+      "dexNumber": "893",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/893.png"
+    },
+    {
+      "github_name": "arcanine",
+      "smogon_name": "arcanine",
+      "name": "Arcanine",
+      "pts": "11",
+      "dexNumber": "059",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/059.png"
+    },
+    {
+      "github_name": "breloom",
+      "smogon_name": "breloom",
+      "name": "Breloom",
+      "pts": "12",
+      "dexNumber": "286",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/286.png"
+    },
+    {
+      "github_name": "cresselia",
+      "smogon_name": "cresselia",
+      "name": "Cresselia",
+      "pts": "12",
+      "dexNumber": "488",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/488.png"
+    },
+    {
+      "github_name": "dondozo",
+      "smogon_name": "dondozo",
+      "name": "Dondozo",
+      "pts": "11",
+      "dexNumber": "977",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/977.png"
+    },
+    {
+      "github_name": "enamorus-therian",
+      "smogon_name": "enamorus-therian",
+      "name": "Enamorus-Therian",
+      "pts": "12",
+      "dexNumber": "905",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/905-s.png"
+    },
+    {
+      "github_name": "weezing-galar",
+      "smogon_name": "weezing-galar",
+      "name": "Galarian Weezing",
+      "pts": "12",
+      "dexNumber": "110",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/110-g.png"
+    },
+    {
+      "github_name": "garganacl",
+      "smogon_name": "garganacl",
+      "name": "Garganacl",
+      "pts": "11",
+      "dexNumber": "934",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/934.png"
+    },
+    {
+      "github_name": "glimmora",
+      "smogon_name": "glimmora",
+      "name": "Glimmora",
+      "pts": "13",
+      "dexNumber": "970",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/970.png"
+    },
+    {
+      "github_name": "hippowdon",
+      "smogon_name": "hippowdon",
+      "name": "Hippowdon",
+      "pts": "12",
+      "dexNumber": "450",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/450.png"
+    },
+    {
+      "github_name": "iron-jugulis",
+      "smogon_name": "iron-jugulis",
+      "name": "Iron Jugulis",
+      "pts": "13",
+      "dexNumber": "993",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/993.png"
+    },
+    {
+      "github_name": "milotic",
+      "smogon_name": "milotic",
+      "name": "Milotic",
+      "pts": "12",
+      "dexNumber": "350",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/350.png"
+    },
+    {
+      "github_name": "sandy-shocks",
+      "smogon_name": "sandy-shocks",
+      "name": "Sandy Shocks",
+      "pts": "12",
+      "dexNumber": "989",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/989.png"
+    },
+    {
+      "github_name": "scream-tail",
+      "smogon_name": "scream-tail",
+      "name": "Scream Tail",
+      "pts": "12",
+      "dexNumber": "985",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/985.png"
+    },
+    {
+      "github_name": "snorlax",
+      "smogon_name": "snorlax",
+      "name": "Snorlax",
+      "pts": "11",
+      "dexNumber": "143",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/143.png"
+    },
+    {
+      "github_name": "sylveon",
+      "smogon_name": "sylveon",
+      "name": "Sylveon",
+      "pts": "12",
+      "dexNumber": "700",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/700.png"
+    },
+    {
+      "github_name": "toxapex",
+      "smogon_name": "toxapex",
+      "name": "Toxapex",
+      "pts": "12",
+      "dexNumber": "748",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/748.png"
+    },
+    {
+      "github_name": "volcanion",
+      "smogon_name": "volcanion",
+      "name": "Volcanion",
+      "pts": "12",
+      "dexNumber": "721",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/721.png"
+    },
+    {
+      "github_name": "amoonguss",
+      "smogon_name": "amoonguss",
+      "name": "Amoonguss",
+      "pts": "10",
+      "dexNumber": "591",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/591.png"
+    },
+    {
+      "github_name": "armarouge",
+      "smogon_name": "armarouge",
+      "name": "Armarouge",
+      "pts": "12",
+      "dexNumber": "936",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/936.png"
+    },
+    {
+      "github_name": "azelf",
+      "smogon_name": "azelf",
+      "name": "Azelf",
+      "pts": "12",
+      "dexNumber": "482",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/482.png"
+    },
+    {
+      "github_name": "barraskewda",
+      "smogon_name": "barraskewda",
+      "name": "Barraskewda",
+      "pts": "11",
+      "dexNumber": "847",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/847.png"
+    },
+    {
+      "github_name": "clodsire",
+      "smogon_name": "clodsire",
+      "name": "Clodsire",
+      "pts": "11",
+      "dexNumber": "980",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/980.png"
+    },
+    {
+      "github_name": "donphan",
+      "smogon_name": "donphan",
+      "name": "Donphan",
+      "pts": "11",
+      "dexNumber": "232",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/232.png"
+    },
+    {
+      "github_name": "dudunsparce",
+      "smogon_name": "dudunsparce",
+      "name": "Dudunsparce",
+      "pts": "10",
+      "dexNumber": "982",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/982.png"
+    },
+    {
+      "github_name": "empoleon",
+      "smogon_name": "empoleon",
+      "name": "Empoleon",
+      "pts": "13",
+      "dexNumber": "395",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/395.png"
+    },
+    {
+      "github_name": "fezandipiti",
+      "smogon_name": "fezandipiti",
+      "name": "Fezandipiti",
+      "pts": "9",
+      "dexNumber": "1016",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1016.png"
+    },
+    {
+      "github_name": "gallade",
+      "smogon_name": "gallade",
+      "name": "Gallade",
+      "pts": "10",
+      "dexNumber": "475",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/475.png"
+    },
+    {
+      "github_name": "gardevoir",
+      "smogon_name": "gardevoir",
+      "name": "Gardevoir",
+      "pts": "12",
+      "dexNumber": "282",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/282.png"
+    },
+    {
+      "github_name": "gyarados",
+      "smogon_name": "gyarados",
+      "name": "Gyarados",
+      "pts": "10",
+      "dexNumber": "130",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/130.png"
+    },
+    {
+      "github_name": "hatterene",
+      "smogon_name": "hatterene",
+      "name": "Hatterene",
+      "pts": "11",
+      "dexNumber": "858",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/858.png"
+    },
+    {
+      "github_name": "lokix",
+      "smogon_name": "lokix",
+      "name": "Lokix",
+      "pts": "10",
+      "dexNumber": "920",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/920.png"
+    },
+    {
+      "github_name": "lucario",
+      "smogon_name": "lucario",
+      "name": "Lucario",
+      "pts": "9",
+      "dexNumber": "448",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/448.png"
+    },
+    {
+      "github_name": "pelipper",
+      "smogon_name": "pelipper",
+      "name": "Pelipper",
+      "pts": "11",
+      "dexNumber": "279",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/279.png"
+    },
+    {
+      "github_name": "regidrago",
+      "smogon_name": "regidrago",
+      "name": "Regidrago",
+      "pts": "11",
+      "dexNumber": "895",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/895.png"
+    },
+    {
+      "github_name": "ribombee",
+      "smogon_name": "ribombee",
+      "name": "Ribombee",
+      "pts": "11",
+      "dexNumber": "743",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/743.png"
+    },
+    {
+      "github_name": "rotom-heat",
+      "smogon_name": "rotom-heat",
+      "name": "Rotom-Heat",
+      "pts": "11",
+      "dexNumber": "479",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/479-h.png"
+    },
+    {
+      "github_name": "torkoal",
+      "smogon_name": "torkoal",
+      "name": "Torkoal",
+      "pts": "11",
+      "dexNumber": "324",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/324.png"
+    },
+    {
+      "github_name": "tornadus",
+      "smogon_name": "tornadus",
+      "name": "Tornadus-Incarnate",
+      "pts": "10",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/641.png",
+      "dexNumber": "641"
+    },
+    {
+      "github_name": "toxtricity",
+      "smogon_name": "toxtricity",
+      "name": "Toxtricity",
+      "pts": "10",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/849.png",
+      "dexNumber": "849"
+    },
+    {
+      "github_name": "muk-alola",
+      "smogon_name": "muk-alola",
+      "name": "Alolan Muk",
+      "pts": "11",
+      "dexNumber": "089",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/089-a.png"
+    },
+    {
+      "github_name": "cloyster",
+      "smogon_name": "cloyster",
+      "name": "Cloyster",
+      "pts": "10",
+      "dexNumber": "091",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/091.png"
+    },
+    {
+      "github_name": "delphox",
+      "smogon_name": "delphox",
+      "name": "Delphox",
+      "pts": "9",
+      "dexNumber": "655",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/655.png"
+    },
+    {
+      "github_name": "diancie",
+      "smogon_name": "diancie",
+      "name": "Diancie",
+      "pts": "9",
+      "dexNumber": "719",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/719.png"
+    },
+    {
+      "github_name": "dugtrio",
+      "smogon_name": "dugtrio",
+      "name": "Dugtrio",
+      "pts": "10",
+      "dexNumber": "051",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/051.png"
+    },
+    {
+      "github_name": "florges",
+      "smogon_name": "florges",
+      "name": "Florges",
+      "pts": "10",
+      "dexNumber": "671",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/671.png"
+    },
+    {
+      "github_name": "slowbro-galar",
+      "smogon_name": "slowbro-galar",
+      "name": "Galarian Slowbro",
+      "pts": "10",
+      "dexNumber": "080",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/080-g.png"
+    },
+    {
+      "github_name": "gastrodon",
+      "smogon_name": "gastrodon",
+      "name": "Gastrodon",
+      "pts": "9",
+      "dexNumber": "423",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/423.png"
+    },
+    {
+      "github_name": "goodra",
+      "smogon_name": "goodra",
+      "name": "Goodra",
+      "pts": "9",
+      "dexNumber": "706",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/706.png"
+    },
+    {
+      "github_name": "heracross",
+      "smogon_name": "heracross",
+      "name": "Heracross",
+      "pts": "10",
+      "dexNumber": "214",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/214.png"
+    },
+    {
+      "github_name": "inteleon",
+      "smogon_name": "inteleon",
+      "name": "Inteleon",
+      "pts": "10",
+      "dexNumber": "818",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/818.png"
+    },
+    {
+      "github_name": "iron-thorns",
+      "smogon_name": "iron-thorns",
+      "name": "Iron Thorns",
+      "pts": "9",
+      "dexNumber": "995",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/995.png"
+    },
+    {
+      "github_name": "klefki",
+      "smogon_name": "klefki",
+      "name": "Klefki",
+      "pts": "10",
+      "dexNumber": "707",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/707.png"
+    },
+    {
+      "github_name": "magnezone",
+      "smogon_name": "magnezone",
+      "name": "Magnezone",
+      "pts": "10",
+      "dexNumber": "462",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/462.png"
+    },
+    {
+      "github_name": "mesprit",
+      "smogon_name": "mesprit",
+      "name": "Mesprit",
+      "pts": "10",
+      "dexNumber": "481",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/481.png"
+    },
+    {
+      "github_name": "mimikyu",
+      "smogon_name": "mimikyu",
+      "name": "Mimikyu",
+      "pts": "10",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/778.png",
+      "dexNumber": "778"
+    },
+    {
+      "github_name": "moltres",
+      "smogon_name": "moltres",
+      "name": "Moltres",
+      "pts": "10",
+      "dexNumber": "146",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/146.png"
+    },
+    {
+      "github_name": "ninetales",
+      "smogon_name": "ninetales",
+      "name": "Ninetales",
+      "pts": "10",
+      "dexNumber": "038",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/038.png"
+    },
+    {
+      "github_name": "noivern",
+      "smogon_name": "noivern",
+      "name": "Noivern",
+      "pts": "10",
+      "dexNumber": "715",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/715.png"
+    },
+    {
+      "github_name": "pawmot",
+      "smogon_name": "pawmot",
+      "name": "Pawmot",
+      "pts": "10",
+      "dexNumber": "923",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/923.png"
+    },
+    {
+      "github_name": "politoed",
+      "smogon_name": "politoed",
+      "name": "Politoed",
+      "pts": "10",
+      "dexNumber": "186",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/186.png"
+    },
+    {
+      "github_name": "rotom-mow",
+      "smogon_name": "rotom-mow",
+      "name": "Rotom-Mow",
+      "pts": "10",
+      "dexNumber": "479",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/479-m.png"
+    },
+    {
+      "github_name": "salazzle",
+      "smogon_name": "salazzle",
+      "name": "Salazzle",
+      "pts": "10",
+      "dexNumber": "758",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/758.png"
+    },
+    {
+      "github_name": "staraptor",
+      "smogon_name": "staraptor",
+      "name": "Staraptor",
+      "pts": "9",
+      "dexNumber": "398",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/398.png"
+    },
+    {
+      "github_name": "talonflame",
+      "smogon_name": "talonflame",
+      "name": "Talonflame",
+      "pts": "10",
+      "dexNumber": "663",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/663.png"
+    },
+    {
+      "github_name": "uxie",
+      "smogon_name": "uxie",
+      "name": "Uxie",
+      "pts": "10",
+      "dexNumber": "480",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/480.png"
+    },
+    {
+      "github_name": "vaporeon",
+      "smogon_name": "vaporeon",
+      "name": "Vaporeon",
+      "pts": "10",
+      "dexNumber": "134",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/134.png"
+    },
+    {
+      "github_name": "wo-chien",
+      "smogon_name": "wo-chien",
+      "name": "Wo-Chien",
+      "pts": "10",
+      "dexNumber": "1001",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1001.png"
+    },
+    {
+      "github_name": "yanmega",
+      "smogon_name": "yanmega",
+      "name": "Yanmega",
+      "pts": "10",
+      "dexNumber": "469",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/469.png"
+    },
+    {
+      "github_name": "basculegion-f",
+      "smogon_name": "basculegion-f",
+      "name": "Basculegion-Female",
+      "pts": "9",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/902-f.png",
+      "dexNumber": "902"
+    },
+    {
+      "github_name": "basculegion",
+      "smogon_name": "basculegion",
+      "name": "Basculegion-Male",
+      "pts": "9",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/902.png",
+      "dexNumber": "902"
+    },
+    {
+      "github_name": "bisharp",
+      "smogon_name": "bisharp",
+      "name": "Bisharp",
+      "pts": "8",
+      "dexNumber": "625",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/625.png"
+    },
+    {
+      "github_name": "blissey",
+      "smogon_name": "blissey",
+      "name": "Blissey",
+      "pts": "8",
+      "dexNumber": "242",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/242.png"
+    },
+    {
+      "github_name": "bronzong",
+      "smogon_name": "bronzong",
+      "name": "Bronzong",
+      "pts": "6",
+      "dexNumber": "437",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/437.png"
+    },
+    {
+      "github_name": "brute-bonnet",
+      "smogon_name": "brute-bonnet",
+      "name": "Brute Bonnet",
+      "pts": "8",
+      "dexNumber": "986",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/986.png"
+    },
+    {
+      "github_name": "cetitan",
+      "smogon_name": "cetitan",
+      "name": "Cetitan",
+      "pts": "9",
+      "dexNumber": "975",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/975.png"
+    },
+    {
+      "github_name": "chandelure",
+      "smogon_name": "chandelure",
+      "name": "Chandelure",
+      "pts": "9",
+      "dexNumber": "609",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/609.png"
+    },
+    {
+      "github_name": "decidueye",
+      "smogon_name": "decidueye",
+      "name": "Decidueye",
+      "pts": "8",
+      "dexNumber": "724",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/724.png"
+    },
+    {
+      "github_name": "dragalge",
+      "smogon_name": "dragalge",
+      "name": "Dragalge",
+      "pts": "10",
+      "dexNumber": "691",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/691.png"
+    },
+    {
+      "github_name": "drednaw",
+      "smogon_name": "drednaw",
+      "name": "Drednaw",
+      "pts": "8",
+      "dexNumber": "834",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/834.png"
+    },
+    {
+      "github_name": "espeon",
+      "smogon_name": "espeon",
+      "name": "Espeon",
+      "pts": "10",
+      "dexNumber": "196",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/196.png"
+    },
+    {
+      "github_name": "flamigo",
+      "smogon_name": "flamigo",
+      "name": "Flamigo",
+      "pts": "7",
+      "dexNumber": "973",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/973.png"
+    },
+    {
+      "github_name": "glastrier",
+      "smogon_name": "glastrier",
+      "name": "Glastrier",
+      "pts": "8",
+      "dexNumber": "896",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/896.png"
+    },
+    {
+      "github_name": "braviary-hisui",
+      "smogon_name": "braviary-hisui",
+      "name": "Hisuian Braviary",
+      "pts": "9",
+      "dexNumber": "628",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/628-h.png"
+    },
+    {
+      "github_name": "jolteon",
+      "smogon_name": "jolteon",
+      "name": "Jolteon",
+      "pts": "9",
+      "dexNumber": "135",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/135.png"
+    },
+    {
+      "github_name": "kilowattrel",
+      "smogon_name": "kilowattrel",
+      "name": "Kilowattrel",
+      "pts": "9",
+      "dexNumber": "941",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/941.png"
+    },
+    {
+      "github_name": "meloetta",
+      "smogon_name": "meloetta",
+      "name": "Meloetta",
+      "pts": "9",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/648.png",
+      "dexNumber": "648"
+    },
+    {
+      "github_name": "mismagius",
+      "smogon_name": "mismagius",
+      "name": "Mismagius",
+      "pts": "8",
+      "dexNumber": "429",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/429.png"
+    },
+    {
+      "github_name": "tauros-paldea-water",
+      "smogon_name": "tauros-paldea-water",
+      "name": "Paldean Tauros Aqua",
+      "pts": "9",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/128-a.png",
+      "dexNumber": "128"
+    },
+    {
+      "github_name": "primeape",
+      "smogon_name": "primeape",
+      "name": "Primeape",
+      "pts": "7",
+      "dexNumber": "057",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/057.png"
+    },
+    {
+      "github_name": "regieleki",
+      "smogon_name": "regieleki",
+      "name": "Regieleki",
+      "pts": "9",
+      "dexNumber": "894",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/894.png"
+    },
+    {
+      "github_name": "revavroom",
+      "smogon_name": "revavroom",
+      "name": "Revavroom",
+      "pts": "9",
+      "dexNumber": "966",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/966.png"
+    },
+    {
+      "github_name": "shaymin",
+      "smogon_name": "shaymin",
+      "name": "Shaymin",
+      "pts": "10",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/492.png",
+      "dexNumber": "492"
+    },
+    {
+      "github_name": "sinistcha",
+      "smogon_name": "sinistcha",
+      "name": "Sinistcha",
+      "pts": "9",
+      "dexNumber": "1013",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1013.png"
+    },
+    {
+      "github_name": "tauros",
+      "smogon_name": "tauros",
+      "name": "Tauros",
+      "pts": "8",
+      "dexNumber": "128",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/128.png"
+    },
+    {
+      "github_name": "torterra",
+      "smogon_name": "torterra",
+      "name": "Torterra",
+      "pts": "7",
+      "dexNumber": "389",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/389.png"
+    },
+    {
+      "github_name": "tsareena",
+      "smogon_name": "tsareena",
+      "name": "Tsareena",
+      "pts": "8",
+      "dexNumber": "763",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/763.png"
+    },
+    {
+      "github_name": "umbreon",
+      "smogon_name": "umbreon",
+      "name": "Umbreon",
+      "pts": "9",
+      "dexNumber": "197",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/197.png"
+    },
+    {
+      "github_name": "zoroark",
+      "smogon_name": "zoroark",
+      "name": "Zoroark",
+      "pts": "9",
+      "dexNumber": "571",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/571.png"
+    },
+    {
+      "github_name": "abomasnow",
+      "smogon_name": "abomasnow",
+      "name": "Abomasnow",
+      "pts": "7",
+      "dexNumber": "460",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/460.png"
+    },
+    {
+      "github_name": "alomomola",
+      "smogon_name": "alomomola",
+      "name": "Alomomola",
+      "pts": "8",
+      "dexNumber": "594",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/594.png"
+    },
+    {
+      "github_name": "chansey",
+      "smogon_name": "chansey",
+      "name": "Chansey",
+      "pts": "7",
+      "dexNumber": "113",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/113.png"
+    },
+    {
+      "github_name": "chesnaught",
+      "smogon_name": "chesnaught",
+      "name": "Chesnaught",
+      "pts": "8",
+      "dexNumber": "652",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/652.png"
+    },
+    {
+      "github_name": "copperajah",
+      "smogon_name": "copperajah",
+      "name": "Copperajah",
+      "pts": "7",
+      "dexNumber": "879",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/879.png"
+    },
+    {
+      "github_name": "cyclizar",
+      "smogon_name": "cyclizar",
+      "name": "Cyclizar",
+      "pts": "8",
+      "dexNumber": "967",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/967.png"
+    },
+    {
+      "github_name": "eelektross",
+      "smogon_name": "eelektross",
+      "name": "Eelektross",
+      "pts": "7",
+      "dexNumber": "604",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/604.png"
+    },
+    {
+      "github_name": "floatzel",
+      "smogon_name": "floatzel",
+      "name": "Floatzel",
+      "pts": "7",
+      "dexNumber": "419",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/419.png"
+    },
+    {
+      "github_name": "articuno-galar",
+      "smogon_name": "articuno-galar",
+      "name": "Galarian Articuno",
+      "pts": "8",
+      "dexNumber": "144",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/144-g.png"
+    },
+    {
+      "github_name": "hariyama",
+      "smogon_name": "hariyama",
+      "name": "Hariyama",
+      "pts": "7",
+      "dexNumber": "297",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/297.png"
+    },
+    {
+      "github_name": "electrode-hisui",
+      "smogon_name": "electrode-hisui",
+      "name": "Hisuian Electrode",
+      "pts": "7",
+      "dexNumber": "101",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/101-h.png"
+    },
+    {
+      "github_name": "hoopa",
+      "smogon_name": "hoopa",
+      "name": "Hoopa",
+      "pts": "7",
+      "dexNumber": "720",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/720.png"
+    },
+    {
+      "github_name": "indeedee-f",
+      "smogon_name": "indeedee-f",
+      "name": "Indeedee-Female",
+      "pts": "7",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/876-f.png",
+      "dexNumber": "876"
+    },
+    {
+      "github_name": "indeedee",
+      "smogon_name": "indeedee",
+      "name": "Indeedee-Male",
+      "pts": "8",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/876.png",
+      "dexNumber": "876"
+    },
+    {
+      "github_name": "lycanroc",
+      "smogon_name": "lycanroc",
+      "name": "Lycanroc-Midday",
+      "pts": "7",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/745.png",
+      "dexNumber": "745"
+    },
+    {
+      "github_name": "maushold",
+      "smogon_name": "maushold",
+      "name": "Maushold",
+      "pts": "8",
+      "dexNumber": "925",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/925.png"
+    },
+    {
+      "github_name": "overqwil",
+      "smogon_name": "overqwil",
+      "name": "Overqwil",
+      "pts": "8",
+      "dexNumber": "904",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/904.png"
+    },
+    {
+      "github_name": "tauros-paldea-fire",
+      "smogon_name": "tauros-paldea-fire",
+      "name": "Paldean Tauros Blaze",
+      "pts": "8",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/128-b.png",
+      "dexNumber": "128"
+    },
+    {
+      "github_name": "piloswine",
+      "smogon_name": "piloswine",
+      "name": "Piloswine",
+      "pts": "7",
+      "dexNumber": "221",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/221.png"
+    },
+    {
+      "github_name": "polteageist",
+      "smogon_name": "polteageist",
+      "name": "Polteageist",
+      "pts": "8",
+      "dexNumber": "855",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/855.png"
+    },
+    {
+      "github_name": "quagsire",
+      "smogon_name": "quagsire",
+      "name": "Quagsire",
+      "pts": "7",
+      "dexNumber": "195",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/195.png"
+    },
+    {
+      "github_name": "tinkaton",
+      "smogon_name": "tinkaton",
+      "name": "Tinkaton",
+      "pts": "8",
+      "dexNumber": "959",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/959.png"
+    },
+    {
+      "github_name": "venomoth",
+      "smogon_name": "venomoth",
+      "name": "Venomoth",
+      "pts": "8",
+      "dexNumber": "049",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/049.png"
+    },
+    {
+      "github_name": "vivillon",
+      "smogon_name": "vivillon",
+      "name": "Vivillon",
+      "pts": "8",
+      "dexNumber": "666",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/666.png"
+    },
+    {
+      "github_name": "raichu-alola",
+      "smogon_name": "raichu-alola",
+      "name": "Alolan Raichu",
+      "pts": "7",
+      "dexNumber": "026",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/026-a.png"
+    },
+    {
+      "github_name": "sandslash-alola",
+      "smogon_name": "sandslash-alola",
+      "name": "Alolan Sandslash",
+      "pts": "7",
+      "dexNumber": "028",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/028-a.png"
+    },
+    {
+      "github_name": "brambleghast",
+      "smogon_name": "brambleghast",
+      "name": "Brambleghast",
+      "pts": "8",
+      "dexNumber": "947",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/947.png"
+    },
+    {
+      "github_name": "clawitzer",
+      "smogon_name": "clawitzer",
+      "name": "Clawitzer",
+      "pts": "5",
+      "dexNumber": "693",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/693.png"
+    },
+    {
+      "github_name": "forretress",
+      "smogon_name": "forretress",
+      "name": "Forretress",
+      "pts": "7",
+      "dexNumber": "205",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/205.png"
+    },
+    {
+      "github_name": "froslass",
+      "smogon_name": "froslass",
+      "name": "Froslass",
+      "pts": "8",
+      "dexNumber": "478",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/478.png"
+    },
+    {
+      "github_name": "decidueye-hisui",
+      "smogon_name": "decidueye-hisui",
+      "name": "Hisuian Decidueye",
+      "pts": "6",
+      "dexNumber": "724",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/724-h.png"
+    },
+    {
+      "github_name": "qwilfish-hisui",
+      "smogon_name": "qwilfish-hisui",
+      "name": "Hisuian Qwilfish",
+      "pts": "7",
+      "dexNumber": "211",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/211-h.png"
+    },
+    {
+      "github_name": "honchkrow",
+      "smogon_name": "honchkrow",
+      "name": "Honchkrow",
+      "pts": "6",
+      "dexNumber": "430",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/430.png"
+    },
+    {
+      "github_name": "houndstone",
+      "smogon_name": "houndstone",
+      "name": "Houndstone",
+      "pts": "7",
+      "dexNumber": "972",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/972.png"
+    },
+    {
+      "github_name": "ludicolo",
+      "smogon_name": "ludicolo",
+      "name": "Ludicolo",
+      "pts": "6",
+      "dexNumber": "272",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/272.png"
+    },
+    {
+      "github_name": "medicham",
+      "smogon_name": "medicham",
+      "name": "Medicham",
+      "pts": "6",
+      "dexNumber": "308",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/308.png"
+    },
+    {
+      "github_name": "mudsdale",
+      "smogon_name": "mudsdale",
+      "name": "Mudsdale",
+      "pts": "7",
+      "dexNumber": "750",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/750.png"
+    },
+    {
+      "github_name": "passimian",
+      "smogon_name": "passimian",
+      "name": "Passimian",
+      "pts": "8",
+      "dexNumber": "766",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/766.png"
+    },
+    {
+      "github_name": "poliwrath",
+      "smogon_name": "poliwrath",
+      "name": "Poliwrath",
+      "pts": "7",
+      "dexNumber": "062",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/062.png"
+    },
+    {
+      "github_name": "rotom-frost",
+      "smogon_name": "rotom-frost",
+      "name": "Rotom-Frost",
+      "pts": "6",
+      "dexNumber": "479",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/479-f.png"
+    },
+    {
+      "github_name": "scovillain",
+      "smogon_name": "scovillain",
+      "name": "Scovillain",
+      "pts": "6",
+      "dexNumber": "952",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/952.png"
+    },
+    {
+      "github_name": "toedscruel",
+      "smogon_name": "toedscruel",
+      "name": "Toedscruel",
+      "pts": "7",
+      "dexNumber": "949",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/949.png"
+    },
+    {
+      "github_name": "toxicroak",
+      "smogon_name": "toxicroak",
+      "name": "Toxicroak",
+      "pts": "6",
+      "dexNumber": "454",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/454.png"
+    },
+    {
+      "github_name": "ursaring",
+      "smogon_name": "ursaring",
+      "name": "Ursaring",
+      "pts": "6",
+      "dexNumber": "217",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/217.png"
+    },
+    {
+      "github_name": "vikavolt",
+      "smogon_name": "vikavolt",
+      "name": "Vikavolt",
+      "pts": "6",
+      "dexNumber": "738",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/738.png"
+    },
+    {
+      "github_name": "weezing",
+      "smogon_name": "weezing",
+      "name": "Weezing",
+      "pts": "7",
+      "dexNumber": "110",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/110.png"
+    },
+    {
+      "github_name": "ambipom",
+      "smogon_name": "ambipom",
+      "name": "Ambipom",
+      "pts": "6",
+      "dexNumber": "424",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/424.png"
+    },
+    {
+      "github_name": "articuno",
+      "smogon_name": "articuno",
+      "name": "Articuno",
+      "pts": "4",
+      "dexNumber": "144",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/144.png"
+    },
+    {
+      "github_name": "bellibolt",
+      "smogon_name": "bellibolt",
+      "name": "Bellibolt",
+      "pts": "6",
+      "dexNumber": "939",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/939.png"
+    },
+    {
+      "github_name": "bombirdier",
+      "smogon_name": "bombirdier",
+      "name": "Bombirdier",
+      "pts": "5",
+      "dexNumber": "962",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/962.png"
+    },
+    {
+      "github_name": "braviary",
+      "smogon_name": "braviary",
+      "name": "Braviary",
+      "pts": "6",
+      "dexNumber": "628",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/628.png"
+    },
+    {
+      "github_name": "charizard",
+      "smogon_name": "charizard",
+      "name": "Charizard",
+      "pts": "5",
+      "dexNumber": "006",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/006.png"
+    },
+    {
+      "github_name": "frosmoth",
+      "smogon_name": "frosmoth",
+      "name": "Frosmoth",
+      "pts": "5",
+      "dexNumber": "873",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/873.png"
+    },
+    {
+      "github_name": "gligar",
+      "smogon_name": "gligar",
+      "name": "Gligar",
+      "pts": "6",
+      "dexNumber": "207",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/207.png"
+    },
+    {
+      "github_name": "typhlosion-hisui",
+      "smogon_name": "typhlosion-hisui",
+      "name": "Hisuian Typhlosion",
+      "pts": "6",
+      "dexNumber": "157",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/157-h.png"
+    },
+    {
+      "github_name": "lilligant",
+      "smogon_name": "lilligant",
+      "name": "Lilligant",
+      "pts": "6",
+      "dexNumber": "549",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/549.png"
+    },
+    {
+      "github_name": "magneton",
+      "smogon_name": "magneton",
+      "name": "Magneton",
+      "pts": "6",
+      "dexNumber": "082",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/082.png"
+    },
+    {
+      "github_name": "morpeko",
+      "smogon_name": "morpeko",
+      "name": "Morpeko",
+      "pts": "4",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/877.png",
+      "dexNumber": "877"
+    },
+    {
+      "github_name": "oricorio",
+      "smogon_name": "oricorio",
+      "name": "Oricorio",
+      "pts": "6",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/741.png",
+      "dexNumber": "741"
+    },
+    {
+      "github_name": "orthworm",
+      "smogon_name": "orthworm",
+      "name": "Orthworm",
+      "pts": "6",
+      "dexNumber": "968",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/968.png"
+    },
+    {
+      "github_name": "tauros-paldea",
+      "smogon_name": "tauros-paldea",
+      "name": "Paldean Tauros",
+      "pts": "5",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/128-p.png",
+      "dexNumber": "128"
+    },
+    {
+      "github_name": "palossand",
+      "smogon_name": "palossand",
+      "name": "Palossand",
+      "pts": "5",
+      "dexNumber": "770",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/770.png"
+    },
+    {
+      "github_name": "pincurchin",
+      "smogon_name": "pincurchin",
+      "name": "Pincurchin",
+      "pts": "5",
+      "dexNumber": "871",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/871.png"
+    },
+    {
+      "github_name": "qwilfish",
+      "smogon_name": "qwilfish",
+      "name": "Qwilfish",
+      "pts": "6",
+      "dexNumber": "211",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/211.png"
+    },
+    {
+      "github_name": "rotom",
+      "smogon_name": "rotom",
+      "name": "Rotom",
+      "pts": "5",
+      "dexNumber": "479",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/479.png"
+    },
+    {
+      "github_name": "sandaconda",
+      "smogon_name": "sandaconda",
+      "name": "Sandaconda",
+      "pts": "8",
+      "dexNumber": "844",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/844.png"
+    },
+    {
+      "github_name": "scyther",
+      "smogon_name": "scyther",
+      "name": "Scyther",
+      "pts": "7",
+      "dexNumber": "123",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/123.png"
+    },
+    {
+      "github_name": "shiftry",
+      "smogon_name": "shiftry",
+      "name": "Shiftry",
+      "pts": "6",
+      "dexNumber": "275",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/275.png"
+    },
+    {
+      "github_name": "sneasel",
+      "smogon_name": "sneasel",
+      "name": "Sneasel",
+      "pts": "6",
+      "dexNumber": "215",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/215.png"
+    },
+    {
+      "github_name": "typhlosion",
+      "smogon_name": "typhlosion",
+      "name": "Typhlosion",
+      "pts": "5",
+      "dexNumber": "157",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/157.png"
+    },
+    {
+      "github_name": "veluza",
+      "smogon_name": "veluza",
+      "name": "Veluza",
+      "pts": "5",
+      "dexNumber": "976",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/976.png"
+    },
+    {
+      "github_name": "victreebel",
+      "smogon_name": "victreebel",
+      "name": "Victreebel",
+      "pts": "5",
+      "dexNumber": "071",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/071.png"
+    },
+    {
+      "github_name": "arboliva",
+      "smogon_name": "arboliva",
+      "name": "Arboliva",
+      "pts": "4",
+      "dexNumber": "930",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/930.png"
+    },
+    {
+      "github_name": "coalossal",
+      "smogon_name": "coalossal",
+      "name": "Coalossal",
+      "pts": "5",
+      "dexNumber": "839",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/839.png"
+    },
+    {
+      "github_name": "dachsbun",
+      "smogon_name": "dachsbun",
+      "name": "Dachsbun",
+      "pts": "4",
+      "dexNumber": "927",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/927.png"
+    },
+    {
+      "github_name": "ditto",
+      "smogon_name": "ditto",
+      "name": "Ditto",
+      "pts": "5",
+      "dexNumber": "132",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/132.png"
+    },
+    {
+      "github_name": "drifblim",
+      "smogon_name": "drifblim",
+      "name": "Drifblim",
+      "pts": "5",
+      "dexNumber": "426",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/426.png"
+    },
+    {
+      "github_name": "farigiraf",
+      "smogon_name": "farigiraf",
+      "name": "Farigiraf",
+      "pts": "5",
+      "dexNumber": "981",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/981.png"
+    },
+    {
+      "github_name": "gothorita",
+      "smogon_name": "gothorita",
+      "name": "Gothorita",
+      "pts": "4",
+      "dexNumber": "575",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/575.png"
+    },
+    {
+      "github_name": "grafaiai",
+      "smogon_name": "grafaiai",
+      "name": "Grafaiai",
+      "pts": "5",
+      "dexNumber": "945",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/945.png"
+    },
+    {
+      "github_name": "gurdurr",
+      "smogon_name": "gurdurr",
+      "name": "Gurdurr",
+      "pts": "5",
+      "dexNumber": "533",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/533.png"
+    },
+    {
+      "github_name": "sneasel-hisui",
+      "smogon_name": "sneasel-hisui",
+      "name": "Hisuian Sneasel",
+      "pts": "5",
+      "dexNumber": "215",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/215-h.png"
+    },
+    {
+      "github_name": "luxray",
+      "smogon_name": "luxray",
+      "name": "Luxray",
+      "pts": "4",
+      "dexNumber": "405",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/405.png"
+    },
+    {
+      "github_name": "lycanroc-midnight",
+      "smogon_name": "lycanroc-midnight",
+      "name": "Lycanroc-Midnight",
+      "pts": "3",
+      "dexNumber": "745",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/745-m.png"
+    },
+    {
+      "github_name": "masquerain",
+      "smogon_name": "masquerain",
+      "name": "Masquerain",
+      "pts": "5",
+      "dexNumber": "284",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/284.png"
+    },
+    {
+      "github_name": "phione",
+      "smogon_name": "phione",
+      "name": "Phione",
+      "pts": "2",
+      "dexNumber": "489",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/489.png"
+    },
+    {
+      "github_name": "raichu",
+      "smogon_name": "raichu",
+      "name": "Raichu",
+      "pts": "5",
+      "dexNumber": "026",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/026.png"
+    },
+    {
+      "github_name": "rotom-fan",
+      "smogon_name": "rotom-fan",
+      "name": "Rotom-Fan",
+      "pts": "4",
+      "dexNumber": "479",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/479-s.png"
+    },
+    {
+      "github_name": "skuntank",
+      "smogon_name": "skuntank",
+      "name": "Skuntank",
+      "pts": "5",
+      "dexNumber": "435",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/435.png"
+    },
+    {
+      "github_name": "trevenant",
+      "smogon_name": "trevenant",
+      "name": "Trevenant",
+      "pts": "4",
+      "dexNumber": "709",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/709.png"
+    },
+    {
+      "github_name": "zangoose",
+      "smogon_name": "zangoose",
+      "name": "Zangoose",
+      "pts": "4",
+      "dexNumber": "335",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/335.png"
+    },
+    {
+      "github_name": "persian-alola",
+      "smogon_name": "persian-alola",
+      "name": "Alolan Persian",
+      "pts": "4",
+      "dexNumber": "053",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/053-a.png"
+    },
+    {
+      "github_name": "altaria",
+      "smogon_name": "altaria",
+      "name": "Altaria",
+      "pts": "4",
+      "dexNumber": "334",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/334.png"
+    },
+    {
+      "github_name": "avalugg",
+      "smogon_name": "avalugg",
+      "name": "Avalugg",
+      "pts": "4",
+      "dexNumber": "713",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/713.png"
+    },
+    {
+      "github_name": "bruxish",
+      "smogon_name": "bruxish",
+      "name": "Bruxish",
+      "pts": "4",
+      "dexNumber": "779",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/779.png"
+    },
+    {
+      "github_name": "cacturne",
+      "smogon_name": "cacturne",
+      "name": "Cacturne",
+      "pts": "3",
+      "dexNumber": "332",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/332.png"
+    },
+    {
+      "github_name": "clefairy",
+      "smogon_name": "clefairy",
+      "name": "Clefairy",
+      "pts": "3",
+      "dexNumber": "035",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/035.png"
+    },
+    {
+      "github_name": "cramorant",
+      "smogon_name": "cramorant",
+      "name": "Cramorant",
+      "pts": "4",
+      "dexNumber": "845",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/845.png"
+    },
+    {
+      "github_name": "cryogonal",
+      "smogon_name": "cryogonal",
+      "name": "Cryogonal",
+      "pts": "5",
+      "dexNumber": "615",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/615.png"
+    },
+    {
+      "github_name": "dunsparce",
+      "smogon_name": "dunsparce",
+      "name": "Dunsparce",
+      "pts": "3",
+      "dexNumber": "206",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/206.png"
+    },
+    {
+      "github_name": "dusknoir",
+      "smogon_name": "dusknoir",
+      "name": "Dusknoir",
+      "pts": "4",
+      "dexNumber": "477",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/477.png"
+    },
+    {
+      "github_name": "electrode",
+      "smogon_name": "electrode",
+      "name": "Electrode",
+      "pts": "4",
+      "dexNumber": "101",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/101.png"
+    },
+    {
+      "github_name": "falinks",
+      "smogon_name": "falinks",
+      "name": "Falinks",
+      "pts": "4",
+      "dexNumber": "870",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/870.png"
+    },
+    {
+      "github_name": "flareon",
+      "smogon_name": "flareon",
+      "name": "Flareon",
+      "pts": "4",
+      "dexNumber": "136",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/136.png"
+    },
+    {
+      "github_name": "glaceon",
+      "smogon_name": "glaceon",
+      "name": "Glaceon",
+      "pts": "4",
+      "dexNumber": "471",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/471.png"
+    },
+    {
+      "github_name": "greedent",
+      "smogon_name": "greedent",
+      "name": "Greedent",
+      "pts": "3",
+      "dexNumber": "820",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/820.png"
+    },
+    {
+      "github_name": "avalugg-hisui",
+      "smogon_name": "avalugg-hisui",
+      "name": "Hisuian Avalugg",
+      "pts": "4",
+      "dexNumber": "713",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/713-h.png"
+    },
+    {
+      "github_name": "klawf",
+      "smogon_name": "klawf",
+      "name": "Klawf",
+      "pts": "3",
+      "dexNumber": "950",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/950.png"
+    },
+    {
+      "github_name": "leavanny",
+      "smogon_name": "leavanny",
+      "name": "Leavanny",
+      "pts": "4",
+      "dexNumber": "542",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/542.png"
+    },
+    {
+      "github_name": "mabosstiff",
+      "smogon_name": "mabosstiff",
+      "name": "Mabosstiff",
+      "pts": "4",
+      "dexNumber": "943",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/943.png"
+    },
+    {
+      "github_name": "muk",
+      "smogon_name": "muk",
+      "name": "Muk",
+      "pts": "5",
+      "dexNumber": "089",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/089.png"
+    },
+    {
+      "github_name": "noctowl",
+      "smogon_name": "noctowl",
+      "name": "Noctowl",
+      "pts": "4",
+      "dexNumber": "164",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/164.png"
+    },
+    {
+      "github_name": "sableye",
+      "smogon_name": "sableye",
+      "name": "Sableye",
+      "pts": "4",
+      "dexNumber": "302",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/302.png"
+    },
+    {
+      "github_name": "samurott",
+      "smogon_name": "samurott",
+      "name": "Samurott",
+      "pts": "3",
+      "dexNumber": "503",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/503.png"
+    },
+    {
+      "github_name": "sandslash",
+      "smogon_name": "sandslash",
+      "name": "Sandslash",
+      "pts": "4",
+      "dexNumber": "028",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/028.png"
+    },
+    {
+      "github_name": "swanna",
+      "smogon_name": "swanna",
+      "name": "Swanna",
+      "pts": "4",
+      "dexNumber": "581",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/581.png"
+    },
+    {
+      "github_name": "tatsugiri",
+      "smogon_name": "tatsugiri",
+      "name": "Tatsugiri",
+      "pts": "4",
+      "dexNumber": "978",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/978.png"
+    },
+    {
+      "github_name": "appletun",
+      "smogon_name": "appletun",
+      "name": "Appletun",
+      "pts": "4",
+      "dexNumber": "842",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/842.png"
+    },
+    {
+      "github_name": "ariados",
+      "smogon_name": "ariados",
+      "name": "Ariados",
+      "pts": "3",
+      "dexNumber": "168",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/168.png"
+    },
+    {
+      "github_name": "basculin",
+      "smogon_name": "basculin",
+      "name": "Basculin",
+      "pts": "5",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/550.png",
+      "dexNumber": "550"
+    },
+    {
+      "github_name": "beartic",
+      "smogon_name": "beartic",
+      "name": "Beartic",
+      "pts": "5",
+      "dexNumber": "614",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/614.png"
+    },
+    {
+      "github_name": "crabominable",
+      "smogon_name": "crabominable",
+      "name": "Crabominable",
+      "pts": "3",
+      "dexNumber": "740",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/740.png"
+    },
+    {
+      "github_name": "crocalor",
+      "smogon_name": "crocalor",
+      "name": "Crocalor",
+      "pts": "4",
+      "dexNumber": "910",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/910.png"
+    },
+    {
+      "github_name": "dipplin",
+      "smogon_name": "dipplin",
+      "name": "Dipplin",
+      "pts": "3",
+      "dexNumber": "1011",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1011.png"
+    },
+    {
+      "github_name": "dusclops",
+      "smogon_name": "dusclops",
+      "name": "Dusclops",
+      "pts": "2",
+      "dexNumber": "356",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/356.png"
+    },
+    {
+      "github_name": "golduck",
+      "smogon_name": "golduck",
+      "name": "Golduck",
+      "pts": "3",
+      "dexNumber": "055",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/055.png"
+    },
+    {
+      "github_name": "golem",
+      "smogon_name": "golem",
+      "name": "Golem",
+      "pts": "2",
+      "dexNumber": "076",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/076.png"
+    },
+    {
+      "github_name": "haunter",
+      "smogon_name": "haunter",
+      "name": "Haunter",
+      "pts": "3",
+      "dexNumber": "093",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/093.png"
+    },
+    {
+      "github_name": "houndoom",
+      "smogon_name": "houndoom",
+      "name": "Houndoom",
+      "pts": "3",
+      "dexNumber": "229",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/229.png"
+    },
+    {
+      "github_name": "leafeon",
+      "smogon_name": "leafeon",
+      "name": "Leafeon",
+      "pts": "3",
+      "dexNumber": "470",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/470.png"
+    },
+    {
+      "github_name": "lurantis",
+      "smogon_name": "lurantis",
+      "name": "Lurantis",
+      "pts": "6",
+      "dexNumber": "754",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/754.png"
+    },
+    {
+      "github_name": "monferno",
+      "smogon_name": "monferno",
+      "name": "Monferno",
+      "pts": "2",
+      "dexNumber": "391",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/391.png"
+    },
+    {
+      "github_name": "naclstack",
+      "smogon_name": "naclstack",
+      "name": "Naclstack",
+      "pts": "3",
+      "dexNumber": "933",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/933.png"
+    },
+    {
+      "github_name": "probopass",
+      "smogon_name": "probopass",
+      "name": "Probopass",
+      "pts": "3",
+      "dexNumber": "476",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/476.png"
+    },
+    {
+      "github_name": "pyroar",
+      "smogon_name": "pyroar",
+      "name": "Pyroar",
+      "pts": "4",
+      "dexNumber": "668",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/668.png"
+    },
+    {
+      "github_name": "quilladin",
+      "smogon_name": "quilladin",
+      "name": "Quilladin",
+      "pts": "2",
+      "dexNumber": "651",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/651.png"
+    },
+    {
+      "github_name": "rabsca",
+      "smogon_name": "rabsca",
+      "name": "Rabsca",
+      "pts": "2",
+      "dexNumber": "954",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/954.png"
+    },
+    {
+      "github_name": "spidops",
+      "smogon_name": "spidops",
+      "name": "Spidops",
+      "pts": "3",
+      "dexNumber": "918",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/918.png"
+    },
+    {
+      "github_name": "spiritomb",
+      "smogon_name": "spiritomb",
+      "name": "Spiritomb",
+      "pts": "3",
+      "dexNumber": "442",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/442.png"
+    },
+    {
+      "github_name": "vullaby",
+      "smogon_name": "vullaby",
+      "name": "Vullaby",
+      "pts": "2",
+      "dexNumber": "629",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/629.png"
+    },
+    {
+      "github_name": "dugtrio-alola",
+      "smogon_name": "dugtrio-alola",
+      "name": "Alolan Dugtrio",
+      "pts": "3",
+      "dexNumber": "051",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/051-a.png"
+    },
+    {
+      "github_name": "golem-alola",
+      "smogon_name": "golem-alola",
+      "name": "Alolan Golem",
+      "pts": "2",
+      "dexNumber": "075",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/075-a.png"
+    },
+    {
+      "github_name": "ampharos",
+      "smogon_name": "ampharos",
+      "name": "Ampharos",
+      "pts": "2",
+      "dexNumber": "181",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/181.png"
+    },
+    {
+      "github_name": "arbok",
+      "smogon_name": "arbok",
+      "name": "Arbok",
+      "pts": "3",
+      "dexNumber": "024",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/024.png"
+    },
+    {
+      "github_name": "banette",
+      "smogon_name": "banette",
+      "name": "Banette",
+      "pts": "2",
+      "dexNumber": "354",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/354.png"
+    },
+    {
+      "github_name": "camerupt",
+      "smogon_name": "camerupt",
+      "name": "Camerupt",
+      "pts": "2",
+      "dexNumber": "323",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/323.png"
+    },
+    {
+      "github_name": "carbink",
+      "smogon_name": "carbink",
+      "name": "Carbink",
+      "pts": "2",
+      "dexNumber": "703",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/703.png"
+    },
+    {
+      "github_name": "eiscue",
+      "smogon_name": "eiscue",
+      "name": "Eiscue",
+      "pts": "3",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/875.png",
+      "dexNumber": "875"
+    },
+    {
+      "github_name": "flapple",
+      "smogon_name": "flapple",
+      "name": "Flapple",
+      "pts": "2",
+      "dexNumber": "841",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/841.png"
+    },
+    {
+      "github_name": "fraxure",
+      "smogon_name": "fraxure",
+      "name": "Fraxure",
+      "pts": "2",
+      "dexNumber": "611",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/611.png"
+    },
+    {
+      "github_name": "frogadier",
+      "smogon_name": "frogadier",
+      "name": "Frogadier",
+      "pts": "2",
+      "dexNumber": "657",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/657.png"
+    },
+    {
+      "github_name": "furret",
+      "smogon_name": "furret",
+      "name": "Furret",
+      "pts": "2",
+      "dexNumber": "162",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/162.png"
+    },
+    {
+      "github_name": "girafarig",
+      "smogon_name": "girafarig",
+      "name": "Girafarig",
+      "pts": "2",
+      "dexNumber": "203",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/203.png"
+    },
+    {
+      "github_name": "gogoat",
+      "smogon_name": "gogoat",
+      "name": "Gogoat",
+      "pts": "3",
+      "dexNumber": "673",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/673.png"
+    },
+    {
+      "github_name": "grotle",
+      "smogon_name": "grotle",
+      "name": "Grotle",
+      "pts": "2",
+      "dexNumber": "388",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/388.png"
+    },
+    {
+      "github_name": "grumpig",
+      "smogon_name": "grumpig",
+      "name": "Grumpig",
+      "pts": "2",
+      "dexNumber": "326",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/326.png"
+    },
+    {
+      "github_name": "sliggoo-hisui",
+      "smogon_name": "sliggoo-hisui",
+      "name": "Hisuian Sliggoo",
+      "pts": "2",
+      "dexNumber": "705",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/705-h.png"
+    },
+    {
+      "github_name": "illumise",
+      "smogon_name": "illumise",
+      "name": "Illumise",
+      "pts": "2",
+      "dexNumber": "314",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/314.png"
+    },
+    {
+      "github_name": "komala",
+      "smogon_name": "komala",
+      "name": "Komala",
+      "pts": "2",
+      "dexNumber": "775",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/775.png"
+    },
+    {
+      "github_name": "magcargo",
+      "smogon_name": "magcargo",
+      "name": "Magcargo",
+      "pts": "2",
+      "dexNumber": "219",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/219.png"
+    },
+    {
+      "github_name": "mareanie",
+      "smogon_name": "mareanie",
+      "name": "Mareanie",
+      "pts": "2",
+      "dexNumber": "747",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/747.png"
+    },
+    {
+      "github_name": "mightyena",
+      "smogon_name": "mightyena",
+      "name": "Mightyena",
+      "pts": "2",
+      "dexNumber": "262",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/262.png"
+    },
+    {
+      "github_name": "misdreavus",
+      "smogon_name": "misdreavus",
+      "name": "Misdreavus",
+      "pts": "2",
+      "dexNumber": "200",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/200.png"
+    },
+    {
+      "github_name": "morgrem",
+      "smogon_name": "morgrem",
+      "name": "Morgrem",
+      "pts": "2",
+      "dexNumber": "860",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/860.png"
+    },
+    {
+      "github_name": "munchlax",
+      "smogon_name": "munchlax",
+      "name": "Munchlax",
+      "pts": "2",
+      "dexNumber": "446",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/446.png"
+    },
+    {
+      "github_name": "oinkologne",
+      "smogon_name": "oinkologne",
+      "name": "Oinkologne",
+      "pts": "2",
+      "dexNumber": "916",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/916.png"
+    },
+    {
+      "github_name": "oranguru",
+      "smogon_name": "oranguru",
+      "name": "Oranguru",
+      "pts": "2",
+      "dexNumber": "765",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/765.png"
+    },
+    {
+      "github_name": "perrserker",
+      "smogon_name": "perrserker",
+      "name": "Perrserker",
+      "pts": "2",
+      "dexNumber": "863",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/863.png"
+    },
+    {
+      "github_name": "raboot",
+      "smogon_name": "raboot",
+      "name": "Raboot",
+      "pts": "3",
+      "dexNumber": "814",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/814.png"
+    },
+    {
+      "github_name": "sawsbuck",
+      "smogon_name": "sawsbuck",
+      "name": "Sawsbuck",
+      "pts": "3",
+      "dexNumber": "586",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/586.png"
+    },
+    {
+      "github_name": "slaking",
+      "smogon_name": "slaking",
+      "name": "Slaking",
+      "pts": "2",
+      "dexNumber": "289",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/289.png"
+    },
+    {
+      "github_name": "squawkabilly",
+      "smogon_name": "squawkabilly",
+      "name": "Squawkabilly",
+      "pts": "2",
+      "dexNumber": "931",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/931.png"
+    },
+    {
+      "github_name": "stonjourner",
+      "smogon_name": "stonjourner",
+      "name": "Stonjourner",
+      "pts": "2",
+      "dexNumber": "874",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/874.png"
+    },
+    {
+      "github_name": "swalot",
+      "smogon_name": "swalot",
+      "name": "Swalot",
+      "pts": "2",
+      "dexNumber": "317",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/317.png"
+    },
+    {
+      "github_name": "thwackey",
+      "smogon_name": "thwackey",
+      "name": "Thwackey",
+      "pts": "3",
+      "dexNumber": "811",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/811.png"
+    },
+    {
+      "github_name": "vespiquen",
+      "smogon_name": "vespiquen",
+      "name": "Vespiquen",
+      "pts": "2",
+      "dexNumber": "416",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/416.png"
+    },
+    {
+      "github_name": "volbeat",
+      "smogon_name": "volbeat",
+      "name": "Volbeat",
+      "pts": "2",
+      "dexNumber": "313",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/313.png"
+    },
+    {
+      "github_name": "whiscash",
+      "smogon_name": "whiscash",
+      "name": "Whiscash",
+      "pts": "3",
+      "dexNumber": "340",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/340.png"
+    },
+    {
+      "github_name": "wigglytuff",
+      "smogon_name": "wigglytuff",
+      "name": "Wigglytuff",
+      "pts": "2",
+      "dexNumber": "040",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/040.png"
+    },
+    {
+      "github_name": "wugtrio",
+      "smogon_name": "wugtrio",
+      "name": "Wugtrio",
+      "pts": "2",
+      "dexNumber": "961",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/961.png"
+    },
+    {
+      "github_name": "wyrdeer",
+      "smogon_name": "wyrdeer",
+      "name": "Wyrdeer",
+      "pts": "2",
+      "dexNumber": "899",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/899.png"
+    },
+    {
+      "github_name": "aipom",
+      "smogon_name": "aipom",
+      "name": "Aipom",
+      "pts": "1",
+      "dexNumber": "190",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/190.png"
+    },
+    {
+      "github_name": "diglett-alola",
+      "smogon_name": "diglett-alola",
+      "name": "Alolan Diglett",
+      "pts": "1",
+      "dexNumber": "050",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/050-a.png"
+    },
+    {
+      "github_name": "geodude-alola",
+      "smogon_name": "geodude-alola",
+      "name": "Alolan Geodude",
+      "pts": "1",
+      "dexNumber": "074",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/074-a.png"
+    },
+    {
+      "github_name": "graveler-alola",
+      "smogon_name": "graveler-alola",
+      "name": "Alolan Graveler",
+      "pts": "1",
+      "dexNumber": "075",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/075-a.png"
+    },
+    {
+      "github_name": "grimer-alola",
+      "smogon_name": "grimer-alola",
+      "name": "Alolan Grimer",
+      "pts": "1",
+      "dexNumber": "088",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/088-a.png"
+    },
+    {
+      "github_name": "meowth-alola",
+      "smogon_name": "meowth-alola",
+      "name": "Alolan Meowth",
+      "pts": "1",
+      "dexNumber": "052",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/052-a.png"
+    },
+    {
+      "github_name": "sandshrew-alola",
+      "smogon_name": "sandshrew-alola",
+      "name": "Alolan Sandshrew",
+      "pts": "1",
+      "dexNumber": "028",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/028-a.png"
+    },
+    {
+      "github_name": "vulpix-alola",
+      "smogon_name": "vulpix-alola",
+      "name": "Alolan Vulpix",
+      "pts": "1",
+      "dexNumber": "037",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/037-a.png"
+    },
+    {
+      "github_name": "applin",
+      "smogon_name": "applin",
+      "name": "Applin",
+      "pts": "1",
+      "dexNumber": "840",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/840.png"
+    },
+    {
+      "github_name": "arctibax",
+      "smogon_name": "arctibax",
+      "name": "Arctibax",
+      "pts": "1",
+      "dexNumber": "997",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/997.png"
+    },
+    {
+      "github_name": "arrokuda",
+      "smogon_name": "arrokuda",
+      "name": "Arrokuda",
+      "pts": "1",
+      "dexNumber": "846",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/846.png"
+    },
+    {
+      "github_name": "axew",
+      "smogon_name": "axew",
+      "name": "Axew",
+      "pts": "1",
+      "dexNumber": "610",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/610.png"
+    },
+    {
+      "github_name": "azurill",
+      "smogon_name": "azurill",
+      "name": "Azurill",
+      "pts": "1",
+      "dexNumber": "298",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/298.png"
+    },
+    {
+      "github_name": "bagon",
+      "smogon_name": "bagon",
+      "name": "Bagon",
+      "pts": "1",
+      "dexNumber": "371",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/371.png"
+    },
+    {
+      "github_name": "barboach",
+      "smogon_name": "barboach",
+      "name": "Barboach",
+      "pts": "1",
+      "dexNumber": "339",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/339.png"
+    },
+    {
+      "github_name": "bellsprout",
+      "smogon_name": "bellsprout",
+      "name": "Bellsprout",
+      "pts": "1",
+      "dexNumber": "069",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/069.png"
+    },
+    {
+      "github_name": "bergmite",
+      "smogon_name": "bergmite",
+      "name": "Bergmite",
+      "pts": "1",
+      "dexNumber": "712",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/712.png"
+    },
+    {
+      "github_name": "bonsly",
+      "smogon_name": "bonsly",
+      "name": "Bonsly",
+      "pts": "1",
+      "dexNumber": "438",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/438.png"
+    },
+    {
+      "github_name": "bounsweet",
+      "smogon_name": "bounsweet",
+      "name": "Bounsweet",
+      "pts": "1",
+      "dexNumber": "761",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/761.png"
+    },
+    {
+      "github_name": "braixen",
+      "smogon_name": "braixen",
+      "name": "Braixen",
+      "pts": "1",
+      "dexNumber": "654",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/654.png"
+    },
+    {
+      "github_name": "bramblin",
+      "smogon_name": "bramblin",
+      "name": "Bramblin",
+      "pts": "1",
+      "dexNumber": "946",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/946.png"
+    },
+    {
+      "github_name": "bronzor",
+      "smogon_name": "bronzor",
+      "name": "Bronzor",
+      "pts": "1",
+      "dexNumber": "436",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/436.png"
+    },
+    {
+      "github_name": "buizel",
+      "smogon_name": "buizel",
+      "name": "Buizel",
+      "pts": "1",
+      "dexNumber": "418",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/418.png"
+    },
+    {
+      "github_name": "cacnea",
+      "smogon_name": "cacnea",
+      "name": "Cacnea",
+      "pts": "1",
+      "dexNumber": "331",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/331.png"
+    },
+    {
+      "github_name": "calyrex",
+      "smogon_name": "calyrex",
+      "name": "Calyrex",
+      "pts": "1",
+      "dexNumber": "898",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/898.png"
+    },
+    {
+      "github_name": "capsakid",
+      "smogon_name": "capsakid",
+      "name": "Capsakid",
+      "pts": "1",
+      "dexNumber": "951",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/951.png"
+    },
+    {
+      "github_name": "carkol",
+      "smogon_name": "carkol",
+      "name": "Carkol",
+      "pts": "1",
+      "dexNumber": "838",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/838.png"
+    },
+    {
+      "github_name": "cetoddle",
+      "smogon_name": "cetoddle",
+      "name": "Cetoddle",
+      "pts": "1",
+      "dexNumber": "974",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/974.png"
+    },
+    {
+      "github_name": "charcadet",
+      "smogon_name": "charcadet",
+      "name": "Charcadet",
+      "pts": "1",
+      "dexNumber": "935",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/935.png"
+    },
+    {
+      "github_name": "charjabug",
+      "smogon_name": "charjabug",
+      "name": "Charjabug",
+      "pts": "1",
+      "dexNumber": "737",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/737.png"
+    },
+    {
+      "github_name": "charmander",
+      "smogon_name": "charmander",
+      "name": "Charmander",
+      "pts": "1",
+      "dexNumber": "004",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/004.png"
+    },
+    {
+      "github_name": "charmeleon",
+      "smogon_name": "charmeleon",
+      "name": "Charmeleon",
+      "pts": "1",
+      "dexNumber": "005",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/005.png"
+    },
+    {
+      "github_name": "chespin",
+      "smogon_name": "chespin",
+      "name": "Chespin",
+      "pts": "1",
+      "dexNumber": "650",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/650.png"
+    },
+    {
+      "github_name": "chewtle",
+      "smogon_name": "chewtle",
+      "name": "Chewtle",
+      "pts": "1",
+      "dexNumber": "833",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/833.png"
+    },
+    {
+      "github_name": "chimchar",
+      "smogon_name": "chimchar",
+      "name": "Chimchar",
+      "pts": "1",
+      "dexNumber": "390",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/390.png"
+    },
+    {
+      "github_name": "chimecho",
+      "smogon_name": "chimecho",
+      "name": "Chimecho",
+      "pts": "2",
+      "dexNumber": "358",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/358.png"
+    },
+    {
+      "github_name": "chingling",
+      "smogon_name": "chingling",
+      "name": "Chingling",
+      "pts": "1",
+      "dexNumber": "433",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/433.png"
+    },
+    {
+      "github_name": "clauncher",
+      "smogon_name": "clauncher",
+      "name": "Clauncher",
+      "pts": "1",
+      "dexNumber": "692",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/692.png"
+    },
+    {
+      "github_name": "cleffa",
+      "smogon_name": "cleffa",
+      "name": "Cleffa",
+      "pts": "1",
+      "dexNumber": "173",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/173.png"
+    },
+    {
+      "github_name": "combee",
+      "smogon_name": "combee",
+      "name": "Combee",
+      "pts": "1",
+      "dexNumber": "415",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/415.png"
+    },
+    {
+      "github_name": "corphish",
+      "smogon_name": "corphish",
+      "name": "Corphish",
+      "pts": "1",
+      "dexNumber": "341",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/341.png"
+    },
+    {
+      "github_name": "corvisquire",
+      "smogon_name": "corvisquire",
+      "name": "Corvisquire",
+      "pts": "1",
+      "dexNumber": "822",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/822.png"
+    },
+    {
+      "github_name": "crabrawler",
+      "smogon_name": "crabrawler",
+      "name": "Crabrawler",
+      "pts": "1",
+      "dexNumber": "739",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/739.png"
+    },
+    {
+      "github_name": "croagunk",
+      "smogon_name": "croagunk",
+      "name": "Croagunk",
+      "pts": "1",
+      "dexNumber": "453",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/453.png"
+    },
+    {
+      "github_name": "cubchoo",
+      "smogon_name": "cubchoo",
+      "name": "Cubchoo",
+      "pts": "1",
+      "dexNumber": "613",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/613.png"
+    },
+    {
+      "github_name": "cufant",
+      "smogon_name": "cufant",
+      "name": "Cufant",
+      "pts": "1",
+      "dexNumber": "878",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/878.png"
+    },
+    {
+      "github_name": "cutiefly",
+      "smogon_name": "cutiefly",
+      "name": "Cutiefly",
+      "pts": "1",
+      "dexNumber": "742",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/742.png"
+    },
+    {
+      "github_name": "cyndaquil",
+      "smogon_name": "cyndaquil",
+      "name": "Cyndaquil",
+      "pts": "1",
+      "dexNumber": "155",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/155.png"
+    },
+    {
+      "github_name": "dartrix",
+      "smogon_name": "dartrix",
+      "name": "Dartrix",
+      "pts": "1",
+      "dexNumber": "723",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/723.png"
+    },
+    {
+      "github_name": "dedenne",
+      "smogon_name": "dedenne",
+      "name": "Dedenne",
+      "pts": "1",
+      "dexNumber": "702",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/702.png"
+    },
+    {
+      "github_name": "deerling",
+      "smogon_name": "deerling",
+      "name": "Deerling",
+      "pts": "1",
+      "dexNumber": "585",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/585.png"
+    },
+    {
+      "github_name": "deino",
+      "smogon_name": "deino",
+      "name": "Deino",
+      "pts": "1",
+      "dexNumber": "633",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/633.png"
+    },
+    {
+      "github_name": "delibird",
+      "smogon_name": "delibird",
+      "name": "Delibird",
+      "pts": "1",
+      "dexNumber": "225",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/225.png"
+    },
+    {
+      "github_name": "dewott",
+      "smogon_name": "dewott",
+      "name": "Dewott",
+      "pts": "1",
+      "dexNumber": "502",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/502.png"
+    },
+    {
+      "github_name": "diglett",
+      "smogon_name": "diglett",
+      "name": "Diglett",
+      "pts": "1",
+      "dexNumber": "050",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/050.png"
+    },
+    {
+      "github_name": "dolliv",
+      "smogon_name": "dolliv",
+      "name": "Dolliv",
+      "pts": "1",
+      "dexNumber": "929",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/929.png"
+    },
+    {
+      "github_name": "dragonair",
+      "smogon_name": "dragonair",
+      "name": "Dragonair",
+      "pts": "1",
+      "dexNumber": "148",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/148.png"
+    },
+    {
+      "github_name": "drakloak",
+      "smogon_name": "drakloak",
+      "name": "Drakloak",
+      "pts": "1",
+      "dexNumber": "886",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/886.png"
+    },
+    {
+      "github_name": "dratini",
+      "smogon_name": "dratini",
+      "name": "Dratini",
+      "pts": "1",
+      "dexNumber": "147",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/147.png"
+    },
+    {
+      "github_name": "dreepy",
+      "smogon_name": "dreepy",
+      "name": "Dreepy",
+      "pts": "1",
+      "dexNumber": "885",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/885.png"
+    },
+    {
+      "github_name": "drifloon",
+      "smogon_name": "drifloon",
+      "name": "Drifloon",
+      "pts": "1",
+      "dexNumber": "425",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/425.png"
+    },
+    {
+      "github_name": "drizzile",
+      "smogon_name": "drizzile",
+      "name": "Drizzile",
+      "pts": "1",
+      "dexNumber": "817",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/817.png"
+    },
+    {
+      "github_name": "drowzee",
+      "smogon_name": "drowzee",
+      "name": "Drowzee",
+      "pts": "1",
+      "dexNumber": "096",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/096.png"
+    },
+    {
+      "github_name": "ducklett",
+      "smogon_name": "ducklett",
+      "name": "Ducklett",
+      "pts": "1",
+      "dexNumber": "580",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/580.png"
+    },
+    {
+      "github_name": "duskull",
+      "smogon_name": "duskull",
+      "name": "Duskull",
+      "pts": "1",
+      "dexNumber": "355",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/355.png"
+    },
+    {
+      "github_name": "eelektrik",
+      "smogon_name": "eelektrik",
+      "name": "Eelektrik",
+      "pts": "1",
+      "dexNumber": "603",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/603.png"
+    },
+    {
+      "github_name": "eevee",
+      "smogon_name": "eevee",
+      "name": "Eevee",
+      "pts": "1",
+      "dexNumber": "133",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/133.png"
+    },
+    {
+      "github_name": "ekans",
+      "smogon_name": "ekans",
+      "name": "Ekans",
+      "pts": "1",
+      "dexNumber": "023",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/023.png"
+    },
+    {
+      "github_name": "feebas",
+      "smogon_name": "feebas",
+      "name": "Feebas",
+      "pts": "1",
+      "dexNumber": "349",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/349.png"
+    },
+    {
+      "github_name": "fennekin",
+      "smogon_name": "fennekin",
+      "name": "Fennekin",
+      "pts": "1",
+      "dexNumber": "653",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/653.png"
+    },
+    {
+      "github_name": "fidough",
+      "smogon_name": "fidough",
+      "name": "Fidough",
+      "pts": "1",
+      "dexNumber": "926",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/926.png"
+    },
+    {
+      "github_name": "finizen",
+      "smogon_name": "finizen",
+      "name": "Finizen",
+      "pts": "1",
+      "dexNumber": "963",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/963.png"
+    },
+    {
+      "github_name": "finneon",
+      "smogon_name": "finneon",
+      "name": "Finneon",
+      "pts": "1",
+      "dexNumber": "456",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/456.png"
+    },
+    {
+      "github_name": "flaaffy",
+      "smogon_name": "flaaffy",
+      "name": "Flaaffy",
+      "pts": "1",
+      "dexNumber": "180",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/180.png"
+    },
+    {
+      "github_name": "flabebe",
+      "smogon_name": "flabebe",
+      "name": "Flabébé",
+      "pts": "1",
+      "dexNumber": "669",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/669.png"
+    },
+    {
+      "github_name": "fletchinder",
+      "smogon_name": "fletchinder",
+      "name": "Fletchinder",
+      "pts": "1",
+      "dexNumber": "662",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/662.png"
+    },
+    {
+      "github_name": "fletchling",
+      "smogon_name": "fletchling",
+      "name": "Fletchling",
+      "pts": "1",
+      "dexNumber": "661",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/661.png"
+    },
+    {
+      "github_name": "flittle",
+      "smogon_name": "flittle",
+      "name": "Flittle",
+      "pts": "1",
+      "dexNumber": "955",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/955.png"
+    },
+    {
+      "github_name": "floette",
+      "smogon_name": "floette",
+      "name": "Floette",
+      "pts": "1",
+      "dexNumber": "670",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/670.png"
+    },
+    {
+      "github_name": "floragato",
+      "smogon_name": "floragato",
+      "name": "Floragato",
+      "pts": "1",
+      "dexNumber": "907",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/907.png"
+    },
+    {
+      "github_name": "fomantis",
+      "smogon_name": "fomantis",
+      "name": "Fomantis",
+      "pts": "1",
+      "dexNumber": "753",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/753.png"
+    },
+    {
+      "github_name": "foongus",
+      "smogon_name": "foongus",
+      "name": "Foongus",
+      "pts": "1",
+      "dexNumber": "590",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/590.png"
+    },
+    {
+      "github_name": "frigibax",
+      "smogon_name": "frigibax",
+      "name": "Frigibax",
+      "pts": "1",
+      "dexNumber": "996",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/996.png"
+    },
+    {
+      "github_name": "froakie",
+      "smogon_name": "froakie",
+      "name": "Froakie",
+      "pts": "1",
+      "dexNumber": "656",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/656.png"
+    },
+    {
+      "github_name": "fuecoco",
+      "smogon_name": "fuecoco",
+      "name": "Fuecoco",
+      "pts": "1",
+      "dexNumber": "909",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/909.png"
+    },
+    {
+      "github_name": "gabite",
+      "smogon_name": "gabite",
+      "name": "Gabite",
+      "pts": "1",
+      "dexNumber": "444",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/444.png"
+    },
+    {
+      "github_name": "meowth-galar",
+      "smogon_name": "meowth-galar",
+      "name": "Galarian Meowth",
+      "pts": "1",
+      "dexNumber": "052",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/052-g.png"
+    },
+    {
+      "github_name": "slowpoke-galar",
+      "smogon_name": "slowpoke-galar",
+      "name": "Galarian Slowpoke",
+      "pts": "1",
+      "dexNumber": "079",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/079-g.png"
+    },
+    {
+      "github_name": "gastly",
+      "smogon_name": "gastly",
+      "name": "Gastly",
+      "pts": "1",
+      "dexNumber": "092",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/092.png"
+    },
+    {
+      "github_name": "geodude",
+      "smogon_name": "geodude",
+      "name": "Geodude",
+      "pts": "1",
+      "dexNumber": "074",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/074.png"
+    },
+    {
+      "github_name": "gible",
+      "smogon_name": "gible",
+      "name": "Gible",
+      "pts": "1",
+      "dexNumber": "443",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/443.png"
+    },
+    {
+      "github_name": "gimmighoul",
+      "smogon_name": "gimmighoul",
+      "name": "Gimmighoul",
+      "pts": "1",
+      "dexNumber": "999",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/999.png"
+    },
+    {
+      "github_name": "glalie",
+      "smogon_name": "glalie",
+      "name": "Glalie",
+      "pts": "1",
+      "dexNumber": "362",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/362.png"
+    },
+    {
+      "github_name": "glimmet",
+      "smogon_name": "glimmet",
+      "name": "Glimmet",
+      "pts": "1",
+      "dexNumber": "969",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/969.png"
+    },
+    {
+      "github_name": "goomy",
+      "smogon_name": "goomy",
+      "name": "Goomy",
+      "pts": "1",
+      "dexNumber": "704",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/704.png"
+    },
+    {
+      "github_name": "gothita",
+      "smogon_name": "gothita",
+      "name": "Gothita",
+      "pts": "1",
+      "dexNumber": "574",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/574.png"
+    },
+    {
+      "github_name": "graveler",
+      "smogon_name": "graveler",
+      "name": "Graveler",
+      "pts": "1",
+      "dexNumber": "075",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/075.png"
+    },
+    {
+      "github_name": "greavard",
+      "smogon_name": "greavard",
+      "name": "Greavard",
+      "pts": "1",
+      "dexNumber": "971",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/971.png"
+    },
+    {
+      "github_name": "grimer",
+      "smogon_name": "grimer",
+      "name": "Grimer",
+      "pts": "1",
+      "dexNumber": "088",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/088.png"
+    },
+    {
+      "github_name": "grookey",
+      "smogon_name": "grookey",
+      "name": "Grookey",
+      "pts": "1",
+      "dexNumber": "810",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/810.png"
+    },
+    {
+      "github_name": "growlithe",
+      "smogon_name": "growlithe",
+      "name": "Growlithe",
+      "pts": "1",
+      "dexNumber": "058",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/058.png"
+    },
+    {
+      "github_name": "grubbin",
+      "smogon_name": "grubbin",
+      "name": "Grubbin",
+      "pts": "1",
+      "dexNumber": "736",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/736.png"
+    },
+    {
+      "github_name": "gulpin",
+      "smogon_name": "gulpin",
+      "name": "Gulpin",
+      "pts": "1",
+      "dexNumber": "316",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/316.png"
+    },
+    {
+      "github_name": "gumshoos",
+      "smogon_name": "gumshoos",
+      "name": "Gumshoos",
+      "pts": "1",
+      "dexNumber": "735",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/735.png"
+    },
+    {
+      "github_name": "hakamo-o",
+      "smogon_name": "hakamo-o",
+      "name": "Hakamo-o",
+      "pts": "1",
+      "dexNumber": "783",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/783.png"
+    },
+    {
+      "github_name": "happiny",
+      "smogon_name": "happiny",
+      "name": "Happiny",
+      "pts": "1",
+      "dexNumber": "440",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/440.png"
+    },
+    {
+      "github_name": "hatenna",
+      "smogon_name": "hatenna",
+      "name": "Hatenna",
+      "pts": "1",
+      "dexNumber": "856",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/856.png"
+    },
+    {
+      "github_name": "hattrem",
+      "smogon_name": "hattrem",
+      "name": "Hattrem",
+      "pts": "1",
+      "dexNumber": "857",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/857.png"
+    },
+    {
+      "github_name": "hippopotas",
+      "smogon_name": "hippopotas",
+      "name": "Hippopotas",
+      "pts": "1",
+      "dexNumber": "449",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/449.png"
+    },
+    {
+      "github_name": "growlithe-hisui",
+      "smogon_name": "growlithe-hisui",
+      "name": "Hisuian Growlithe",
+      "pts": "1",
+      "dexNumber": "058",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/058-h.png"
+    },
+    {
+      "github_name": "voltorb-hisui",
+      "smogon_name": "voltorb-hisui",
+      "name": "Hisuian Voltorb",
+      "pts": "1",
+      "dexNumber": "100",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/100-h.png"
+    },
+    {
+      "github_name": "zorua-hisui",
+      "smogon_name": "zorua-hisui",
+      "name": "Hisuian Zorua",
+      "pts": "1",
+      "dexNumber": "570",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/570-h.png"
+    },
+    {
+      "github_name": "hoothoot",
+      "smogon_name": "hoothoot",
+      "name": "Hoothoot",
+      "pts": "1",
+      "dexNumber": "163",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/163.png"
+    },
+    {
+      "github_name": "hoppip",
+      "smogon_name": "hoppip",
+      "name": "Hoppip",
+      "pts": "1",
+      "dexNumber": "187",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/187.png"
+    },
+    {
+      "github_name": "houndour",
+      "smogon_name": "houndour",
+      "name": "Houndour",
+      "pts": "1",
+      "dexNumber": "228",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/228.png"
+    },
+    {
+      "github_name": "hypno",
+      "smogon_name": "hypno",
+      "name": "Hypno",
+      "pts": "1",
+      "dexNumber": "097",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/097.png"
+    },
+    {
+      "github_name": "igglybuff",
+      "smogon_name": "igglybuff",
+      "name": "Igglybuff",
+      "pts": "1",
+      "dexNumber": "174",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/174.png"
+    },
+    {
+      "github_name": "impidimp",
+      "smogon_name": "impidimp",
+      "name": "Impidimp",
+      "pts": "1",
+      "dexNumber": "859",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/859.png"
+    },
+    {
+      "github_name": "jangmo-o",
+      "smogon_name": "jangmo-o",
+      "name": "Jangmo-o",
+      "pts": "1",
+      "dexNumber": "782",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/782.png"
+    },
+    {
+      "github_name": "jigglypuff",
+      "smogon_name": "jigglypuff",
+      "name": "Jigglypuff",
+      "pts": "1",
+      "dexNumber": "039",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/039.png"
+    },
+    {
+      "github_name": "jumpluff",
+      "smogon_name": "jumpluff",
+      "name": "Jumpluff",
+      "pts": "1",
+      "dexNumber": "189",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/189.png"
+    },
+    {
+      "github_name": "kirlia",
+      "smogon_name": "kirlia",
+      "name": "Kirlia",
+      "pts": "1",
+      "dexNumber": "281",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/281.png"
+    },
+    {
+      "github_name": "koffing",
+      "smogon_name": "koffing",
+      "name": "Koffing",
+      "pts": "1",
+      "dexNumber": "109",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/109.png"
+    },
+    {
+      "github_name": "kricketot",
+      "smogon_name": "kricketot",
+      "name": "Kricketot",
+      "pts": "1",
+      "dexNumber": "401",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/401.png"
+    },
+    {
+      "github_name": "kricketune",
+      "smogon_name": "kricketune",
+      "name": "Kricketune",
+      "pts": "1",
+      "dexNumber": "402",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/402.png"
+    },
+    {
+      "github_name": "krokorok",
+      "smogon_name": "krokorok",
+      "name": "Krokorok",
+      "pts": "1",
+      "dexNumber": "552",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/552.png"
+    },
+    {
+      "github_name": "kubfu",
+      "smogon_name": "kubfu",
+      "name": "Kubfu",
+      "pts": "1",
+      "dexNumber": "891",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/891.png"
+    },
+    {
+      "github_name": "lampent",
+      "smogon_name": "lampent",
+      "name": "Lampent",
+      "pts": "1",
+      "dexNumber": "608",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/608.png"
+    },
+    {
+      "github_name": "larvesta",
+      "smogon_name": "larvesta",
+      "name": "Larvesta",
+      "pts": "1",
+      "dexNumber": "636",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/636.png"
+    },
+    {
+      "github_name": "larvitar",
+      "smogon_name": "larvitar",
+      "name": "Larvitar",
+      "pts": "1",
+      "dexNumber": "246",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/246.png"
+    },
+    {
+      "github_name": "lechonk",
+      "smogon_name": "lechonk",
+      "name": "Lechonk",
+      "pts": "1",
+      "dexNumber": "915",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/915.png"
+    },
+    {
+      "github_name": "litleo",
+      "smogon_name": "litleo",
+      "name": "Litleo",
+      "pts": "1",
+      "dexNumber": "667",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/667.png"
+    },
+    {
+      "github_name": "litwick",
+      "smogon_name": "litwick",
+      "name": "Litwick",
+      "pts": "1",
+      "dexNumber": "607",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/607.png"
+    },
+    {
+      "github_name": "lombre",
+      "smogon_name": "lombre",
+      "name": "Lombre",
+      "pts": "1",
+      "dexNumber": "271",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/271.png"
+    },
+    {
+      "github_name": "lotad",
+      "smogon_name": "lotad",
+      "name": "Lotad",
+      "pts": "1",
+      "dexNumber": "270",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/270.png"
+    },
+    {
+      "github_name": "lumineon",
+      "smogon_name": "lumineon",
+      "name": "Lumineon",
+      "pts": "1",
+      "dexNumber": "457",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/457.png"
+    },
+    {
+      "github_name": "luvdisc",
+      "smogon_name": "luvdisc",
+      "name": "Luvdisc",
+      "pts": "1",
+      "dexNumber": "370",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/370.png"
+    },
+    {
+      "github_name": "luxio",
+      "smogon_name": "luxio",
+      "name": "Luxio",
+      "pts": "1",
+      "dexNumber": "404",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/404.png"
+    },
+    {
+      "github_name": "magikarp",
+      "smogon_name": "magikarp",
+      "name": "Magikarp",
+      "pts": "1",
+      "dexNumber": "129",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/129.png"
+    },
+    {
+      "github_name": "magnemite",
+      "smogon_name": "magnemite",
+      "name": "Magnemite",
+      "pts": "1",
+      "dexNumber": "081",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/081.png"
+    },
+    {
+      "github_name": "makuhita",
+      "smogon_name": "makuhita",
+      "name": "Makuhita",
+      "pts": "1",
+      "dexNumber": "296",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/296.png"
+    },
+    {
+      "github_name": "mankey",
+      "smogon_name": "mankey",
+      "name": "Mankey",
+      "pts": "1",
+      "dexNumber": "056",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/056.png"
+    },
+    {
+      "github_name": "mareep",
+      "smogon_name": "mareep",
+      "name": "Mareep",
+      "pts": "1",
+      "dexNumber": "179",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/179.png"
+    },
+    {
+      "github_name": "marill",
+      "smogon_name": "marill",
+      "name": "Marill",
+      "pts": "1",
+      "dexNumber": "183",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/183.png"
+    },
+    {
+      "github_name": "maschiff",
+      "smogon_name": "maschiff",
+      "name": "Maschiff",
+      "pts": "1",
+      "dexNumber": "942",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/942.png"
+    },
+    {
+      "github_name": "meditite",
+      "smogon_name": "meditite",
+      "name": "Meditite",
+      "pts": "1",
+      "dexNumber": "307",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/307.png"
+    },
+    {
+      "github_name": "meowth",
+      "smogon_name": "meowth",
+      "name": "Meowth",
+      "pts": "1",
+      "dexNumber": "052",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/052.png"
+    },
+    {
+      "github_name": "mienfoo",
+      "smogon_name": "mienfoo",
+      "name": "Mienfoo",
+      "pts": "1",
+      "dexNumber": "619",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/619.png"
+    },
+    {
+      "github_name": "mudbray",
+      "smogon_name": "mudbray",
+      "name": "Mudbray",
+      "pts": "1",
+      "dexNumber": "749",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/749.png"
+    },
+    {
+      "github_name": "murkrow",
+      "smogon_name": "murkrow",
+      "name": "Murkrow",
+      "pts": "1",
+      "dexNumber": "198",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/198.png"
+    },
+    {
+      "github_name": "nacli",
+      "smogon_name": "nacli",
+      "name": "Nacli",
+      "pts": "1",
+      "dexNumber": "932",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/932.png"
+    },
+    {
+      "github_name": "noibat",
+      "smogon_name": "noibat",
+      "name": "Noibat",
+      "pts": "1",
+      "dexNumber": "714",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/714.png"
+    },
+    {
+      "github_name": "nosepass",
+      "smogon_name": "nosepass",
+      "name": "Nosepass",
+      "pts": "1",
+      "dexNumber": "299",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/299.png"
+    },
+    {
+      "github_name": "numel",
+      "smogon_name": "numel",
+      "name": "Numel",
+      "pts": "1",
+      "dexNumber": "322",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/322.png"
+    },
+    {
+      "github_name": "nuzleaf",
+      "smogon_name": "nuzleaf",
+      "name": "Nuzleaf",
+      "pts": "1",
+      "dexNumber": "274",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/274.png"
+    },
+    {
+      "github_name": "nymble",
+      "smogon_name": "nymble",
+      "name": "Nymble",
+      "pts": "1",
+      "dexNumber": "919",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/919.png"
+    },
+    {
+      "github_name": "pachirisu",
+      "smogon_name": "pachirisu",
+      "name": "Pachirisu",
+      "pts": "1",
+      "dexNumber": "417",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/417.png"
+    },
+    {
+      "github_name": "wooper-paldea",
+      "smogon_name": "wooper-paldea",
+      "name": "Paldean Wooper",
+      "pts": "1",
+      "dexNumber": "194",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/194-p.png"
+    },
+    {
+      "github_name": "pawmi",
+      "smogon_name": "pawmi",
+      "name": "Pawmi",
+      "pts": "1",
+      "dexNumber": "921",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/921.png"
+    },
+    {
+      "github_name": "pawmo",
+      "smogon_name": "pawmo",
+      "name": "Pawmo",
+      "pts": "1",
+      "dexNumber": "922",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/922.png"
+    },
+    {
+      "github_name": "pawniard",
+      "smogon_name": "pawniard",
+      "name": "Pawniard",
+      "pts": "1",
+      "dexNumber": "624",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/624.png"
+    },
+    {
+      "github_name": "persian",
+      "smogon_name": "persian",
+      "name": "Persian",
+      "pts": "2",
+      "dexNumber": "053",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/053.png"
+    },
+    {
+      "github_name": "petilil",
+      "smogon_name": "petilil",
+      "name": "Petilil",
+      "pts": "1",
+      "dexNumber": "548",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/548.png"
+    },
+    {
+      "github_name": "phanpy",
+      "smogon_name": "phanpy",
+      "name": "Phanpy",
+      "pts": "1",
+      "dexNumber": "231",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/231.png"
+    },
+    {
+      "github_name": "phantump",
+      "smogon_name": "phantump",
+      "name": "Phantump",
+      "pts": "1",
+      "dexNumber": "708",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/708.png"
+    },
+    {
+      "github_name": "pichu",
+      "smogon_name": "pichu",
+      "name": "Pichu",
+      "pts": "1",
+      "dexNumber": "172",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/172.png"
+    },
+    {
+      "github_name": "pikachu",
+      "smogon_name": "pikachu",
+      "name": "Pikachu",
+      "pts": "1",
+      "dexNumber": "025",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/025.png"
+    },
+    {
+      "github_name": "pineco",
+      "smogon_name": "pineco",
+      "name": "Pineco",
+      "pts": "1",
+      "dexNumber": "204",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/204.png"
+    },
+    {
+      "github_name": "piplup",
+      "smogon_name": "piplup",
+      "name": "Piplup",
+      "pts": "1",
+      "dexNumber": "393",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/393.png"
+    },
+    {
+      "github_name": "poliwag",
+      "smogon_name": "poliwag",
+      "name": "Poliwag",
+      "pts": "1",
+      "dexNumber": "060",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/060.png"
+    },
+    {
+      "github_name": "poliwhirl",
+      "smogon_name": "poliwhirl",
+      "name": "Poliwhirl",
+      "pts": "1",
+      "dexNumber": "061",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/061.png"
+    },
+    {
+      "github_name": "poltchageist",
+      "smogon_name": "poltchageist",
+      "name": "Poltchageist",
+      "pts": "1",
+      "dexNumber": "1012",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1012.png"
+    },
+    {
+      "github_name": "poochyena",
+      "smogon_name": "poochyena",
+      "name": "Poochyena",
+      "pts": "1",
+      "dexNumber": "261",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/261.png"
+    },
+    {
+      "github_name": "prinplup",
+      "smogon_name": "prinplup",
+      "name": "Prinplup",
+      "pts": "1",
+      "dexNumber": "394",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/394.png"
+    },
+    {
+      "github_name": "psyduck",
+      "smogon_name": "psyduck",
+      "name": "Psyduck",
+      "pts": "1",
+      "dexNumber": "054",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/054.png"
+    },
+    {
+      "github_name": "pupitar",
+      "smogon_name": "pupitar",
+      "name": "Pupitar",
+      "pts": "1",
+      "dexNumber": "247",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/247.png"
+    },
+    {
+      "github_name": "quaxly",
+      "smogon_name": "quaxly",
+      "name": "Quaxly",
+      "pts": "1",
+      "dexNumber": "912",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/912.png"
+    },
+    {
+      "github_name": "quaxwell",
+      "smogon_name": "quaxwell",
+      "name": "Quaxwell",
+      "pts": "1",
+      "dexNumber": "913",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/913.png"
+    },
+    {
+      "github_name": "quilava",
+      "smogon_name": "quilava",
+      "name": "Quilava",
+      "pts": "1",
+      "dexNumber": "156",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/156.png"
+    },
+    {
+      "github_name": "ralts",
+      "smogon_name": "ralts",
+      "name": "Ralts",
+      "pts": "1",
+      "dexNumber": "280",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/280.png"
+    },
+    {
+      "github_name": "rellor",
+      "smogon_name": "rellor",
+      "name": "Rellor",
+      "pts": "1",
+      "dexNumber": "953",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/953.png"
+    },
+    {
+      "github_name": "riolu",
+      "smogon_name": "riolu",
+      "name": "Riolu",
+      "pts": "1",
+      "dexNumber": "447",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/447.png"
+    },
+    {
+      "github_name": "rockruff",
+      "smogon_name": "rockruff",
+      "name": "Rockruff",
+      "pts": "1",
+      "dexNumber": "744",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/744.png"
+    },
+    {
+      "github_name": "rolycoly",
+      "smogon_name": "rolycoly",
+      "name": "Rolycoly",
+      "pts": "1",
+      "dexNumber": "837",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/837.png"
+    },
+    {
+      "github_name": "rookidee",
+      "smogon_name": "rookidee",
+      "name": "Rookidee",
+      "pts": "1",
+      "dexNumber": "821",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/821.png"
+    },
+    {
+      "github_name": "rowlet",
+      "smogon_name": "rowlet",
+      "name": "Rowlet",
+      "pts": "1",
+      "dexNumber": "722",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/722.png"
+    },
+    {
+      "github_name": "rufflet",
+      "smogon_name": "rufflet",
+      "name": "Rufflet",
+      "pts": "1",
+      "dexNumber": "627",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/627.png"
+    },
+    {
+      "github_name": "salandit",
+      "smogon_name": "salandit",
+      "name": "Salandit",
+      "pts": "1",
+      "dexNumber": "757",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/757.png"
+    },
+    {
+      "github_name": "sandile",
+      "smogon_name": "sandile",
+      "name": "Sandile",
+      "pts": "1",
+      "dexNumber": "551",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/551.png"
+    },
+    {
+      "github_name": "sandshrew",
+      "smogon_name": "sandshrew",
+      "name": "Sandshrew",
+      "pts": "1",
+      "dexNumber": "027",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/027.png"
+    },
+    {
+      "github_name": "sandygast",
+      "smogon_name": "sandygast",
+      "name": "Sandygast",
+      "pts": "1",
+      "dexNumber": "769",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/769.png"
+    },
+    {
+      "github_name": "scatterbug",
+      "smogon_name": "scatterbug",
+      "name": "Scatterbug",
+      "pts": "1",
+      "dexNumber": "664",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/664.png"
+    },
+    {
+      "github_name": "scorbunny",
+      "smogon_name": "scorbunny",
+      "name": "Scorbunny",
+      "pts": "1",
+      "dexNumber": "813",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/813.png"
+    },
+    {
+      "github_name": "seedot",
+      "smogon_name": "seedot",
+      "name": "Seedot",
+      "pts": "1",
+      "dexNumber": "273",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/273.png"
+    },
+    {
+      "github_name": "sentret",
+      "smogon_name": "sentret",
+      "name": "Sentret",
+      "pts": "1",
+      "dexNumber": "161",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/161.png"
+    },
+    {
+      "github_name": "seviper",
+      "smogon_name": "seviper",
+      "name": "Seviper",
+      "pts": "1",
+      "dexNumber": "336",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/336.png"
+    },
+    {
+      "github_name": "sewaddle",
+      "smogon_name": "sewaddle",
+      "name": "Sewaddle",
+      "pts": "1",
+      "dexNumber": "540",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/540.png"
+    },
+    {
+      "github_name": "shelgon",
+      "smogon_name": "shelgon",
+      "name": "Shelgon",
+      "pts": "1",
+      "dexNumber": "372",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/372.png"
+    },
+    {
+      "github_name": "shellder",
+      "smogon_name": "shellder",
+      "name": "Shellder",
+      "pts": "1",
+      "dexNumber": "090",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/090.png"
+    },
+    {
+      "github_name": "shellos",
+      "smogon_name": "shellos",
+      "name": "Shellos",
+      "pts": "1",
+      "dexNumber": "422",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/422.png"
+    },
+    {
+      "github_name": "shinx",
+      "smogon_name": "shinx",
+      "name": "Shinx",
+      "pts": "1",
+      "dexNumber": "403",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/403.png"
+    },
+    {
+      "github_name": "shroodle",
+      "smogon_name": "shroodle",
+      "name": "Shroodle",
+      "pts": "1",
+      "dexNumber": "944",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/944.png"
+    },
+    {
+      "github_name": "shroomish",
+      "smogon_name": "shroomish",
+      "name": "Shroomish",
+      "pts": "1",
+      "dexNumber": "285",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/285.png"
+    },
+    {
+      "github_name": "shuppet",
+      "smogon_name": "shuppet",
+      "name": "Shuppet",
+      "pts": "1",
+      "dexNumber": "353",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/353.png"
+    },
+    {
+      "github_name": "silicobra",
+      "smogon_name": "silicobra",
+      "name": "Silicobra",
+      "pts": "1",
+      "dexNumber": "843",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/843.png"
+    },
+    {
+      "github_name": "sinistea",
+      "smogon_name": "sinistea",
+      "name": "Sinistea",
+      "pts": "1",
+      "dexNumber": "854",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/854.png"
+    },
+    {
+      "github_name": "skiddo",
+      "smogon_name": "skiddo",
+      "name": "Skiddo",
+      "pts": "1",
+      "dexNumber": "672",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/672.png"
+    },
+    {
+      "github_name": "skiploom",
+      "smogon_name": "skiploom",
+      "name": "Skiploom",
+      "pts": "1",
+      "dexNumber": "188",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/188.png"
+    },
+    {
+      "github_name": "skrelp",
+      "smogon_name": "skrelp",
+      "name": "Skrelp",
+      "pts": "1",
+      "dexNumber": "690",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/690.png"
+    },
+    {
+      "github_name": "skwovet",
+      "smogon_name": "skwovet",
+      "name": "Skwovet",
+      "pts": "1",
+      "dexNumber": "819",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/819.png"
+    },
+    {
+      "github_name": "slakoth",
+      "smogon_name": "slakoth",
+      "name": "Slakoth",
+      "pts": "1",
+      "dexNumber": "287",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/287.png"
+    },
+    {
+      "github_name": "sliggoo",
+      "smogon_name": "sliggoo",
+      "name": "Sliggoo",
+      "pts": "1",
+      "dexNumber": "705",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/705.png"
+    },
+    {
+      "github_name": "slowpoke",
+      "smogon_name": "slowpoke",
+      "name": "Slowpoke",
+      "pts": "1",
+      "dexNumber": "079",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/079.png"
+    },
+    {
+      "github_name": "slugma",
+      "smogon_name": "slugma",
+      "name": "Slugma",
+      "pts": "1",
+      "dexNumber": "218",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/218.png"
+    },
+    {
+      "github_name": "smoliv",
+      "smogon_name": "smoliv",
+      "name": "Smoliv",
+      "pts": "1",
+      "dexNumber": "928",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/928.png"
+    },
+    {
+      "github_name": "snom",
+      "smogon_name": "snom",
+      "name": "Snom",
+      "pts": "1",
+      "dexNumber": "872",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/872.png"
+    },
+    {
+      "github_name": "snorunt",
+      "smogon_name": "snorunt",
+      "name": "Snorunt",
+      "pts": "1",
+      "dexNumber": "361",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/361.png"
+    },
+    {
+      "github_name": "snover",
+      "smogon_name": "snover",
+      "name": "Snover",
+      "pts": "1",
+      "dexNumber": "459",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/459.png"
+    },
+    {
+      "github_name": "sobble",
+      "smogon_name": "sobble",
+      "name": "Sobble",
+      "pts": "1",
+      "dexNumber": "816",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/816.png"
+    },
+    {
+      "github_name": "spewpa",
+      "smogon_name": "spewpa",
+      "name": "Spewpa",
+      "pts": "1",
+      "dexNumber": "665",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/665.png"
+    },
+    {
+      "github_name": "spinarak",
+      "smogon_name": "spinarak",
+      "name": "Spinarak",
+      "pts": "1",
+      "dexNumber": "167",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/167.png"
+    },
+    {
+      "github_name": "spoink",
+      "smogon_name": "spoink",
+      "name": "Spoink",
+      "pts": "1",
+      "dexNumber": "325",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/325.png"
+    },
+    {
+      "github_name": "sprigatito",
+      "smogon_name": "sprigatito",
+      "name": "Sprigatito",
+      "pts": "1",
+      "dexNumber": "906",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/906.png"
+    },
+    {
+      "github_name": "stantler",
+      "smogon_name": "stantler",
+      "name": "Stantler",
+      "pts": "1",
+      "dexNumber": "234",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/234.png"
+    },
+    {
+      "github_name": "staravia",
+      "smogon_name": "staravia",
+      "name": "Staravia",
+      "pts": "1",
+      "dexNumber": "397",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/397.png"
+    },
+    {
+      "github_name": "starly",
+      "smogon_name": "starly",
+      "name": "Starly",
+      "pts": "1",
+      "dexNumber": "396",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/396.png"
+    },
+    {
+      "github_name": "steenee",
+      "smogon_name": "steenee",
+      "name": "Steenee",
+      "pts": "1",
+      "dexNumber": "762",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/762.png"
+    },
+    {
+      "github_name": "stunky",
+      "smogon_name": "stunky",
+      "name": "Stunky",
+      "pts": "1",
+      "dexNumber": "434",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/434.png"
+    },
+    {
+      "github_name": "sudowoodo",
+      "smogon_name": "sudowoodo",
+      "name": "Sudowoodo",
+      "pts": "1",
+      "dexNumber": "185",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/185.png"
+    },
+    {
+      "github_name": "sunflora",
+      "smogon_name": "sunflora",
+      "name": "Sunflora",
+      "pts": "1",
+      "dexNumber": "192",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/192.png"
+    },
+    {
+      "github_name": "sunkern",
+      "smogon_name": "sunkern",
+      "name": "Sunkern",
+      "pts": "1",
+      "dexNumber": "191",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/191.png"
+    },
+    {
+      "github_name": "surskit",
+      "smogon_name": "surskit",
+      "name": "Surskit",
+      "pts": "1",
+      "dexNumber": "283",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/283.png"
+    },
+    {
+      "github_name": "swablu",
+      "smogon_name": "swablu",
+      "name": "Swablu",
+      "pts": "1",
+      "dexNumber": "333",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/333.png"
+    },
+    {
+      "github_name": "swadloon",
+      "smogon_name": "swadloon",
+      "name": "Swadloon",
+      "pts": "1",
+      "dexNumber": "541",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/541.png"
+    },
+    {
+      "github_name": "swinub",
+      "smogon_name": "swinub",
+      "name": "Swinub",
+      "pts": "1",
+      "dexNumber": "220",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/220.png"
+    },
+    {
+      "github_name": "tadbulb",
+      "smogon_name": "tadbulb",
+      "name": "Tadbulb",
+      "pts": "1",
+      "dexNumber": "938",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/938.png"
+    },
+    {
+      "github_name": "tandemaus",
+      "smogon_name": "tandemaus",
+      "name": "Tandemaus",
+      "pts": "1",
+      "dexNumber": "924",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/924.png"
+    },
+    {
+      "github_name": "tarountula",
+      "smogon_name": "tarountula",
+      "name": "Tarountula",
+      "pts": "1",
+      "dexNumber": "917",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/917.png"
+    },
+    {
+      "github_name": "teddiursa",
+      "smogon_name": "teddiursa",
+      "name": "Teddiursa",
+      "pts": "1",
+      "dexNumber": "216",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/216.png"
+    },
+    {
+      "github_name": "timburr",
+      "smogon_name": "timburr",
+      "name": "Timburr",
+      "pts": "1",
+      "dexNumber": "532",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/532.png"
+    },
+    {
+      "github_name": "tinkatink",
+      "smogon_name": "tinkatink",
+      "name": "Tinkatink",
+      "pts": "1",
+      "dexNumber": "957",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/957.png"
+    },
+    {
+      "github_name": "tinkatuff",
+      "smogon_name": "tinkatuff",
+      "name": "Tinkatuff",
+      "pts": "1",
+      "dexNumber": "958",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/958.png"
+    },
+    {
+      "github_name": "toedscool",
+      "smogon_name": "toedscool",
+      "name": "Toedscool",
+      "pts": "1",
+      "dexNumber": "948",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/948.png"
+    },
+    {
+      "github_name": "toxel",
+      "smogon_name": "toxel",
+      "name": "Toxel",
+      "pts": "1",
+      "dexNumber": "848",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/848.png"
+    },
+    {
+      "github_name": "tropius",
+      "smogon_name": "tropius",
+      "name": "Tropius",
+      "pts": "1",
+      "dexNumber": "357",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/357.png"
+    },
+    {
+      "github_name": "turtwig",
+      "smogon_name": "turtwig",
+      "name": "Turtwig",
+      "pts": "1",
+      "dexNumber": "387",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/387.png"
+    },
+    {
+      "github_name": "tynamo",
+      "smogon_name": "tynamo",
+      "name": "Tynamo",
+      "pts": "1",
+      "dexNumber": "602",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/602.png"
+    },
+    {
+      "github_name": "varoom",
+      "smogon_name": "varoom",
+      "name": "Varoom",
+      "pts": "1",
+      "dexNumber": "965",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/965.png"
+    },
+    {
+      "github_name": "venonat",
+      "smogon_name": "venonat",
+      "name": "Venonat",
+      "pts": "1",
+      "dexNumber": "048",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/048.png"
+    },
+    {
+      "github_name": "vigoroth",
+      "smogon_name": "vigoroth",
+      "name": "Vigoroth",
+      "pts": "1",
+      "dexNumber": "288",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/288.png"
+    },
+    {
+      "github_name": "voltorb",
+      "smogon_name": "voltorb",
+      "name": "Voltorb",
+      "pts": "1",
+      "dexNumber": "100",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/100.png"
+    },
+    {
+      "github_name": "vulpix",
+      "smogon_name": "vulpix",
+      "name": "Vulpix",
+      "pts": "1",
+      "dexNumber": "037",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/037.png"
+    },
+    {
+      "github_name": "wattrel",
+      "smogon_name": "wattrel",
+      "name": "Wattrel",
+      "pts": "1",
+      "dexNumber": "940",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/940.png"
+    },
+    {
+      "github_name": "weepinbell",
+      "smogon_name": "weepinbell",
+      "name": "Weepinbell",
+      "pts": "1",
+      "dexNumber": "070",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/070.png"
+    },
+    {
+      "github_name": "wiglett",
+      "smogon_name": "wiglett",
+      "name": "Wiglett",
+      "pts": "1",
+      "dexNumber": "960",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/960.png"
+    },
+    {
+      "github_name": "wingull",
+      "smogon_name": "wingull",
+      "name": "Wingull",
+      "pts": "1",
+      "dexNumber": "278",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/278.png"
+    },
+    {
+      "github_name": "wooper",
+      "smogon_name": "wooper",
+      "name": "Wooper",
+      "pts": "1",
+      "dexNumber": "194",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/194.png"
+    },
+    {
+      "github_name": "yanma",
+      "smogon_name": "yanma",
+      "name": "Yanma",
+      "pts": "1",
+      "dexNumber": "193",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/193.png"
+    },
+    {
+      "github_name": "yungoos",
+      "smogon_name": "yungoos",
+      "name": "Yungoos",
+      "pts": "1",
+      "dexNumber": "734",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/734.png"
+    },
+    {
+      "github_name": "zorua",
+      "smogon_name": "zorua",
+      "name": "Zorua",
+      "pts": "1",
+      "dexNumber": "570",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/570.png"
+    },
+    {
+      "github_name": "zweilous",
+      "smogon_name": "zweilous",
+      "name": "Zweilous",
+      "pts": "1",
+      "dexNumber": "634",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/634.png"
+    }
+  ]
+}

@@ -38,7 +38,7 @@ export default function Home() {
     >
       <section className="py-6 sm:10 md:py-14">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 gap-y-4 flex flex-col">
-          <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mx-auto max-w-2xl md:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
               👋
             </h2>
@@ -73,7 +73,7 @@ export default function Home() {
                       buttonVariants({ variant: "secondary" }),
                       "py-8 justify-between flex grow"
                     )}
-                    to={`../tournament/${t.id}`}
+                    to={`../tournament/${t.id}/dashboard`}
                   >
                     {t.name}
                   </Link>

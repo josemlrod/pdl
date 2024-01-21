@@ -8,10 +8,13 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-import { NavLink, Outlet, useMatches } from "@remix-run/react";
+import { NavLink, Outlet, useLoaderData } from "@remix-run/react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ThemeToggle";
+import { LoaderFunctionArgs, json, redirect } from "@remix-run/node";
+import { getErrorMessage } from "~/services/utils";
+import { ReadTournament } from "~/services/firebase";
 
 const navigation = [
   { name: "Dashboard", href: "dashboard", icon: HomeIcon, current: true },
@@ -24,18 +27,45 @@ const navigation = [
   },
 ];
 
-export default function TournamentLayout() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const matches = useMatches();
+export async function loader({ params }: LoaderFunctionArgs) {
+  const { tournamentId } = params;
+  if (tournamentId) {
+    try {
+      const readTournamentResponse = await ReadTournament({ id: tournamentId });
+      const tournament =
+        typeof readTournamentResponse !== "string" &&
+        Object.entries(readTournamentResponse).length &&
+        readTournamentResponse.data;
 
-  //   const {
-  //     data: { players },
-  //   } =
-  //     Array.isArray(matches) &&
-  //     matches.length &&
-  //     matches.find((m) => m.id === "routes/tournament.$tournamentId");
-  //   const noPlayers = !players || (Array.isArray(players) && !players.length);
-  const noPlayers = true;
+      if (!tournament) {
+        return redirect("/home");
+      }
+
+      const noPlayers =
+        !tournament ||
+        !Array.isArray(tournament.players) ||
+        !tournament.players.length;
+
+      return json({
+        data: {
+          tournament,
+          noPlayers,
+        },
+      });
+    } catch (e) {
+      getErrorMessage(e);
+    }
+  }
+
+  return redirect("/home");
+}
+
+export default function TournamentLayout() {
+  const {
+    data: { tournament, noPlayers },
+  } = useLoaderData<typeof loader>();
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="h-full">
@@ -146,7 +176,7 @@ export default function TournamentLayout() {
       </Transition.Root>
 
       {/* Static sidebar for desktop */}
-      <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <div className="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-72 xl:flex-col">
         {/* Sidebar component, swap this element with another sidebar if you like */}
         <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r px-6 pb-4">
           <div className="flex h-16 shrink-0 items-center">
@@ -232,11 +262,11 @@ export default function TournamentLayout() {
         </div>
       </div>
 
-      <div className="lg:pl-72 h-full">
+      <div className="xl:pl-72 h-full">
         <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
           <button
             type="button"
-            className="-m-2.5 p-2.5 lg:hidden"
+            className="-m-2.5 p-2.5 xl:hidden"
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
@@ -244,9 +274,9 @@ export default function TournamentLayout() {
           </button>
 
           {/* Separator */}
-          <div className="h-6 w-px bg-primary lg:hidden" aria-hidden="true" />
+          <div className="h-6 w-px bg-primary xl:hidden" aria-hidden="true" />
 
-          <div className="flex w-full justify-end">
+          <div className="flex w-full justify-center">
             <ModeToggle />
           </div>
         </div>
@@ -256,7 +286,12 @@ export default function TournamentLayout() {
           style={{ height: `calc(100dvh - 64px)` }}
         >
           <div className="px-4 sm:px-6 lg:px-8 grow">
-            <Outlet />
+            <Outlet
+              context={{
+                tournament,
+                noPlayers,
+              }}
+            />
           </div>
         </main>
       </div>
