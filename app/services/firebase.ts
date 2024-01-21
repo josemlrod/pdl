@@ -6,6 +6,8 @@ import {
   setDoc,
   doc,
   getDoc,
+  updateDoc,
+  arrayUnion,
 } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
@@ -51,6 +53,8 @@ export type Player = {
   isHidden?: boolean;
 };
 
+type UpdatePlayer = { tournamentId: string; id: string } & Partial<Player>;
+
 type Pokemon = {
   githubName: string;
   id: string;
@@ -82,6 +86,76 @@ export async function AddUser({
     };
   } catch (e) {
     return getErrorMessage(e);
+  }
+}
+
+export async function AddPlayer({ id, tournamentId, ...rest }: UpdatePlayer) {
+  try {
+    const { data } = (await ReadPlayer({ tournamentId, playerId: id })) || {};
+    const playerExists = data && Object.entries(data).length;
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+
+    if (playerExists) {
+      const tournamentDocSnap = await getDoc(tournamentDocRef);
+      const tournament = tournamentDocSnap.data();
+      const players = tournament && tournament.players;
+      const newPlayers = players.map((p: Player) => {
+        if (p.id === id) {
+          return {
+            ...p,
+            ...rest,
+          };
+        }
+        return p;
+      });
+      await updateDoc(tournamentDocRef, {
+        players: newPlayers,
+      });
+    } else {
+      await updateDoc(tournamentDocRef, {
+        players: arrayUnion({
+          id,
+          ...rest,
+          initialDraftPoints: 120,
+          record: {
+            loses: 0,
+            wins: 0,
+          },
+          pokemon: [],
+          previousPokemon: [],
+          transactions: [],
+        }),
+      });
+
+      return { success: true };
+    }
+  } catch (e) {
+    getErrorMessage(e);
+  }
+}
+
+async function ReadPlayer({
+  tournamentId,
+  playerId,
+}: {
+  tournamentId: string;
+  playerId: string;
+}) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    if (tournamentDocSnap.exists()) {
+      const tournament = tournamentDocSnap.data();
+      const players = tournament.players;
+      const player =
+        players &&
+        Array.isArray(players) &&
+        players.find((p) => p.id === playerId);
+
+      return { success: true, data: player ?? null };
+    }
+  } catch (e) {
+    getErrorMessage(e);
   }
 }
 

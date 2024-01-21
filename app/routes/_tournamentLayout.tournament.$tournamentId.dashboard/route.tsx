@@ -5,7 +5,9 @@ import PokemonList, { type Pokemon } from "./pokemon-list";
 import CardLayout from "./card";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import type { Player } from "~/services/firebase";
+import { AddPlayer, type Player } from "~/services/firebase";
+import SheetButton from "./sheet";
+import { ActionFunctionArgs, json } from "@remix-run/node";
 
 export default function TournamentDashboard() {
   const matches = useMatches();
@@ -107,18 +109,13 @@ export default function TournamentDashboard() {
                 </NavLink>
               </div>
               <div className="flex gap-x-1">
-                {hasAddedPokemon ? (
-                  <button
-                    className={cn(buttonVariants({ variant: "ghost" }))}
-                    // onClick={() => {
-                    //   setOpenSlideOver(true);
-                    //   setSelectedPlayer(u);
-                    // }}
-                    type="button"
-                  >
-                    Edit
-                  </button>
-                ) : null}
+                <SheetButton
+                  buttonProps={{
+                    variant: "ghost",
+                  }}
+                  buttonLabel="Edit"
+                  player={p}
+                />
                 <button
                   className={cn(buttonVariants({ variant: "default" }))}
                   disabled={!canAddMorePokemon}
@@ -146,4 +143,25 @@ export default function TournamentDashboard() {
       })}
     </div>
   );
+}
+
+export async function action({ params, request }: ActionFunctionArgs) {
+  const { tournamentId } = params;
+  const body = await request.formData();
+  const data = Object.fromEntries(body);
+
+  const id = String(data.id) || "";
+  const name = String(data.name) || "";
+  const teamName = String(data.team_name) || "";
+
+  if (tournamentId) {
+    await AddPlayer({
+      id,
+      tournamentId,
+      name,
+      team_name: teamName,
+    });
+  }
+
+  return json({});
 }
