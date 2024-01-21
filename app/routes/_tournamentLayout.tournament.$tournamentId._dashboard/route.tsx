@@ -1,10 +1,12 @@
-import { NavLink, useMatches, useOutletContext } from "@remix-run/react";
-
-import EmptyState from "./empty-state";
-import PokemonList, { type Pokemon } from "./pokemon-list";
-import CardLayout from "./card";
+import { NavLink, Outlet, useMatches } from "@remix-run/react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+
+import EmptyState from "../_tournamentLayout.tournament.$tournamentId.dashboard/empty-state";
+import PokemonList, {
+  type Pokemon,
+} from "../_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
+import CardLayout from "../_tournamentLayout.tournament.$tournamentId.dashboard/card";
 import type { Player } from "~/services/firebase";
 
 export default function TournamentDashboard() {
@@ -100,8 +102,7 @@ export default function TournamentDashboard() {
                 <NavLink
                   className={cn(buttonVariants({ variant: "ghost" }))}
                   preventScrollReset
-                  relative="path"
-                  to={`../previous-pokemon/${p.id}`}
+                  to={`${p.id}/previous-pokemon`}
                 >
                   See previous Pokemon
                 </NavLink>
@@ -144,6 +145,7 @@ export default function TournamentDashboard() {
           />
         );
       })}
+      <Outlet context={{ players: tournament.players }} />
     </div>
   );
 }

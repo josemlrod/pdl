@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Data from "../../data.json";
 
-type Pokemon = {
+export type Pokemon = {
   githubName: string;
   name: string;
   pts: string;

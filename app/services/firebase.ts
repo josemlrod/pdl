@@ -36,7 +36,7 @@ type Tournament = {
 
 type AddTournamentProps = Omit<Tournament, "players">;
 
-type Player = {
+export type Player = {
   id: string;
   initialDraftPoints: number;
   name: string;
@@ -48,6 +48,7 @@ type Player = {
   };
   team_name: string;
   transactions: [];
+  isHidden?: boolean;
 };
 
 type Pokemon = {
