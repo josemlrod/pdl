@@ -49,7 +49,7 @@ export type Player = {
     wins: number;
   };
   team_name: string;
-  transactions: [];
+  transactions: Transaction[];
   isHidden?: boolean;
 };
 
@@ -64,6 +64,13 @@ type Pokemon = {
     faints: number;
     kills: number;
   };
+};
+
+type Transaction = {
+  in: string;
+  out: string;
+  player_name: string;
+  type: "Transfer" | "Tera captain";
 };
 
 export async function AddUser({
@@ -159,6 +166,21 @@ async function ReadPlayer({
   }
 }
 
+export async function ReadPlayers({ tournamentId }: { tournamentId: string }) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const players = tournament?.players;
+    return {
+      success: true,
+      data: players,
+    };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
 export async function ReadUser({ userId }: { userId: string }) {
   try {
     const docRef = doc(db, "app_users", userId);
@@ -244,6 +266,24 @@ export async function ReadTournaments() {
     return {
       success: true,
       data: tournaments,
+    };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
+export async function ReadTransactions({
+  tournamentId,
+}: {
+  tournamentId: string;
+}) {
+  try {
+    const transactions: Array<Transaction>[] = [];
+    const { data: players } = (await ReadPlayers({ tournamentId })) || {};
+    players.forEach((p: Player) => transactions.push(p.transactions));
+    return {
+      success: true,
+      data: transactions.flat(),
     };
   } catch (error) {
     getErrorMessage(error);
