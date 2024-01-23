@@ -38,7 +38,7 @@ export default function Search({ open, setOpen }: Props) {
     >
       <Command shouldFilter={false}>
         <CommandInput
-          placeholder="Type a command or search..."
+          placeholder="Gyarados"
           value={query}
           onValueChange={(search) => setQuery(search)}
         />
