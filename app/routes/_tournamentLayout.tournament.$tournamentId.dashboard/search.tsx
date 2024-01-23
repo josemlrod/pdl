@@ -29,7 +29,13 @@ export default function Search({ open, setOpen }: Props) {
         });
 
   return (
-    <CommandDialog open={open} onOpenChange={setOpen}>
+    <CommandDialog
+      open={open}
+      onOpenChange={(open) => {
+        setQuery("");
+        setOpen(false);
+      }}
+    >
       <Command shouldFilter={false}>
         <CommandInput
           placeholder="Type a command or search..."
