@@ -1,13 +1,15 @@
-import { NavLink, useMatches, useOutletContext } from "@remix-run/react";
+import { useState } from "react";
+import { ActionFunctionArgs, json } from "@remix-run/node";
+import { NavLink, useMatches } from "@remix-run/react";
+import { cn } from "@/lib/utils";
+import { AddPlayer, type Player } from "~/services/firebase";
+import { buttonVariants } from "@/components/ui/button";
 
 import EmptyState from "./empty-state";
 import PokemonList, { type Pokemon } from "./pokemon-list";
 import CardLayout from "./card";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import { AddPlayer, type Player } from "~/services/firebase";
 import SheetButton from "./sheet";
-import { ActionFunctionArgs, json } from "@remix-run/node";
+import Search from "./search";
 
 export default function TournamentDashboard() {
   const matches = useMatches();
@@ -19,6 +21,8 @@ export default function TournamentDashboard() {
     tournamentLayoutMatch.data &&
     tournamentLayoutMatch.data.data;
   const { tournament, noPlayers } = tournamentLayoutData;
+
+  const [openSearch, setOpenSearch] = useState(false);
 
   const usersIcon = (
     <svg
@@ -119,10 +123,9 @@ export default function TournamentDashboard() {
                 <button
                   className={cn(buttonVariants({ variant: "default" }))}
                   disabled={!canAddMorePokemon}
-                  // onClick={() => {
-                  //   setOpenSearch(true);
-                  //   setSelectedPlayer(u);
-                  // }}
+                  onClick={() => {
+                    setOpenSearch(true);
+                  }}
                   type="button"
                 >
                   Search
@@ -141,6 +144,7 @@ export default function TournamentDashboard() {
           />
         );
       })}
+      <Search open={openSearch} setOpen={setOpenSearch} />
     </div>
   );
 }
