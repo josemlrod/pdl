@@ -278,7 +278,7 @@ export default function TournamentLayout() {
         </div>
 
         <main
-          className="py-4 sm:py-10 overflow-scroll flex"
+          className="py-4 sm:py-10 overflow-y-scroll flex"
           style={{ height: `calc(100dvh - 64px)` }}
         >
           <div className="px-4 sm:px-6 lg:px-8 grow">
