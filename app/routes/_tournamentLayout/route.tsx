@@ -13,8 +13,9 @@ import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ThemeToggle";
 import { LoaderFunctionArgs, json, redirect } from "@remix-run/node";
-import { getErrorMessage } from "~/services/utils";
-import { ReadTournament } from "~/services/firebase";
+import { getErrorMessage, getIsAdmin } from "~/services/utils";
+import { ReadTournament, ReadUser } from "~/services/firebase";
+import { authCookie } from "~/sessions.server";
 
 const navigation = [
   { name: "Dashboard", href: "dashboard", icon: HomeIcon, current: true },
@@ -27,8 +28,18 @@ const navigation = [
   },
 ];
 
-export async function loader({ params }: LoaderFunctionArgs) {
+export async function loader({ params, request }: LoaderFunctionArgs) {
   const { tournamentId } = params;
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
+  const readUserResponse = await ReadUser({ userId });
+  user =
+    readUserResponse && typeof readUserResponse !== "string"
+      ? readUserResponse.data
+      : null;
+
   if (tournamentId) {
     try {
       const readTournamentResponse = await ReadTournament({ id: tournamentId });
@@ -50,6 +61,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
         data: {
           tournament,
           noPlayers,
+          isAdmin: getIsAdmin(user),
         },
       });
     } catch (e) {
@@ -62,7 +74,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
 
 export default function TournamentLayout() {
   const {
-    data: { tournament, noPlayers },
+    data: { tournament, noPlayers, isAdmin },
   } = useLoaderData<typeof loader>();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -220,7 +232,7 @@ export default function TournamentLayout() {
                 </div>
                 <ul role="list" className="-mx-2 mt-2 space-y-1">
                   <li key="new-match">
-                    {noPlayers ? (
+                    {noPlayers || !isAdmin ? (
                       <Button className="gap-2" disabled variant="link">
                         <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium">
                           N

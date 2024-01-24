@@ -5,6 +5,12 @@ type ErrorWithMessage = {
   message: string;
 };
 
+export type User = {
+  displayName: string;
+  email: string;
+  id: string;
+};
+
 function isErrorWithMessage(error: unknown): error is ErrorWithMessage {
   return (
     typeof error === "object" &&
@@ -74,4 +80,14 @@ export const sortPlayers = (players: Player[]) => {
 
     return b.record.wins - a.record.wins;
   });
+};
+
+export const getIsAdmin = (user: User) => {
+  if (user) {
+    if (user.id === "d93e4d2a-5830-442a-bcd3-58a1d2f819fc") {
+      return true;
+    }
+  }
+
+  return false;
 };

@@ -19,8 +19,34 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ActionFunctionArgs, redirect } from "@remix-run/node";
-import { AddTournament } from "~/services/firebase";
+import {
+  ActionFunctionArgs,
+  LoaderFunctionArgs,
+  json,
+  redirect,
+} from "@remix-run/node";
+import { AddTournament, ReadUser } from "~/services/firebase";
+import { authCookie } from "~/sessions.server";
+import { getIsAdmin } from "~/services/utils";
+
+export async function loader({ request }: LoaderFunctionArgs) {
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
+  const readUserResponse = userId ? await ReadUser({ userId }) : null;
+  user =
+    readUserResponse && typeof readUserResponse !== "string"
+      ? readUserResponse.data
+      : null;
+  const isAdmin = getIsAdmin(user);
+
+  if (isAdmin) {
+    return json({});
+  }
+
+  return redirect("/home");
+}
 
 export default function NewTournament() {
   const navigate = useNavigate();

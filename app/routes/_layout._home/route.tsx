@@ -1,9 +1,11 @@
-import { json, type MetaFunction } from "@remix-run/node";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { getErrorMessage } from "~/services/utils";
-import { ReadTournaments } from "~/services/firebase";
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
+import { json, LoaderFunctionArgs, type MetaFunction } from "@remix-run/node";
+
+import { Button, buttonVariants } from "@/components/ui/button";
+import { getErrorMessage, getIsAdmin } from "~/services/utils";
+import { ReadTournaments, ReadUser } from "~/services/firebase";
 import { cn } from "@/lib/utils";
+import { authCookie } from "~/sessions.server";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,19 +17,37 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export async function loader() {
+export async function loader({ request }: LoaderFunctionArgs) {
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
   try {
     const tournaments = await ReadTournaments();
-    return json({ data: tournaments?.data ?? null });
+    const readUserResponse = userId ? await ReadUser({ userId }) : null;
+    user =
+      readUserResponse && typeof readUserResponse !== "string"
+        ? readUserResponse.data
+        : null;
+
+    return json({
+      data: {
+        tournaments: tournaments?.data ?? null,
+        user,
+      },
+    });
   } catch (error) {
     getErrorMessage(error);
   }
 }
 
 export default function Home() {
-  const { data: tournaments } = useLoaderData<typeof loader>();
+  const {
+    data: { tournaments, user },
+  } = useLoaderData<typeof loader>();
   const hasTournaments =
     tournaments && Array.isArray(tournaments) && tournaments.length;
+  const isAdmin = getIsAdmin(user);
 
   return (
     <div
@@ -36,7 +56,7 @@ export default function Home() {
     >
       <section className="py-6 sm:10 md:py-14">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 gap-y-4 flex flex-col">
-          <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mx-auto max-w-2xl md:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
               👋
             </h2>
@@ -46,9 +66,22 @@ export default function Home() {
               players' transactions!
             </p>
           </div>
-          <Button className="w-fit" variant="default">
-            New
-          </Button>
+          {isAdmin ? (
+            <Link
+              className={cn(buttonVariants({ variant: "default" }), "w-fit")}
+              to="../new-tournament"
+            >
+              New
+            </Link>
+          ) : (
+            <Button
+              className="w-fit cursor-not-allowed"
+              disabled
+              variant="default"
+            >
+              New
+            </Button>
+          )}
         </div>
       </section>
 
@@ -68,19 +101,29 @@ export default function Home() {
                       buttonVariants({ variant: "secondary" }),
                       "py-8 justify-between flex grow"
                     )}
-                    to="/"
+                    to={`../tournament/${t.id}/dashboard`}
                   >
                     {t.name}
                   </Link>
-                  <Link
-                    className={cn(
-                      buttonVariants({ variant: "secondary" }),
-                      "py-8"
-                    )}
-                    to={`../edit/${t.id}`}
-                  >
-                    Edit
-                  </Link>
+                  {isAdmin ? (
+                    <Link
+                      className={cn(
+                        buttonVariants({ variant: "secondary" }),
+                        "py-8"
+                      )}
+                      to={`../edit/${t.id}`}
+                    >
+                      Edit
+                    </Link>
+                  ) : (
+                    <Button
+                      className="w-fit py-8 cursor-not-allowed"
+                      disabled
+                      variant="secondary"
+                    >
+                      Edit
+                    </Button>
+                  )}
                 </div>
               ))}
             </div>

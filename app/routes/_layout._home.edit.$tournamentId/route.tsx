@@ -25,12 +25,24 @@ import {
   json,
   redirect,
 } from "@remix-run/node";
-import { AddTournament, ReadTournament } from "~/services/firebase";
-import { getErrorMessage } from "~/services/utils";
+import { AddTournament, ReadTournament, ReadUser } from "~/services/firebase";
+import { getErrorMessage, getIsAdmin } from "~/services/utils";
+import { authCookie } from "~/sessions.server";
 
-export async function loader({ params }: LoaderFunctionArgs) {
+export async function loader({ params, request }: LoaderFunctionArgs) {
   const { tournamentId } = params;
-  if (tournamentId) {
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
+  const readUserResponse = userId ? await ReadUser({ userId }) : null;
+  user =
+    readUserResponse && typeof readUserResponse !== "string"
+      ? readUserResponse.data
+      : null;
+  const isAdmin = getIsAdmin(user);
+
+  if (tournamentId && isAdmin) {
     try {
       const readTournamentResponse = await ReadTournament({ id: tournamentId });
       const tournament =

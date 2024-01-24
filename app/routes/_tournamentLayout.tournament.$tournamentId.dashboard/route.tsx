@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { ActionFunctionArgs, json } from "@remix-run/node";
-import { NavLink, useMatches } from "@remix-run/react";
+import { ActionFunctionArgs, LoaderFunctionArgs, json } from "@remix-run/node";
+import { NavLink, useLoaderData, useMatches } from "@remix-run/react";
 import { cn } from "@/lib/utils";
-import { AddPlayer, type Player } from "~/services/firebase";
+import { AddPlayer, ReadUser, type Player } from "~/services/firebase";
 import { buttonVariants } from "@/components/ui/button";
 
 import EmptyState from "./empty-state";
@@ -10,8 +10,25 @@ import PokemonList, { type Pokemon } from "./pokemon-list";
 import CardLayout from "./card";
 import SheetButton from "./sheet";
 import Search from "./search";
+import { authCookie } from "~/sessions.server";
+import { getIsAdmin } from "~/services/utils";
+
+export async function loader({ request }: LoaderFunctionArgs) {
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
+  const readUserResponse = await ReadUser({ userId });
+  user =
+    readUserResponse && typeof readUserResponse !== "string"
+      ? readUserResponse.data
+      : null;
+
+  return json({ user: user ?? null });
+}
 
 export default function TournamentDashboard() {
+  const { user } = useLoaderData<typeof loader>();
   const matches = useMatches();
   const tournamentLayoutMatch = matches.find(
     (m) => m.id === "routes/_tournamentLayout"
@@ -21,6 +38,7 @@ export default function TournamentDashboard() {
     tournamentLayoutMatch.data &&
     tournamentLayoutMatch.data.data;
   const { tournament, noPlayers } = tournamentLayoutData;
+  const isAdmin = getIsAdmin(user);
 
   const [openSearch, setOpenSearch] = useState(false);
 
@@ -122,7 +140,7 @@ export default function TournamentDashboard() {
                 />
                 <button
                   className={cn(buttonVariants({ variant: "default" }))}
-                  disabled={!canAddMorePokemon}
+                  disabled={!canAddMorePokemon || !isAdmin}
                   onClick={() => {
                     setOpenSearch(true);
                   }}
