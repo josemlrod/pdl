@@ -82,7 +82,7 @@ export default function TournamentDashboard() {
       title="No players added"
     />
   ) : (
-    <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 justify-center my-4">
+    <div className="py-4 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2">
       {tournament.players.map((p: Player, i: number) => {
         const hasAddedPokemon =
           p.pokemon && Array.isArray(p.pokemon) && p.pokemon.length;
