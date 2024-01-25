@@ -181,6 +181,23 @@ export async function ReadPlayers({ tournamentId }: { tournamentId: string }) {
   }
 }
 
+export async function ReadPlayerByName({
+  name,
+  tournamentId,
+}: {
+  name: string;
+  tournamentId: string;
+}) {
+  try {
+    const { data: players } = (await ReadPlayers({ tournamentId })) || {};
+    const [player] = players.filter((p: Player) => p.name === name);
+
+    return { success: true, data: player };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
 export async function ReadUser({ userId }: { userId: string }) {
   try {
     const docRef = doc(db, "app_users", userId);
