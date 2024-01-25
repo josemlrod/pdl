@@ -81,7 +81,7 @@ export default function NewTransaction() {
   const playerNames = players.map((p: Player) => p.name);
 
   return (
-    <Dialog open onOpenChange={() => navigate("/home")}>
+    <Dialog open onOpenChange={() => navigate(-1)}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Add new transaction</DialogTitle>
@@ -257,9 +257,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
         tournamentId,
       });
     }
-
-    return redirect(`/tournament/${tournamentId}/transactions`);
   }
 
-  return redirect("/home");
+  return redirect(`/tournament/${tournamentId}/transactions`);
 }
