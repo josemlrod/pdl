@@ -54,11 +54,14 @@ export default function TournamentDashboard() {
   );
 
   return noPlayers ? (
-    <EmptyState
-      icon={usersIcon}
-      subtitle="Get started by adding a player"
-      title="No players added"
-    />
+    <>
+      <EmptyState
+        icon={usersIcon}
+        subtitle="Get started by adding a player"
+        title="No players added"
+      />
+      <Outlet context={{ players: tournament.players }} />
+    </>
   ) : (
     <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 justify-center my-4">
       {tournament.players.map((p: Player, i: number) => {

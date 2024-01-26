@@ -66,6 +66,12 @@ type Pokemon = {
   };
 };
 
+type UpdatePlayerPokemonProps = {
+  tournamentId: string;
+  playerId: string;
+  pokemon: Partial<Pokemon>;
+};
+
 type Transaction = {
   in: string;
   out: string;
@@ -302,6 +308,59 @@ export async function ReadTransactions({
       success: true,
       data: transactions.flat(),
     };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
+export async function UpdatePlayerPokemon({
+  tournamentId,
+  playerId,
+  pokemon: { githubName, name, pts },
+}: UpdatePlayerPokemonProps) {
+  try {
+    const { data: player } =
+      (await ReadPlayer({ tournamentId, playerId })) || {};
+    let playerPokemon = player?.pokemon;
+
+    if (playerPokemon && Array.isArray(playerPokemon)) {
+      playerPokemon = [
+        ...playerPokemon,
+        {
+          githubName,
+          name,
+          id: crypto.randomUUID(),
+          pts,
+          record: {
+            faints: 0,
+            kills: 0,
+          },
+        },
+      ];
+    } else {
+      playerPokemon = [
+        {
+          githubName,
+          name,
+          id: crypto.randomUUID(),
+          pts,
+          record: {
+            faints: 0,
+            kills: 0,
+          },
+        },
+      ];
+    }
+
+    const newPlayer = { ...player, pokemon: playerPokemon };
+
+    await AddPlayer({
+      tournamentId,
+      playerId,
+      ...newPlayer,
+    });
+
+    return { success: true, data: newPlayer };
   } catch (error) {
     getErrorMessage(error);
   }

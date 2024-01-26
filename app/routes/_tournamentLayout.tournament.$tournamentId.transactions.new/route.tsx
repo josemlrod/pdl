@@ -37,8 +37,8 @@ import Data from "../../data.json";
 import type { Pokemon } from "../_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
 
 export const TransactionTypes = Object.freeze({
-  TERA_CAPTAIN: "Tera captain",
-  TRANSFER: "Transfer",
+  TERA_CAPTAIN: "tera captain",
+  TRANSFER: "transfer",
 });
 
 export async function loader({ params, request }: LoaderFunctionArgs) {

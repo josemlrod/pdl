@@ -4,6 +4,7 @@ import { NavLink, useLoaderData, useMatches } from "@remix-run/react";
 import { cn } from "@/lib/utils";
 import { AddPlayer, ReadUser, type Player } from "~/services/firebase";
 import { buttonVariants } from "@/components/ui/button";
+import FloatingActionButton from "@/components/floating-action-button";
 
 import EmptyState from "./empty-state";
 import PokemonList, { type Pokemon } from "./pokemon-list";
@@ -41,6 +42,7 @@ export default function TournamentDashboard() {
   const isAdmin = getIsAdmin(user);
 
   const [openSearch, setOpenSearch] = useState(false);
+  const [searchPlayer, setSearchPlayer] = useState<Player | null>(null);
 
   const usersIcon = (
     <svg
@@ -76,11 +78,14 @@ export default function TournamentDashboard() {
   );
 
   return noPlayers ? (
-    <EmptyState
-      icon={usersIcon}
-      subtitle="Get started by adding a player"
-      title="No players added"
-    />
+    <>
+      <EmptyState
+        icon={usersIcon}
+        subtitle="Get started by adding a player"
+        title="No players added"
+      />
+      <FloatingActionButton pathname="../new-player" />
+    </>
   ) : (
     <div className="py-4 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2">
       {tournament.players.map((p: Player, i: number) => {
@@ -143,6 +148,7 @@ export default function TournamentDashboard() {
                   disabled={!canAddMorePokemon || !isAdmin}
                   onClick={() => {
                     setOpenSearch(true);
+                    setSearchPlayer(p);
                   }}
                   type="button"
                 >
@@ -162,7 +168,8 @@ export default function TournamentDashboard() {
           />
         );
       })}
-      <Search open={openSearch} setOpen={setOpenSearch} />
+      <Search open={openSearch} setOpen={setOpenSearch} player={searchPlayer} />
+      <FloatingActionButton pathname="../new-player" />
     </div>
   );
 }

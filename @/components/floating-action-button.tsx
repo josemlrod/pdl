@@ -11,7 +11,7 @@ export default function FloatingActionButton({
   return (
     <NavLink
       className={cn(
-        buttonVariants({ variant: "outline" }),
+        buttonVariants({ variant: "default" }),
         "fixed bottom-9 right-14 rounded-full px-1"
       )}
       relative="path"

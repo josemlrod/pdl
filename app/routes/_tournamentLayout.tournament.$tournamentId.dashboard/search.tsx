@@ -11,13 +11,18 @@ import { PlusIcon } from "@heroicons/react/24/outline";
 import { cn } from "@/lib/utils";
 import Data from "../../data.json";
 import { Command } from "cmdk";
+import type { Player } from "~/services/firebase";
+import { useParams, useSubmit } from "@remix-run/react";
 
 type Props = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  player: Player | null;
 };
 
-export default function Search({ open, setOpen }: Props) {
+export default function Search({ open, setOpen, player }: Props) {
+  const { tournamentId } = useParams();
+  const submit = useSubmit();
   const [query, setQuery] = useState("");
 
   const { data } = Data;
@@ -47,7 +52,26 @@ export default function Search({ open, setOpen }: Props) {
             <CommandEmpty>No results found.</CommandEmpty>
             <CommandGroup>
               {filteredItems.map((item, i) => (
-                <CommandItem key={i}>
+                <CommandItem
+                  key={i}
+                  onSelect={() => {
+                    submit(
+                      {
+                        player_id: player.id,
+                        pokemon_name: item.name,
+                        github_name: item.github_name,
+                        pokemon_pts: item.pts,
+                        tournament_id: tournamentId,
+                      },
+                      {
+                        action: "/add-pokemon",
+                        method: "POST",
+                        encType: "application/x-www-form-urlencoded",
+                      }
+                    );
+                    setOpen(false);
+                  }}
+                >
                   <div
                     className={cn(
                       "flex h-10 w-10 flex-none items-center justify-center rounded-lg"
