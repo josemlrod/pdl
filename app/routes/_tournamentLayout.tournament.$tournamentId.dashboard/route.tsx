@@ -84,7 +84,7 @@ export default function TournamentDashboard() {
         subtitle="Get started by adding a player"
         title="No players added"
       />
-      <FloatingActionButton pathname="../new-player" />
+      <FloatingActionButton isAdmin={isAdmin} pathname="../new-player" />
     </>
   ) : (
     <div className="py-4 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2">
@@ -169,7 +169,7 @@ export default function TournamentDashboard() {
         );
       })}
       <Search open={openSearch} setOpen={setOpenSearch} player={searchPlayer} />
-      <FloatingActionButton pathname="../new-player" />
+      <FloatingActionButton isAdmin={isAdmin} pathname="../new-player" />
     </div>
   );
 }

@@ -2,23 +2,35 @@ import { Fragment } from "react";
 import { Outlet, useLoaderData, useSearchParams } from "@remix-run/react";
 import { type LoaderFunctionArgs, json, redirect } from "@remix-run/node";
 
-import { ReadTransactions } from "~/services/firebase";
+import { ReadTransactions, ReadUser } from "~/services/firebase";
 import FloatingActionButton from "@/components/floating-action-button";
+import { authCookie } from "~/sessions.server";
+import { getIsAdmin } from "~/services/utils";
 
-export async function loader({ params }: LoaderFunctionArgs) {
+export async function loader({ params, request }: LoaderFunctionArgs) {
   const { tournamentId } = params;
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
+  const readUserResponse = await ReadUser({ userId });
+  user =
+    readUserResponse && typeof readUserResponse !== "string"
+      ? readUserResponse.data
+      : null;
+  const isAdmin = user ? getIsAdmin(user) : false;
 
   if (tournamentId) {
     const transactions = await ReadTransactions({ tournamentId });
 
-    return json({ transactions: transactions?.data });
+    return json({ transactions: transactions?.data, isAdmin });
   }
 
   return redirect("/home");
 }
 
 export default function Transactions() {
-  const { transactions } = useLoaderData<typeof loader>();
+  const { isAdmin, transactions } = useLoaderData<typeof loader>();
 
   const [searchParams] = useSearchParams();
 
@@ -89,7 +101,7 @@ export default function Transactions() {
         </div>
       </div>
 
-      <FloatingActionButton pathname="new" />
+      <FloatingActionButton isAdmin={isAdmin} pathname="new" />
       <Outlet />
     </Fragment>
   );
