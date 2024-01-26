@@ -32,6 +32,7 @@ const groupB = [
   "7e5177cc-161f-45c0-acf3-c7f4f4d50591",
   "3575b97b-e180-48ea-8952-5f03ff23be84",
   "f79ed181-f9ca-4a02-b2b4-9090993818e0",
+  "245f9051-18e7-4d14-a339-9b005cdf4a7e",
 ];
 
 export async function loader({ params }: LoaderFunctionArgs) {
