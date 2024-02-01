@@ -79,6 +79,27 @@ type Transaction = {
   type: "Transfer" | "Tera captain";
 };
 
+type Match = {
+  date: Date;
+  id: string;
+  playerNames: [string, string];
+  pokemonTeams: {
+    [key: string]: Array<string>;
+  };
+  results: {
+    [key: string]: Array<Pokemon>;
+  };
+  userRecords: {
+    [key: string]: {
+      loses: number;
+      wins: number;
+    };
+  };
+  winner: Player;
+};
+
+type AddMatchProps = { tournamentId: string; matchId: string } & Partial<Match>;
+
 export async function AddUser({
   email,
   displayName,
@@ -361,6 +382,76 @@ export async function UpdatePlayerPokemon({
     });
 
     return { success: true, data: newPlayer };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
+export async function AddMatch({
+  tournamentId,
+  matchId,
+  ...rest
+}: AddMatchProps) {
+  try {
+    const { data } = (await ReadMatch({ tournamentId, matchId })) || {};
+    const matchExists = data && Object.entries(data).length;
+
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const matches = tournament.matches;
+
+    if (matchExists) {
+      const newMatches = matches.map((m: Match) => {
+        if (m.id === matchId) {
+          return {
+            ...m,
+            ...rest,
+          };
+        }
+        return m;
+      });
+      await updateDoc(tournamentDocRef, {
+        matches: newMatches,
+      });
+    } else {
+      await updateDoc(tournamentDocRef, {
+        matches: arrayUnion({
+          id: matchId,
+          ...rest,
+        }),
+      });
+
+      return { success: true };
+    }
+
+    return { id: matchId, success: true };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
+export async function ReadMatch({
+  tournamentId,
+  matchId,
+}: {
+  tournamentId: string;
+  matchId: string;
+}) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const match =
+      tournament &&
+      Array.isArray(tournament.matches) &&
+      tournament.matches.find((m) => m.id === matchId);
+
+    if (match) {
+      return { success: true, data: match };
+    } else {
+      return { success: true, data: {} };
+    }
   } catch (error) {
     getErrorMessage(error);
   }

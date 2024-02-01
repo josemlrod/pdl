@@ -1,12 +1,6 @@
 import { Outlet, useLoaderData, useNavigate } from "@remix-run/react";
 import { type LoaderFunctionArgs, json, redirect } from "@remix-run/node";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ReadPlayers } from "~/services/firebase";
 
 export async function loader({ params }: LoaderFunctionArgs) {

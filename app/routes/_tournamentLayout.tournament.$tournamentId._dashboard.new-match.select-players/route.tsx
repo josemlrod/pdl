@@ -1,5 +1,5 @@
 import { useFetcher, useOutletContext } from "@remix-run/react";
-import { ActionFunctionArgs, json, redirect } from "@remix-run/node";
+import { ActionFunctionArgs, redirect } from "@remix-run/node";
 import { Button } from "@/components/ui/button";
 import {
   DialogFooter,
@@ -127,7 +127,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
     return errors;
   } else {
     return redirect(
-      `/tournament/${tournamentId}/new-match/select-pokemon?playerOne={${player_one}}&playerTwo={${player_two}}`
+      `/tournament/${tournamentId}/new-match/select-pokemon?playerOne=${player_one}&playerTwo=${player_two}`
     );
   }
 }
