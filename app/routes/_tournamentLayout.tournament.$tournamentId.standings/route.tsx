@@ -287,9 +287,9 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
               {remainingKillLeaders.map((p) => (
                 <li
                   key={p.id}
-                  className="overflow-hidden rounded-md bg-slate-100 px-6 py-4 shadow flex justify-between"
+                  className="overflow-hidden rounded-md bg-primary-foreground px-6 py-4 shadow flex justify-between"
                 >
-                  <p className="text-sm font-medium text-gray-900">{p.name}</p>
+                  <p className="text-sm font-medium">{p.name}</p>
                   <p className="text-xs font-medium text-green-700">
                     {p.record.kills}
                   </p>
@@ -300,7 +300,7 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
         </li>
         <li
           key={faintsLeader.id}
-          className="col-span-1 rounded-lg bg-white text-center shadow grid grid-cols-1 sm:grid-cols-2"
+          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2"
         >
           <div className="flex flex-1 flex-col p-8">
             <img
@@ -308,9 +308,7 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
               src={faintsLeaderSpriteUrl}
               alt=""
             />
-            <h3 className="mt-6 text-sm font-medium text-gray-900">
-              {faintsLeader.name}
-            </h3>
+            <h3 className="mt-6 text-sm font-medium">{faintsLeader.name}</h3>
             <dl className="mt-1 flex flex-grow flex-col justify-between">
               <dt className="sr-only">Title</dt>
               <dd className="text-sm text-gray-500">Faints leader</dd>
@@ -327,9 +325,9 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
               {remainingFaintsLeaders.map((p) => (
                 <li
                   key={p.id}
-                  className="overflow-hidden rounded-md bg-slate-100 px-6 py-4 shadow flex justify-between"
+                  className="overflow-hidden rounded-md bg-primary-foreground px-6 py-4 shadow flex justify-between"
                 >
-                  <p className="text-sm font-medium text-gray-900">{p.name}</p>
+                  <p className="text-sm font-medium">{p.name}</p>
                   <p className="text-xs font-medium text-green-700">
                     {p.record.faints}
                   </p>
