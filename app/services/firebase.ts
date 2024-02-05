@@ -10,6 +10,7 @@ import {
   arrayUnion,
 } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { v4 as uuidv4 } from "uuid";
 
 import { getErrorMessage } from "./utils";
 
@@ -350,7 +351,7 @@ export async function UpdatePlayerPokemon({
         {
           githubName,
           name,
-          id: crypto.randomUUID(),
+          id: uuidv4(),
           pts,
           record: {
             faints: 0,
@@ -363,7 +364,7 @@ export async function UpdatePlayerPokemon({
         {
           githubName,
           name,
-          id: crypto.randomUUID(),
+          id: uuidv4(),
           pts,
           record: {
             faints: 0,

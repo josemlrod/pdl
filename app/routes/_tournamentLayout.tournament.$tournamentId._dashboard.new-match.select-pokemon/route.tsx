@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useFetcher, useLocation, useOutletContext } from "@remix-run/react";
 import { ActionFunctionArgs, json, redirect } from "@remix-run/node";
+import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import {
   DialogFooter,
@@ -214,7 +215,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
     return errors;
   }
 
-  const matchId = crypto.randomUUID();
+  const matchId = uuidv4();
   await AddMatch({
     matchId,
     tournamentId: tournamentId ?? "",

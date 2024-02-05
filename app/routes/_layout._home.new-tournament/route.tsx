@@ -1,4 +1,5 @@
 import { useFetcher, useNavigate } from "@remix-run/react";
+import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -134,7 +135,7 @@ export async function action({ request }: ActionFunctionArgs) {
   const format = String(bodyData.format);
 
   await AddTournament({
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     name,
     player_num: playerNum,
     format,

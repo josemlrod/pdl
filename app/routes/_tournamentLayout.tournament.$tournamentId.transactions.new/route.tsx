@@ -1,4 +1,5 @@
 import { useFetcher, useLoaderData, useNavigate } from "@remix-run/react";
+import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -229,7 +230,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
           ? {
               githubName: incomingPokemon.github_name,
               name: incomingPokemon.name,
-              id: crypto.randomUUID(),
+              id: uuidv4(),
               pts: incomingPokemon.pts,
               record: {
                 faints: 0,

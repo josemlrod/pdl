@@ -1,5 +1,6 @@
 import { useFetcher, useNavigate } from "@remix-run/react";
 import { ActionFunctionArgs, redirect } from "@remix-run/node";
+import { v4 as uuidv4 } from "uuid";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -83,7 +84,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
   const { name, team_name } = bodyData;
 
   if (tournamentId) {
-    const playerId = crypto.randomUUID();
+    const playerId = uuidv4();
     await AddPlayer({
       tournamentId,
       id: playerId,

@@ -258,7 +258,7 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
 
   return (
     (havePlayedAnyGames && (
-      <ul className="grid grid-cols-2 gap-6">
+      <ul className="grid grid-cols-2 gap-6 border-primary">
         <li
           key={killLeader.id}
           className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2"
