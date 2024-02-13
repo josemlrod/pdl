@@ -84,7 +84,10 @@ export const sortPlayers = (players: Player[]) => {
 
 export const getIsAdmin = (user: User) => {
   if (user) {
-    if (user.id === "d93e4d2a-5830-442a-bcd3-58a1d2f819fc") {
+    if (
+      user.id === "d93e4d2a-5830-442a-bcd3-58a1d2f819fc" ||
+      user.id === "b875cb35-88ca-4473-8c11-bc5bc27cac54"
+    ) {
       return true;
     }
   }
