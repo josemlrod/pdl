@@ -1,4 +1,9 @@
-import { useFetcher, useLoaderData, useNavigate } from "@remix-run/react";
+import {
+  useFetcher,
+  useLoaderData,
+  useNavigate,
+  useSearchParams,
+} from "@remix-run/react";
 import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import {
@@ -36,6 +41,7 @@ import { getErrorMessage, getIsAdmin } from "~/services/utils";
 import { authCookie } from "~/sessions.server";
 import Data from "../../data.json";
 import type { Pokemon } from "../_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
+import { useEffect, useState } from "react";
 
 export const TransactionTypes = Object.freeze({
   TERA_CAPTAIN: "tera captain",
@@ -58,6 +64,7 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
   if (tournamentId && isAdmin) {
     try {
       const readPlayersResponse = await ReadPlayers({ tournamentId });
+      console.log(readPlayersResponse.data);
       const players =
         readPlayersResponse &&
         readPlayersResponse.data &&
@@ -80,6 +87,22 @@ export default function NewTransaction() {
   const fetcher = useFetcher();
   const { data: players } = useLoaderData<typeof loader>();
   const playerNames = players.map((p: Player) => p.name);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const selectedPlayer = searchParams.get("selected_player");
+
+  useEffect(() => {
+    if (selectedPlayer) return;
+
+    const params = new URLSearchParams();
+    params.set("selected_player", playerNames[0]);
+    setSearchParams(params, {
+      preventScrollReset: true,
+    });
+  }, []);
+
+  const selectedPlayerPokemon = selectedPlayer
+    ? players.find((p: Player) => p.name === selectedPlayer).pokemon
+    : [];
 
   return (
     <Dialog open onOpenChange={() => navigate(-1)}>
@@ -118,14 +141,24 @@ export default function NewTransaction() {
               <Label htmlFor="outgoing_pokemon" className="text-right">
                 Outgoing pokemon
               </Label>
-              <Input
-                id="outgoing_pokemon"
+              <Select
+                defaultValue={selectedPlayerPokemon[0].githubName}
                 name="outgoing_pokemon"
-                placeholder="Muk"
-                defaultValue={""}
-                className="col-span-3"
-                type="text"
-              />
+                required
+              >
+                <SelectTrigger className="w-[180px] col-span-3">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    {selectedPlayerPokemon.map((p: Pokemon, idx: number) => (
+                      <SelectItem key={idx} value={p.githubName}>
+                        {p.githubName}
+                      </SelectItem>
+                    ))}
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
               <Label htmlFor="incoming_pokemon" className="text-right">
                 Incoming pokemon
               </Label>
