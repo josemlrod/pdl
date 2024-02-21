@@ -90,6 +90,18 @@ export default function NewTransaction() {
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedPlayer = searchParams.get("selected_player");
 
+  const [incomingPokemonQuery, setIncomingPokemonQuery] = useState("");
+
+  const { data } = Data;
+  const filteredItems =
+    incomingPokemonQuery === ""
+      ? []
+      : data.filter((item) => {
+          return item.name
+            .toLowerCase()
+            .includes(incomingPokemonQuery.toLowerCase());
+        });
+
   useEffect(() => {
     if (selectedPlayer) return;
 
@@ -142,7 +154,11 @@ export default function NewTransaction() {
                 Outgoing pokemon
               </Label>
               <Select
-                defaultValue={selectedPlayerPokemon[0].githubName}
+                defaultValue={
+                  selectedPlayerPokemon[0]
+                    ? selectedPlayerPokemon[0].githubName
+                    : ""
+                }
                 name="outgoing_pokemon"
                 required
               >
@@ -166,10 +182,24 @@ export default function NewTransaction() {
                 id="incoming_pokemon"
                 name="incoming_pokemon"
                 placeholder="Rayquaza"
-                defaultValue={""}
-                className="col-span-3"
+                defaultValue={incomingPokemonQuery}
+                value={incomingPokemonQuery}
+                onChange={(e) => {
+                  const q = e.target.value;
+                  setIncomingPokemonQuery(q);
+                }}
+                className="col-span-2"
                 type="text"
               />
+              {filteredItems.length ? (
+                <span className="text-xs text-green-300">
+                  {filteredItems[0].github_name}
+                </span>
+              ) : incomingPokemonQuery ? (
+                <span>🚫</span>
+              ) : (
+                <span />
+              )}
               <Label htmlFor="transaction_type" className="text-right">
                 Transaction type
               </Label>
