@@ -102,22 +102,12 @@ export default function NewTransaction() {
             .includes(incomingPokemonQuery.toLowerCase());
         });
 
-  useEffect(() => {
-    if (selectedPlayer) return;
-
-    const params = new URLSearchParams();
-    params.set("selected_player", playerNames[0]);
-    setSearchParams(params, {
-      preventScrollReset: true,
-    });
-  }, []);
-
   const selectedPlayerPokemon = selectedPlayer
     ? players.find((p: Player) => p.name === selectedPlayer).pokemon
     : [];
 
   return (
-    <Dialog open onOpenChange={() => navigate(-1)}>
+    <Dialog open onOpenChange={() => navigate("..")}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Add new transaction</DialogTitle>
@@ -132,7 +122,16 @@ export default function NewTransaction() {
               <Label htmlFor="player_name" className="text-right">
                 Player name
               </Label>
-              <Select defaultValue={playerNames[0]} name="player_name" required>
+              <Select
+                defaultValue={String(selectedPlayer)}
+                name="player_name"
+                required
+                onValueChange={(value) => {
+                  const params = new URLSearchParams();
+                  params.set("selected_player", value);
+                  setSearchParams(params, { preventScrollReset: true });
+                }}
+              >
                 <SelectTrigger className="w-[180px]">
                   <SelectValue />
                 </SelectTrigger>
@@ -154,11 +153,7 @@ export default function NewTransaction() {
                 Outgoing pokemon
               </Label>
               <Select
-                defaultValue={
-                  selectedPlayerPokemon[0]
-                    ? selectedPlayerPokemon[0].githubName
-                    : ""
-                }
+                defaultValue={selectedPlayerPokemon[0].githubName}
                 name="outgoing_pokemon"
                 required
               >

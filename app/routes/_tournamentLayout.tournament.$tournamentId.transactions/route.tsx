@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Outlet, useLoaderData, useSearchParams } from "@remix-run/react";
 import { type LoaderFunctionArgs, json, redirect } from "@remix-run/node";
 
-import { ReadTransactions, ReadUser } from "~/services/firebase";
+import { ReadPlayers, ReadTransactions, ReadUser } from "~/services/firebase";
 import FloatingActionButton from "@/components/floating-action-button";
 import { authCookie } from "~/sessions.server";
 import { getIsAdmin } from "~/services/utils";
@@ -14,6 +14,12 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
   let user = null;
 
   const readUserResponse = await ReadUser({ userId });
+  const readPlayersResponse = await ReadPlayers({ tournamentId });
+  const players =
+    readPlayersResponse &&
+    readPlayersResponse.data &&
+    Object.entries(readPlayersResponse.data).length &&
+    readPlayersResponse.data;
   user =
     readUserResponse && typeof readUserResponse !== "string"
       ? readUserResponse.data
@@ -23,16 +29,15 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
   if (tournamentId) {
     const transactions = await ReadTransactions({ tournamentId });
 
-    return json({ transactions: transactions?.data, isAdmin });
+    return json({ transactions: transactions?.data, isAdmin, players });
   }
 
   return redirect("/home");
 }
 
 export default function Transactions() {
-  const { isAdmin, transactions } = useLoaderData<typeof loader>();
-
-  const [searchParams] = useSearchParams();
+  const { isAdmin, transactions, players } = useLoaderData<typeof loader>();
+  const [{ name: playerName }] = players;
 
   return (
     <Fragment>
@@ -101,7 +106,10 @@ export default function Transactions() {
         </div>
       </div>
 
-      <FloatingActionButton isAdmin={isAdmin} pathname="new" />
+      <FloatingActionButton
+        isAdmin={isAdmin}
+        pathname={`new?selected_player=${playerName}`}
+      />
       <Outlet />
     </Fragment>
   );
