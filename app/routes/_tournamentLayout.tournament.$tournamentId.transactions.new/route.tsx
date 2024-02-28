@@ -44,7 +44,7 @@ import type { Pokemon } from "../_tournamentLayout.tournament.$tournamentId.dash
 import { useEffect, useState } from "react";
 
 export const TransactionTypes = Object.freeze({
-  TERA_CAPTAIN: "tera captain",
+  TERA_CAPTAIN: "tera_captain",
   TRANSFER: "transfer",
 });
 
