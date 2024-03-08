@@ -6,6 +6,7 @@ import {
   HomeIcon,
   UsersIcon,
   XMarkIcon,
+  FireIcon,
 } from "@heroicons/react/24/outline";
 
 import { NavLink, Outlet, useLoaderData } from "@remix-run/react";
@@ -24,6 +25,12 @@ const navigation = [
     name: "Transactions",
     href: "transactions",
     icon: DocumentDuplicateIcon,
+    current: false,
+  },
+  {
+    name: "Knockout",
+    href: "ko",
+    icon: FireIcon,
     current: false,
   },
 ];
