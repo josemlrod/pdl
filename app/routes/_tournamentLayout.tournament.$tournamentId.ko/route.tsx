@@ -32,12 +32,14 @@ export default function Knockout() {
   } = getGroupTopPlayers(groupAPlayers);
 
   return (
-    <section className="h-full w-full flex flex-col pt-4">
-      <div className="w-full grow flex sm:gap-2 md:gap-4">
+    <section className="h-full w-full flex flex-col py-4">
+      <div className="w-full grow flex gap-2 md:gap-4">
         {/* Quarter finals column */}
-        <div className="grow flex flex-col justify-center items-center">
+        <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
           <div className="flex justify-center items-center bg-primary-foreground py-4 w-full rounded-xl">
-            <span>Quarter Finals</span>
+            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+              Quarter Finals
+            </span>
           </div>
 
           <div className="grow w-full flex justify-center items-center flex-col">
@@ -83,9 +85,11 @@ export default function Knockout() {
         </div>
 
         {/* Semi finals column */}
-        <div className="grow flex flex-col justify-center items-center">
+        <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
           <div className="flex justify-center items-center bg-primary-foreground py-4 w-full rounded-xl">
-            <span>Semi Finals</span>
+            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+              Semi Finals
+            </span>
           </div>
 
           <div className="grow w-full flex justify-center items-center flex-col">
@@ -111,9 +115,11 @@ export default function Knockout() {
         </div>
 
         {/* finals column */}
-        <div className="grow flex flex-col justify-center items-center">
+        <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
           <div className="flex justify-center items-center bg-primary-foreground py-4 w-full rounded-xl">
-            <span>Final</span>
+            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+              Final
+            </span>
           </div>
 
           <div className="grow w-full flex justify-center items-center flex-col">
@@ -158,7 +164,9 @@ function Divider({
 function PlayerBracket({ name }: { name: string }) {
   return (
     <div className="w-[75%] rounded-xl h-16 bg-primary-foreground flex justify-center items-center">
-      {name}
+      <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+        {name}
+      </span>
     </div>
   );
 }
