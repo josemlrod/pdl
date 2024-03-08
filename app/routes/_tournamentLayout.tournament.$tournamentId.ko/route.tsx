@@ -1,4 +1,36 @@
+import { LoaderFunctionArgs, json, redirect } from "@remix-run/node";
+
+import {
+  getGroupAPlayers,
+  getGroupTopPlayers,
+} from "../_tournamentLayout.tournament.$tournamentId.standings/utils";
+import { ReadPlayers } from "~/services/firebase";
+import { useLoaderData } from "@remix-run/react";
+
+export async function loader({ params }: LoaderFunctionArgs) {
+  const { tournamentId } = params;
+
+  if (tournamentId) {
+    const { data } = (await ReadPlayers({ tournamentId })) || {};
+
+    return json({
+      players: data,
+    });
+  }
+
+  return redirect("/home");
+}
+
 export default function Knockout() {
+  const { players } = useLoaderData<typeof loader>();
+  const groupAPlayers = getGroupAPlayers(players);
+  const {
+    firstPl: aFirstPl,
+    secondPl: aSecondPl,
+    thirdPl: aThirdPl,
+    fourthPl: aFourthPl,
+  } = getGroupTopPlayers(groupAPlayers);
+
   return (
     <section className="h-full w-full flex flex-col pt-4">
       <div className="w-full grow flex sm:gap-2 md:gap-4">
@@ -9,44 +41,44 @@ export default function Knockout() {
           </div>
 
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name={aFirstPl.name} />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="B's 4th place" />
           </div>
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name={aSecondPl.name} />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="B's 3rd place" />
           </div>
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="B's 1st place" />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name={aFourthPl.name} />
           </div>
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="B's 2nd place" />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name={aThirdPl.name} />
           </div>
         </div>
 
@@ -57,24 +89,24 @@ export default function Knockout() {
           </div>
 
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="Quarters 1 winner" />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="Quarters 2 winner" />
           </div>
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="Quarters 3 winner" />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="Quarters 4 winner" />
           </div>
         </div>
 
@@ -85,14 +117,14 @@ export default function Knockout() {
           </div>
 
           <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="Semis 1 winner" />
             <Divider
               childrenStyles={{ padding: "0 10px" }}
               containerStyles={{ width: "50%" }}
             >
               vs
             </Divider>
-            <PlayerBracket name="player_1" />
+            <PlayerBracket name="Semis 2 winner" />
           </div>
         </div>
       </div>
