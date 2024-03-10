@@ -6,6 +6,7 @@ import {
 } from "../_tournamentLayout.tournament.$tournamentId.standings/utils";
 import { ReadPlayers } from "~/services/firebase";
 import { useLoaderData } from "@remix-run/react";
+import { Button } from "@/components/ui/button";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const { tournamentId } = params;
@@ -42,46 +43,10 @@ export default function Knockout() {
             </span>
           </div>
 
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name={aFirstPl.name} />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name="B's 4th place" />
-          </div>
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name={aSecondPl.name} />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name="B's 3rd place" />
-          </div>
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="B's 1st place" />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name={aFourthPl.name} />
-          </div>
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="B's 2nd place" />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name={aThirdPl.name} />
-          </div>
+          <Match playerOneName={aFirstPl.name} playerTwoName="B's 4th place" />
+          <Match playerOneName={aSecondPl.name} playerTwoName="B's 3rd place" />
+          <Match playerOneName="B's 1st place" playerTwoName={aFourthPl.name} />
+          <Match playerOneName="B's 2nd place" playerTwoName={aThirdPl.name} />
         </div>
 
         {/* Semi finals column */}
@@ -92,26 +57,14 @@ export default function Knockout() {
             </span>
           </div>
 
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="Quarters 1 winner" />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name="Quarters 2 winner" />
-          </div>
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="Quarters 3 winner" />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name="Quarters 4 winner" />
-          </div>
+          <Match
+            playerOneName="Quarters 1 winner"
+            playerTwoName="Quarters 2 winner"
+          />
+          <Match
+            playerOneName="Quarters 3 winner"
+            playerTwoName="Quarters 4 winner"
+          />
         </div>
 
         {/* finals column */}
@@ -122,16 +75,10 @@ export default function Knockout() {
             </span>
           </div>
 
-          <div className="grow w-full flex justify-center items-center flex-col">
-            <PlayerBracket name="Semis 1 winner" />
-            <Divider
-              childrenStyles={{ padding: "0 10px" }}
-              containerStyles={{ width: "50%" }}
-            >
-              vs
-            </Divider>
-            <PlayerBracket name="Semis 2 winner" />
-          </div>
+          <Match
+            playerOneName="Semis 1 winner"
+            playerTwoName="Semis 2 winner"
+          />
         </div>
       </div>
     </section>
@@ -153,7 +100,7 @@ function Divider({
         <div className="w-full border-t border-gray-300" />
       </div>
       <div className="relative flex justify-center">
-        <span className="bg-background" style={childrenStyles}>
+        <span className="bg-secondary" style={childrenStyles}>
           {children}
         </span>
       </div>
@@ -163,10 +110,36 @@ function Divider({
 
 function PlayerBracket({ name }: { name: string }) {
   return (
-    <div className="w-[75%] rounded-xl h-16 bg-primary-foreground flex justify-center items-center">
+    <div className="w-[75%] rounded-xl h-16 flex justify-center items-center">
       <span className="whitespace-nowrap overflow-hidden text-ellipsis">
         {name}
       </span>
+    </div>
+  );
+}
+
+function Match({
+  playerOneName,
+  playerTwoName,
+}: {
+  playerOneName: string;
+  playerTwoName: string;
+}) {
+  return (
+    <div className="grow w-full flex items-center">
+      <Button
+        className="h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
+        variant="secondary"
+      >
+        <PlayerBracket name={playerOneName} />
+        <Divider
+          childrenStyles={{ padding: "0 10px" }}
+          containerStyles={{ width: "50%" }}
+        >
+          vs
+        </Divider>
+        <PlayerBracket name={playerTwoName} />
+      </Button>
     </div>
   );
 }
