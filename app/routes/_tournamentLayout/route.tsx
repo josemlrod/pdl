@@ -287,10 +287,8 @@ export default function TournamentLayout() {
             <span className="sr-only">Open sidebar</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
-
-          {/* Separator */}
-          <div className="h-6 w-px bg-primary xl:hidden" aria-hidden="true" />
-
+          {/* Separator
+          <div className="h-6 w-px bg-primary xl:hidden" aria-hidden="true" /> */}
           <div className="flex w-full justify-center">
             <ModeToggle />
           </div>
