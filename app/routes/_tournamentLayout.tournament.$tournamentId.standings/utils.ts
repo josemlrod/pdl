@@ -34,8 +34,7 @@ export function getGroupBPlayers(players: Player[]) {
 }
 
 export function getGroupTopPlayers(players: Player[]) {
-  const p = getGroupAPlayers(players);
-  const [firstPl, secondPl, thirdPl, fourthPl] = sortPlayers(p);
+  const [firstPl, secondPl, thirdPl, fourthPl] = sortPlayers(players);
   return {
     firstPl,
     secondPl,

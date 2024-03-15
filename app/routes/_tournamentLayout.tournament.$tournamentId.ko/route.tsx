@@ -1,12 +1,20 @@
 import { LoaderFunctionArgs, json, redirect } from "@remix-run/node";
+import { Link, Outlet, useLoaderData } from "@remix-run/react";
 
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ReadPlayers } from "~/services/firebase";
 import {
   getGroupAPlayers,
+  getGroupBPlayers,
   getGroupTopPlayers,
 } from "../_tournamentLayout.tournament.$tournamentId.standings/utils";
-import { ReadPlayers } from "~/services/firebase";
-import { useLoaderData } from "@remix-run/react";
-import { Button } from "@/components/ui/button";
+
+export const KoRounds = Object.freeze({
+  QF: "quarter_finals",
+  SF: "semi_finals",
+  F: "finals",
+});
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const { tournamentId } = params;
@@ -25,63 +33,93 @@ export async function loader({ params }: LoaderFunctionArgs) {
 export default function Knockout() {
   const { players } = useLoaderData<typeof loader>();
   const groupAPlayers = getGroupAPlayers(players);
+  const groupBPlayers = getGroupBPlayers(players);
+
   const {
     firstPl: aFirstPl,
     secondPl: aSecondPl,
     thirdPl: aThirdPl,
     fourthPl: aFourthPl,
   } = getGroupTopPlayers(groupAPlayers);
+  const {
+    firstPl: bFirstPl,
+    secondPl: bSecondPl,
+    thirdPl: bThirdPl,
+    fourthPl: bFourthPl,
+  } = getGroupTopPlayers(groupBPlayers);
 
   return (
-    <section className="h-full w-full flex flex-col py-4">
-      <div className="w-full grow flex gap-2 md:gap-4 flex-wrap">
-        {/* Quarter finals column */}
-        <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
-          <div className="flex justify-center items-center bg-primary-foreground py-4 w-full rounded-xl">
-            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
-              Quarter Finals
-            </span>
+    <>
+      <section className="h-full w-full flex flex-col py-4">
+        <div className="w-full grow flex gap-2 md:gap-4 flex-wrap">
+          {/* Quarter finals column */}
+          <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
+            <div className="flex justify-center items-center bg-secondary py-4 w-full rounded-xl">
+              <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+                Quarter Finals
+              </span>
+            </div>
+
+            <Match
+              matchRound={KoRounds.QF}
+              playerOneName={aFirstPl.name}
+              playerTwoName={bFourthPl.name}
+            />
+            <Match
+              matchRound={KoRounds.QF}
+              playerOneName={aSecondPl.name}
+              playerTwoName={bThirdPl.name}
+            />
+            <Match
+              matchRound={KoRounds.QF}
+              playerOneName={bFirstPl.name}
+              playerTwoName={aFourthPl.name}
+            />
+            <Match
+              matchRound={KoRounds.QF}
+              playerOneName={bSecondPl.name}
+              playerTwoName={aThirdPl.name}
+            />
           </div>
 
-          <Match playerOneName={aFirstPl.name} playerTwoName="B's 4th place" />
-          <Match playerOneName={aSecondPl.name} playerTwoName="B's 3rd place" />
-          <Match playerOneName="B's 1st place" playerTwoName={aFourthPl.name} />
-          <Match playerOneName="B's 2nd place" playerTwoName={aThirdPl.name} />
-        </div>
+          {/* Semi finals column */}
+          <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
+            <div className="flex justify-center items-center bg-secondary py-4 w-full rounded-xl">
+              <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+                Semi Finals
+              </span>
+            </div>
 
-        {/* Semi finals column */}
-        <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
-          <div className="flex justify-center items-center bg-primary-foreground py-4 w-full rounded-xl">
-            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
-              Semi Finals
-            </span>
+            <Match
+              matchRound={KoRounds.SF}
+              playerOneName="Quarters 1 winner"
+              playerTwoName="Quarters 2 winner"
+            />
+            <Match
+              matchRound={KoRounds.SF}
+              playerOneName="Quarters 3 winner"
+              playerTwoName="Quarters 4 winner"
+            />
           </div>
 
-          <Match
-            playerOneName="Quarters 1 winner"
-            playerTwoName="Quarters 2 winner"
-          />
-          <Match
-            playerOneName="Quarters 3 winner"
-            playerTwoName="Quarters 4 winner"
-          />
-        </div>
+          {/* finals column */}
+          <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
+            <div className="flex justify-center items-center bg-secondary py-4 w-full rounded-xl">
+              <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+                Final
+              </span>
+            </div>
 
-        {/* finals column */}
-        <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
-          <div className="flex justify-center items-center bg-primary-foreground py-4 w-full rounded-xl">
-            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
-              Final
-            </span>
+            <Match
+              matchRound={KoRounds.F}
+              playerOneName="Semis 1 winner"
+              playerTwoName="Semis 2 winner"
+            />
           </div>
-
-          <Match
-            playerOneName="Semis 1 winner"
-            playerTwoName="Semis 2 winner"
-          />
         </div>
-      </div>
-    </section>
+      </section>
+      <Outlet />
+    </>
   );
 }
 
@@ -119,17 +157,22 @@ function PlayerBracket({ name }: { name: string }) {
 }
 
 function Match({
+  matchRound,
   playerOneName,
   playerTwoName,
 }: {
+  matchRound: string;
   playerOneName: string;
   playerTwoName: string;
 }) {
   return (
     <div className="grow w-full flex items-center">
-      <Button
-        className="h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
-        variant="secondary"
+      <Link
+        className={cn(
+          buttonVariants({ variant: "secondary" }),
+          "h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
+        )}
+        to={`${matchRound}?p_one=${playerOneName}&p_two=${playerTwoName}`}
       >
         <PlayerBracket name={playerOneName} />
         <Divider
@@ -139,7 +182,7 @@ function Match({
           vs
         </Divider>
         <PlayerBracket name={playerTwoName} />
-      </Button>
+      </Link>
     </div>
   );
 }
