@@ -11,6 +11,7 @@ import {
 } from "../_tournamentLayout.tournament.$tournamentId.standings/utils";
 import { authCookie } from "~/sessions.server";
 import { getIsAdmin } from "~/services/utils";
+import { getKoMatchLink } from "./utils";
 
 export const KoRounds = Object.freeze({
   QF: "quarter_finals",
@@ -88,12 +89,17 @@ export default function Knockout() {
               <>
                 {qfMatches.map((m) => {
                   const [playerOneName, playerTwoName] = m.playerNames;
+                  const link = isAdmin
+                    ? getKoMatchLink({
+                        match: m,
+                        matchId: m.id,
+                        matchRound: KoRounds.QF,
+                      })
+                    : "";
                   return (
                     <Match
-                      disabled={!isAdmin}
                       key={m.id}
-                      matchId={m.id}
-                      matchRound={KoRounds.QF}
+                      link={link}
                       playerOneName={playerOneName}
                       playerTwoName={playerTwoName}
                     />
@@ -209,17 +215,13 @@ function PlayerBracket({ name }: { name: string }) {
 }
 
 function Match({
-  disabled,
-  matchId,
-  matchRound,
+  link,
   playerOneName,
   playerTwoName,
 }: {
-  matchId: string;
-  matchRound: string;
+  link: string;
   playerOneName: string;
   playerTwoName: string;
-  disabled: boolean;
 }) {
   return (
     <div className="grow w-full flex items-center">
@@ -228,7 +230,7 @@ function Match({
           buttonVariants({ variant: "secondary" }),
           "h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
         )}
-        to={disabled ? "" : `${matchRound}/${matchId}/select-pokemon`}
+        to={link}
       >
         <PlayerBracket name={playerOneName} />
         <Divider

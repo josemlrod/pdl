@@ -81,7 +81,7 @@ type Transaction = {
   type: "Transfer" | "Tera captain";
 };
 
-type Match = {
+export type Match = {
   playedOn: string;
   id: string;
   playerNames: [string, string];
