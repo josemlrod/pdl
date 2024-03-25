@@ -52,7 +52,7 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
 }
 
 export default function Knockout() {
-  const { koMatches, players } = useLoaderData<typeof loader>();
+  const { isAdmin, koMatches, players } = useLoaderData<typeof loader>();
   const groupAPlayers = getGroupAPlayers(players);
   const groupBPlayers = getGroupBPlayers(players);
 
@@ -90,6 +90,7 @@ export default function Knockout() {
                   const [playerOneName, playerTwoName] = m.playerNames;
                   return (
                     <Match
+                      disabled={!isAdmin}
                       key={m.id}
                       matchId={m.id}
                       matchRound={KoRounds.QF}
@@ -208,17 +209,17 @@ function PlayerBracket({ name }: { name: string }) {
 }
 
 function Match({
+  disabled,
   matchId,
   matchRound,
   playerOneName,
   playerTwoName,
-  isAdmin,
 }: {
   matchId: string;
   matchRound: string;
   playerOneName: string;
   playerTwoName: string;
-  isAdmin: boolean;
+  disabled: boolean;
 }) {
   return (
     <div className="grow w-full flex items-center">
@@ -227,7 +228,7 @@ function Match({
           buttonVariants({ variant: "secondary" }),
           "h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
         )}
-        to={isAdmin ? `${matchRound}/${matchId}/select-pokemon` : ""}
+        to={disabled ? "" : `${matchRound}/${matchId}/select-pokemon`}
       >
         <PlayerBracket name={playerOneName} />
         <Divider

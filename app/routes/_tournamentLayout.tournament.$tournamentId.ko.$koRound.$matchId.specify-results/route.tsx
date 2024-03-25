@@ -5,7 +5,6 @@ import {
   json,
   redirect,
 } from "@remix-run/node";
-import { v4 as uuidv4 } from "uuid";
 import {
   Dialog,
   DialogContent,
@@ -18,10 +17,7 @@ import {
 import Data from "~/data.json";
 import { AddKoMatch, ReadKoMatch, ReadPlayerByName } from "~/services/firebase";
 import { type Pokemon } from "../_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
-import {
-  KoRounds,
-  KoRoundsTitles,
-} from "../_tournamentLayout.tournament.$tournamentId.ko/route";
+import { KoRoundsTitles } from "../_tournamentLayout.tournament.$tournamentId.ko/route";
 import { getErrorMessage, hydratePokemon } from "~/services/utils";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
@@ -40,6 +36,10 @@ export async function loader({ params }: LoaderFunctionArgs) {
         matchId: String(matchId),
         tournamentId: String(tournamentId),
       })) || {};
+
+    if (match.results && match.winner) {
+      return redirect(`..`);
+    }
 
     const { data: playerOne } =
       (await ReadPlayerByName({

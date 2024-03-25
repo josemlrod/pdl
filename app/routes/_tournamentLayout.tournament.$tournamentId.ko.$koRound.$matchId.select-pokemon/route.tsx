@@ -25,8 +25,7 @@ import Data from "~/data.json";
 import { type Pokemon } from "../_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
 import { KoRoundsTitles } from "../_tournamentLayout.tournament.$tournamentId.ko/route";
 
-export async function loader({ request, params }: LoaderFunctionArgs) {
-  const url = new URL(request.url);
+export async function loader({ params }: LoaderFunctionArgs) {
   const { koRound, matchId, tournamentId } = params;
   const { data: pokemonData } = Data;
 
@@ -37,6 +36,10 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
         matchId: String(matchId),
         tournamentId: String(tournamentId),
       })) || {};
+
+    if (match.pokemonTeams) {
+      return redirect(`../${koRound}/${matchId}/specify-results`);
+    }
 
     const { data: playerOne } =
       (await ReadPlayerByName({
