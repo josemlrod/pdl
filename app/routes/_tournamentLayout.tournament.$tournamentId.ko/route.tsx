@@ -3,12 +3,14 @@ import { Link, Outlet, useLoaderData } from "@remix-run/react";
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ReadPlayers } from "~/services/firebase";
+import { ReadKoMatches, ReadPlayers, ReadUser } from "~/services/firebase";
 import {
   getGroupAPlayers,
   getGroupBPlayers,
   getGroupTopPlayers,
 } from "../_tournamentLayout.tournament.$tournamentId.standings/utils";
+import { authCookie } from "~/sessions.server";
+import { getIsAdmin } from "~/services/utils";
 
 export const KoRounds = Object.freeze({
   QF: "quarter_finals",
@@ -16,14 +18,33 @@ export const KoRounds = Object.freeze({
   F: "finals",
 });
 
-export async function loader({ params }: LoaderFunctionArgs) {
+export const KoRoundsTitles = Object.freeze({
+  [KoRounds.QF]: "Quarter Finals",
+  [KoRounds.SF]: "Semi Finals",
+  [KoRounds.F]: "Finals",
+});
+
+export async function loader({ params, request }: LoaderFunctionArgs) {
   const { tournamentId } = params;
+  const session = await authCookie.getSession(request.headers.get("Cookie"));
+  const userId = (session.has("userId") && session.get("userId")) || null;
+  let user = null;
+
+  const readUserResponse = await ReadUser({ userId });
+  user =
+    readUserResponse && typeof readUserResponse !== "string"
+      ? readUserResponse.data
+      : null;
+  const isAdmin = user ? getIsAdmin(user) : false;
 
   if (tournamentId) {
-    const { data } = (await ReadPlayers({ tournamentId })) || {};
+    const { data: players } = (await ReadPlayers({ tournamentId })) || {};
+    const { data: koMatches } = (await ReadKoMatches({ tournamentId })) || {};
 
     return json({
-      players: data,
+      koMatches,
+      players,
+      isAdmin,
     });
   }
 
@@ -31,9 +52,13 @@ export async function loader({ params }: LoaderFunctionArgs) {
 }
 
 export default function Knockout() {
-  const { players } = useLoaderData<typeof loader>();
+  const { koMatches, players } = useLoaderData<typeof loader>();
   const groupAPlayers = getGroupAPlayers(players);
   const groupBPlayers = getGroupBPlayers(players);
+
+  const qfMatches = koMatches[KoRounds.QF];
+  const sfMatches = koMatches[KoRounds.SF];
+  const fMatch = koMatches[KoRounds.F];
 
   const {
     firstPl: aFirstPl,
@@ -59,27 +84,49 @@ export default function Knockout() {
                 Quarter Finals
               </span>
             </div>
-
-            <Match
-              matchRound={KoRounds.QF}
-              playerOneName={aFirstPl.name}
-              playerTwoName={bFourthPl.name}
-            />
-            <Match
-              matchRound={KoRounds.QF}
-              playerOneName={aSecondPl.name}
-              playerTwoName={bThirdPl.name}
-            />
-            <Match
-              matchRound={KoRounds.QF}
-              playerOneName={bFirstPl.name}
-              playerTwoName={aFourthPl.name}
-            />
-            <Match
-              matchRound={KoRounds.QF}
-              playerOneName={bSecondPl.name}
-              playerTwoName={aThirdPl.name}
-            />
+            {qfMatches && qfMatches.length ? (
+              <>
+                {qfMatches.map((m) => {
+                  const [playerOneName, playerTwoName] = m.playerNames;
+                  return (
+                    <Match
+                      key={m.id}
+                      matchId={m.id}
+                      matchRound={KoRounds.QF}
+                      playerOneName={playerOneName}
+                      playerTwoName={playerTwoName}
+                    />
+                  );
+                })}
+              </>
+            ) : (
+              <>
+                <Match
+                  matchId={`${KoRounds.QF}-${aFirstPl.name}-${bFourthPl.name}`}
+                  matchRound={KoRounds.QF}
+                  playerOneName={aFirstPl.name}
+                  playerTwoName={bFourthPl.name}
+                />
+                <Match
+                  matchId={`${KoRounds.QF}-${aSecondPl.name}-${bThirdPl.name}`}
+                  matchRound={KoRounds.QF}
+                  playerOneName={aSecondPl.name}
+                  playerTwoName={bThirdPl.name}
+                />
+                <Match
+                  matchId={`${KoRounds.QF}-${bFirstPl.name}-${aFourthPl.name}`}
+                  matchRound={KoRounds.QF}
+                  playerOneName={bFirstPl.name}
+                  playerTwoName={aFourthPl.name}
+                />
+                <Match
+                  matchId={`${KoRounds.QF}-${bSecondPl.name}-${aThirdPl.name}`}
+                  matchRound={KoRounds.QF}
+                  playerOneName={bSecondPl.name}
+                  playerTwoName={aThirdPl.name}
+                />
+              </>
+            )}
           </div>
 
           {/* Semi finals column */}
@@ -89,7 +136,11 @@ export default function Knockout() {
                 Semi Finals
               </span>
             </div>
-
+            {/**
+             * TODO:
+             * finish updating the other two ko rounds
+             * go back to /:koRound/:matchId and update accordingly
+             */}
             <Match
               matchRound={KoRounds.SF}
               playerOneName="Quarters 1 winner"
@@ -157,13 +208,17 @@ function PlayerBracket({ name }: { name: string }) {
 }
 
 function Match({
+  matchId,
   matchRound,
   playerOneName,
   playerTwoName,
+  isAdmin,
 }: {
+  matchId: string;
   matchRound: string;
   playerOneName: string;
   playerTwoName: string;
+  isAdmin: boolean;
 }) {
   return (
     <div className="grow w-full flex items-center">
@@ -172,7 +227,7 @@ function Match({
           buttonVariants({ variant: "secondary" }),
           "h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
         )}
-        to={`${matchRound}?p_one=${playerOneName}&p_two=${playerTwoName}`}
+        to={isAdmin ? `${matchRound}/${matchId}/select-pokemon` : ""}
       >
         <PlayerBracket name={playerOneName} />
         <Divider

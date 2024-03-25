@@ -13,6 +13,7 @@ import { getAuth } from "firebase/auth";
 import { v4 as uuidv4 } from "uuid";
 
 import { getErrorMessage } from "./utils";
+import { KoRounds } from "~/routes/_tournamentLayout.tournament.$tournamentId.ko/route";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDOyFMdG1qKZyEU4Rxk6X6W4YC_xSwdlfo",
@@ -81,7 +82,7 @@ type Transaction = {
 };
 
 type Match = {
-  date: Date;
+  playedOn: string;
   id: string;
   playerNames: [string, string];
   pokemonTeams: {
@@ -99,7 +100,13 @@ type Match = {
   winner: Player;
 };
 
-type AddMatchProps = { tournamentId: string; matchId: string } & Partial<Match>;
+type KoRoundsKeys = keyof typeof KoRounds;
+export type KoRoundsValues = (typeof KoRounds)[KoRoundsKeys];
+
+type AddMatchProps = {
+  matchId: string;
+  tournamentId: string;
+} & Partial<Match>;
 
 export async function AddUser({
   email,
@@ -432,6 +439,59 @@ export async function AddMatch({
   }
 }
 
+export async function AddKoMatch({
+  matchId,
+  koRound,
+  tournamentId,
+  ...rest
+}: AddMatchProps & { koRound: string }) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const koRoundMatchesExist =
+      Array.isArray(tournament?.koMatches[koRound]) &&
+      tournament.koMatches[koRound].length;
+    const koRoundMatchExists = tournament?.koMatches[koRound].find(
+      (m: Match) => m.id === matchId
+    );
+
+    if (koRoundMatchesExist && koRoundMatchExists) {
+      const koMatches = tournament.koMatches;
+      const newMatches = koMatches[koRound].map((m: Match) => {
+        if (m.id === matchId) {
+          return {
+            ...m,
+            ...rest,
+          };
+        }
+        return m;
+      });
+      await updateDoc(tournamentDocRef, {
+        koMatches: {
+          ...koMatches,
+          [koRound]: newMatches,
+        },
+      });
+    } else {
+      await updateDoc(tournamentDocRef, {
+        koMatches: {
+          [koRound]: arrayUnion({
+            id: matchId,
+            ...rest,
+          }),
+        },
+      });
+
+      return { success: true };
+    }
+
+    return { id: matchId, success: true };
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
 export async function ReadMatch({
   tournamentId,
   matchId,
@@ -453,6 +513,55 @@ export async function ReadMatch({
     } else {
       return { success: true, data: {} };
     }
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
+export async function ReadKoMatches({
+  tournamentId,
+}: {
+  tournamentId: string;
+}) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const koMatches = tournament && tournament.koMatches;
+
+    if (koMatches) {
+      return { success: true, data: koMatches };
+    } else {
+      return { success: true, data: {} };
+    }
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
+export async function ReadKoMatch({
+  koRound,
+  matchId,
+  tournamentId,
+}: {
+  koRound: string;
+  matchId: string;
+  tournamentId: string;
+}) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const koMatches = tournament && tournament.koMatches;
+
+    if (koMatches) {
+      const match = koMatches[koRound].find((m) => m.id === matchId);
+      if (match) {
+        return { success: true, data: match };
+      }
+    }
+
+    return { success: true, data: {} };
   } catch (error) {
     getErrorMessage(error);
   }

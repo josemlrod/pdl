@@ -28,7 +28,7 @@ import {
 } from "~/services/utils";
 import Data from "~/data.json";
 
-const FAINTS_REQUIRED_FOR_LOSS = 6;
+export const FAINTS_REQUIRED_FOR_LOSS = 6;
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const { matchId, tournamentId } = params;
