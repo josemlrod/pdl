@@ -10,7 +10,7 @@ export function getKoMatchLink({
   matchRound: string;
 }) {
   if (match.winner) {
-    return ".";
+    return `${matchRound}/${matchId}/winner`;
   } else if (match.pokemonTeams) {
     return `${matchRound}/${matchId}/specify-results`;
   } else {
