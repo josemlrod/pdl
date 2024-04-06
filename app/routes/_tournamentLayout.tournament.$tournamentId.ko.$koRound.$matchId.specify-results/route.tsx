@@ -295,5 +295,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
    * programatically push winner to following match. find match by next_match reference
    */
 
-  return redirect(`/tournament/${tournamentId}/dashboard`);
+  return redirect(
+    `/tournament/${tournamentId}/ko/${koRound}/${matchId}/winner`
+  );
 }
