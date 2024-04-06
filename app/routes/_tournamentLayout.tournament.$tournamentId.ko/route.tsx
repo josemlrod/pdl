@@ -236,7 +236,7 @@ function Match({
         to={link}
       >
         <Badge
-          className={`hover:unset absolute top-2.5 right-2.5 ${
+          className={`hover:unset absolute top-1.5 right-2.5 ${
             isComplete
               ? "bg-green-500 text-primary-foreground"
               : "bg-primary text-primary-foreground"
