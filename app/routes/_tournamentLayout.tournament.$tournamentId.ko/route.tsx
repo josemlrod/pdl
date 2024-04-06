@@ -236,9 +236,12 @@ function Match({
         to={link}
       >
         <Badge
-          className={`absolute top-2.5 right-2.5 ${
-            isComplete ? "bg-green-300" : ""
+          className={`hover:unset absolute top-2.5 right-2.5 ${
+            isComplete
+              ? "bg-green-500 text-primary-foreground"
+              : "bg-primary text-primary-foreground"
           }`}
+          variant="outline"
         >
           {isComplete ? "Completed" : "Not started"}
         </Badge>
