@@ -88,10 +88,8 @@ export default function SpecifyResults() {
   const {
     playerOne,
     playerOneName,
-    // playerOnePokemon,
     playerTwo,
     playerTwoName,
-    // playerTwoPokemon,
     roundTitle,
     match,
   } = useLoaderData<typeof loader>();
