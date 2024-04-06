@@ -89,13 +89,12 @@ export default function Knockout() {
               <>
                 {qfMatches.map((m) => {
                   const [playerOneName, playerTwoName] = m.playerNames;
-                  const link = isAdmin
-                    ? getKoMatchLink({
-                        match: m,
-                        matchId: m.id,
-                        matchRound: KoRounds.QF,
-                      })
-                    : "";
+                  const link = getKoMatchLink({
+                    isAdmin,
+                    match: m,
+                    matchId: m.id,
+                    matchRound: KoRounds.QF,
+                  });
                   return (
                     <Match
                       key={m.id}
