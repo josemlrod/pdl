@@ -55,6 +55,9 @@ export default function KoMatchWinner() {
     );
     return { ...p, spriteUrl: pokemon.spriteUrl };
   });
+  const winnerTeamKos = winningTeam.reduce((acc, curr) => {
+    return (acc += curr.record.kills);
+  }, 0);
   const winnerTeamFaints = winningTeam.reduce((acc, curr) => {
     return (acc += curr.record.faints);
   }, 0);
@@ -81,7 +84,9 @@ export default function KoMatchWinner() {
               </li>
               <li className="text-sm text-muted-foreground">
                 <span className="">Score:</span>{" "}
-                <span className="">6 - {winnerTeamFaints}</span>
+                <span className="">
+                  {winnerTeamKos} - {winnerTeamFaints}
+                </span>
               </li>
               <li className="text-sm text-muted-foreground">
                 <span className="">Played on:</span>{" "}
