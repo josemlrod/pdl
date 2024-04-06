@@ -77,7 +77,7 @@ export default function Knockout() {
   return (
     <>
       <section className="h-full w-full flex flex-col py-4">
-        <div className="w-full grow flex gap-2 md:gap-4 flex-wrap">
+        <div className="container flex gap-2 md:gap-4 flex-wrap max-w-[1200px]">
           {/* Quarter finals column */}
           <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
             <div className="flex justify-center items-center bg-secondary py-4 w-full rounded-xl">
