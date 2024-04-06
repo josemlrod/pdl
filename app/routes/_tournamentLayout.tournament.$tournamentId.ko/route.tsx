@@ -12,6 +12,7 @@ import {
 import { authCookie } from "~/sessions.server";
 import { getIsAdmin } from "~/services/utils";
 import { getKoMatchLink } from "./utils";
+import { Badge } from "@/components/ui/badge";
 
 export const KoRounds = Object.freeze({
   QF: "quarter_finals",
@@ -98,6 +99,7 @@ export default function Knockout() {
                   return (
                     <Match
                       key={m.id}
+                      isComplete={!!m.winner}
                       link={link}
                       playerOneName={playerOneName}
                       playerTwoName={playerTwoName}
@@ -214,10 +216,12 @@ function PlayerBracket({ name }: { name: string }) {
 }
 
 function Match({
+  isComplete,
   link,
   playerOneName,
   playerTwoName,
 }: {
+  isComplete: boolean;
   link: string;
   playerOneName: string;
   playerTwoName: string;
@@ -227,10 +231,17 @@ function Match({
       <Link
         className={cn(
           buttonVariants({ variant: "secondary" }),
-          "h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl"
+          "h-fit w-full flex justify-center items-center flex-col py-4 rounded-xl relative"
         )}
         to={link}
       >
+        <Badge
+          className={`absolute top-2.5 right-2.5 ${
+            isComplete ? "bg-green-300" : ""
+          }`}
+        >
+          {isComplete ? "Completed" : "Not started"}
+        </Badge>
         <PlayerBracket name={playerOneName} />
         <Divider
           childrenStyles={{ padding: "0 10px" }}
