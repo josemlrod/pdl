@@ -149,7 +149,8 @@ export default function Knockout() {
              * finish updating the other two ko rounds
              * go back to /:koRound/:matchId and update accordingly
              */}
-            <Match
+
+            {/* <Match
               matchRound={KoRounds.SF}
               playerOneName="Quarters 1 winner"
               playerTwoName="Quarters 2 winner"
@@ -158,7 +159,42 @@ export default function Knockout() {
               matchRound={KoRounds.SF}
               playerOneName="Quarters 3 winner"
               playerTwoName="Quarters 4 winner"
-            />
+            /> */}
+            {sfMatches && sfMatches.length ? (
+              <>
+                {sfMatches.map((m) => {
+                  const [playerOneName, playerTwoName] = m.playerNames;
+                  const link = getKoMatchLink({
+                    isAdmin,
+                    match: m,
+                    matchId: m.id,
+                    matchRound: KoRounds.SF,
+                  });
+                  return (
+                    <Match
+                      key={m.id}
+                      isComplete={!!m.winner}
+                      link={link}
+                      playerOneName={playerOneName}
+                      playerTwoName={playerTwoName}
+                    />
+                  );
+                })}
+              </>
+            ) : (
+              <>
+                <Match
+                  matchRound={KoRounds.SF}
+                  playerOneName="Quarters 1 winner"
+                  playerTwoName="Quarters 2 winner"
+                />
+                <Match
+                  matchRound={KoRounds.SF}
+                  playerOneName="Quarters 3 winner"
+                  playerTwoName="Quarters 4 winner"
+                />
+              </>
+            )}
           </div>
 
           {/* finals column */}
@@ -169,11 +205,34 @@ export default function Knockout() {
               </span>
             </div>
 
-            <Match
-              matchRound={KoRounds.F}
-              playerOneName="Semis 1 winner"
-              playerTwoName="Semis 2 winner"
-            />
+            {fMatch && fMatch.length ? (
+              <>
+                {fMatch.map((m) => {
+                  const [playerOneName, playerTwoName] = m.playerNames;
+                  const link = getKoMatchLink({
+                    isAdmin,
+                    match: m,
+                    matchId: m.id,
+                    matchRound: KoRounds.F,
+                  });
+                  return (
+                    <Match
+                      key={m.id}
+                      isComplete={!!m.winner}
+                      link={link}
+                      playerOneName={playerOneName}
+                      playerTwoName={playerTwoName}
+                    />
+                  );
+                })}
+              </>
+            ) : (
+              <Match
+                matchRound={KoRounds.F}
+                playerOneName="Semis 1 winner"
+                playerTwoName="Semis 2 winner"
+              />
+            )}
           </div>
         </div>
       </section>
