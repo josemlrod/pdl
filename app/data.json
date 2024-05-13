@@ -6119,6 +6119,30 @@
       "pts": "1",
       "dexNumber": "634",
       "spriteUrl": "https://www.serebii.net/pokemon/art/634.png"
+    },
+    {
+      "github_name": "pecharunt",
+      "smogon_name": "pecharunt",
+      "name": "Pecharunt",
+      "pts": "12",
+      "dexNumber": "1025",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1025.png"
+    },
+    {
+      "github_name": "palafin",
+      "smogon_name": "palafin",
+      "name": "Palafin",
+      "pts": "18",
+      "dexNumber": "964",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/964.png"
+    },
+    {
+      "github_name": "chien-pao",
+      "smogon_name": "chien-pao",
+      "name": "Chien Pao",
+      "pts": "19",
+      "dexNumber": "1002",
+      "spriteUrl": "https://www.serebii.net/pokemon/art/1002.png"
     }
   ]
 }
