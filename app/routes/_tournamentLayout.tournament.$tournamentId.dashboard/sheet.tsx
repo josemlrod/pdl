@@ -55,7 +55,7 @@ export default function SheetButton({
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="team_name" className="text-right">
-                Username
+                Team name
               </Label>
               <Input
                 id="team_name"
