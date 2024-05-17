@@ -2,7 +2,6 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import type { DataFunctionArgs, LinksFunction } from "@remix-run/node";
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -60,7 +59,6 @@ export function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );
