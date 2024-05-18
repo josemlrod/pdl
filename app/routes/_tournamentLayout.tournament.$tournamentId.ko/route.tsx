@@ -75,7 +75,9 @@ export default function Knockout() {
     fourthPl: bFourthPl,
   } = getGroupTopPlayers(groupBPlayers);
 
-  return (
+  const noPlayers = !groupAPlayers.length && !groupBPlayers.length;
+
+  return noPlayers ? null : (
     <>
       <section className="h-full w-full flex flex-col py-4">
         <div className="container flex gap-2 md:gap-4 flex-wrap max-w-[1200px]">
