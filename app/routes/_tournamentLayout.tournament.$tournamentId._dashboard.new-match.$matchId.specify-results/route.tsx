@@ -27,6 +27,7 @@ import {
   hydratePokemon,
 } from "~/services/utils";
 import Data from "~/data.json";
+import { getPlayerMatchPokemon, getPlayerNewPokemon } from "./utils";
 
 export const FAINTS_REQUIRED_FOR_LOSS = 6;
 
@@ -167,7 +168,7 @@ export default function SpecifyResults() {
 }
 
 export async function action({ request, params }: ActionFunctionArgs) {
-  const { matchId, tournamentId } = params;
+  const { tournamentId } = params;
   const body = await request.formData();
   const {
     player_one,
@@ -180,26 +181,16 @@ export async function action({ request, params }: ActionFunctionArgs) {
   const playerTwo = JSON.parse(String(player_two));
   const match = JSON.parse(String(m));
 
-  let playerOneNewPokemon = playerOne.pokemon;
-  let playerTwoNewPokemon = playerTwo.pokemon;
-
   let playerOneKos = 0;
   let playerOneFaints = 0;
   let playerTwoKos = 0;
   let playerTwoFaints = 0;
 
   for (const [key, value] of Object.entries(rest)) {
-    const [githubName, statName, playerName] = key.split("_");
+    const [statName, playerName] = key.split("_");
 
     if (value && value !== "") {
       if (playerName === playerOne.name) {
-        playerOneNewPokemon = playerOneNewPokemon.map((p) => {
-          if (p?.githubName === githubName) {
-            p.record[statName] += Number(value);
-          }
-          return p;
-        });
-
         if (statName === "kills") {
           playerOneKos += Number(value);
         } else if (statName === "faints") {
@@ -208,13 +199,6 @@ export async function action({ request, params }: ActionFunctionArgs) {
       }
 
       if (playerName === playerTwo.name) {
-        playerTwoNewPokemon = playerTwoNewPokemon.map((p) => {
-          if (p?.githubName === githubName) {
-            p.record[statName] += Number(value);
-          }
-          return p;
-        });
-
         if (statName === "kills") {
           playerTwoKos += Number(value);
         } else if (statName === "faints") {
@@ -224,16 +208,52 @@ export async function action({ request, params }: ActionFunctionArgs) {
     }
   }
 
-  const winner =
-    (playerOneFaints !== FAINTS_REQUIRED_FOR_LOSS && playerOne) || playerTwo;
-  const playerOneTeam = hydratePokemon({
-    pokemonTeam: match.pokemonTeams[playerOne.name],
-    pokemon: playerOneNewPokemon,
+  const playerOneNewPokemon = getPlayerNewPokemon({
+    player: JSON.parse(player_one),
+    pokemonStats: Object.entries(rest)
+      .map((el) => {
+        const [key] = el;
+        if (key.includes(playerOne.name)) {
+          return el;
+        }
+      })
+      .filter(Boolean),
   });
-  const playerTwoTeam = hydratePokemon({
-    pokemonTeam: match.pokemonTeams[playerTwo.name],
-    pokemon: playerTwoNewPokemon,
+  const matchPlayerOnePokemon = getPlayerMatchPokemon({
+    player: JSON.parse(player_one),
+    pokemonStats: Object.entries(rest)
+      .map((el) => {
+        const [key] = el;
+        if (key.includes(playerOne.name)) {
+          return el;
+        }
+      })
+      .filter(Boolean),
   });
+  const playerTwoNewPokemon = getPlayerNewPokemon({
+    player: JSON.parse(player_two),
+    pokemonStats: Object.entries(rest)
+      .map((el) => {
+        const [key] = el;
+        if (key.includes(playerTwo.name)) {
+          return el;
+        }
+      })
+      .filter(Boolean),
+  });
+  const matchPlayerTwoPokemon = getPlayerMatchPokemon({
+    player: JSON.parse(player_two),
+    pokemonStats: Object.entries(rest)
+      .map((el) => {
+        const [key] = el;
+        if (key.includes(playerTwo.name)) {
+          return el;
+        }
+      })
+      .filter(Boolean),
+  });
+
+  const winner = playerOneFaints >= playerTwoFaints ? playerTwo : playerOne;
 
   const playerOneRecord = {
     loses:
@@ -294,12 +314,12 @@ export async function action({ request, params }: ActionFunctionArgs) {
     ...match,
     results: {
       [playerOne.name]: {
-        ...playerOneTeam,
+        ...matchPlayerOnePokemon,
         kos: playerOneKos,
         faints: playerOneFaints,
       },
       [playerTwo.name]: {
-        ...playerTwoTeam,
+        ...matchPlayerTwoPokemon,
         kos: playerTwoKos,
         faints: playerTwoFaints,
       },

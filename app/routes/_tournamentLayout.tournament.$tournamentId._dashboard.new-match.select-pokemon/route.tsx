@@ -220,6 +220,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
     matchId,
     tournamentId: tournamentId ?? "",
     playerNames: [playerOneName, playerTwoName],
+    playedOn: new Date().toLocaleDateString(),
     pokemonTeams: {
       [playerOneName]: [...playerOneTeam],
       [playerTwoName]: [...playerTwoTeam],
