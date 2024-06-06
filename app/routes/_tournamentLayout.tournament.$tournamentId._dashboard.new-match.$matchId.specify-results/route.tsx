@@ -253,7 +253,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
       .filter(Boolean),
   });
 
-  const winner = playerOneFaints >= playerTwoFaints ? playerTwo : playerOne;
+  const winner = playerOneFaints === 6 ? playerTwo : playerOne;
 
   const playerOneRecord = {
     loses:
