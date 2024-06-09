@@ -23,7 +23,7 @@ import {
 } from "~/services/firebase";
 import {
   getErrorMessage,
-  hydratePlayers,
+  hydratePlayer,
   hydratePokemon,
 } from "~/services/utils";
 import Data from "~/data.json";
@@ -53,8 +53,12 @@ export default function SpecifyResults() {
 
   const { data: pokemonData } = Data;
 
-  const [playerOne, playerTwo] = hydratePlayers({
-    playerNames: match.playerNames,
+  const [playerOne] = hydratePlayer({
+    playerName: playerOneName,
+    players,
+  });
+  const [playerTwo] = hydratePlayer({
+    playerName: playerTwoName,
     players,
   });
   const playerOnePokemon = pokemonTeams[playerOneName].map((p: string) => {
@@ -187,7 +191,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
   let playerTwoFaints = 0;
 
   for (const [key, value] of Object.entries(rest)) {
-    const [statName, playerName] = key.split("_");
+    const [_, statName, playerName] = key.split("_");
 
     if (value && value !== "") {
       if (playerName === playerOne.name) {

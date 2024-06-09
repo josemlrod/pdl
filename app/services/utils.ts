@@ -95,14 +95,14 @@ export const getIsAdmin = (user: User) => {
   return false;
 };
 
-export function hydratePlayers({
-  playerNames,
+export function hydratePlayer({
+  playerName,
   players,
 }: {
-  playerNames: [string, string];
+  playerName: string;
   players: Array<Player>;
 }) {
-  return players.filter((p) => playerNames.includes(p.name));
+  return players.filter((p) => p.name.includes(playerName));
 }
 
 export function hydratePokemon({ pokemonTeam, pokemon }) {

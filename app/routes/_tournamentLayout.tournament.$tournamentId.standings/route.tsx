@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { useLoaderData } from "@remix-run/react";
 import { LoaderFunctionArgs, json, redirect } from "@remix-run/node";
 
-import { type Player, ReadPlayers } from "~/services/firebase";
+import { type Player, ReadPlayers, ReadTournament } from "~/services/firebase";
 import {
   getAllPokemonFaints,
   getAllPokemonKills,
@@ -10,7 +10,11 @@ import {
 } from "~/services/utils";
 import Data from "~/data.json";
 import { type Pokemon } from "~/routes/_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
-import { getGroupAPlayers, getGroupBPlayers } from "./utils";
+import { TournamentFormats, getGroupAPlayers, getGroupBPlayers } from "./utils";
+
+type TournamentFormatsKeys = keyof typeof TournamentFormats;
+type TournamentFormatsValues =
+  (typeof TournamentFormats)[TournamentFormatsKeys];
 
 /**
  * TODO:
@@ -21,10 +25,13 @@ export async function loader({ params }: LoaderFunctionArgs) {
   const { tournamentId } = params;
 
   if (tournamentId) {
-    const { data } = (await ReadPlayers({ tournamentId })) || {};
+    const { data: players } = (await ReadPlayers({ tournamentId })) || {};
+    const { data: tournament } =
+      (await ReadTournament({ id: tournamentId })) || {};
 
     return json({
-      players: data,
+      players,
+      tournamentFormat: tournament?.format,
     });
   }
 
@@ -32,13 +39,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
 }
 
 export default function Standings() {
-  const { players } = useLoaderData<typeof loader>();
-
-  const playersGroupA = getGroupAPlayers(players);
-  const playersGroupB = getGroupBPlayers(players);
-
-  const sortedPlayersGroupA = sortPlayers(playersGroupA);
-  const sortedPlayersGroupB = sortPlayers(playersGroupB);
+  const { players, tournamentFormat } = useLoaderData<typeof loader>();
 
   const playersPokemon = players.reduce(
     (acc: Player[], p: Player) => [...acc, ...p.pokemon],
@@ -47,6 +48,109 @@ export default function Standings() {
 
   return (
     <Fragment>
+      <LeagueTable players={players} tournamentFormat={tournamentFormat} />
+      <Leaderboard pokemon={playersPokemon} />
+    </Fragment>
+  );
+}
+
+function LeagueTable({
+  players,
+  tournamentFormat,
+}: {
+  players: Array<Player>;
+  tournamentFormat: TournamentFormatsValues;
+}) {
+  const playersGroupA = getGroupAPlayers(players);
+  const playersGroupB = getGroupBPlayers(players);
+
+  const sortedPlayers = sortPlayers(players);
+  const sortedPlayersGroupA = sortPlayers(playersGroupA);
+  const sortedPlayersGroupB = sortPlayers(playersGroupB);
+
+  return tournamentFormat === TournamentFormats.LEAGUE ? (
+    <div className="px-4 sm:px-6 lg:px-8 my-4 rounded-md border drop-shadow-lg">
+      <div className="flow-root">
+        <div className="-mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+            <table className="min-w-full divide-y text-center">
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                    className="py-3.5 pl-4 pr-3 text-sm font-semibold sm:pl-0 text-center"
+                  >
+                    Name
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-3.5 text-sm font-semibold text-center"
+                  >
+                    Games played
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-3.5 text-sm font-semibold text-center"
+                  >
+                    Wins
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-3.5 text-sm font-semibold text-center"
+                  >
+                    Loses
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-3.5 text-sm font-semibold text-center"
+                  >
+                    Differential
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                {sortedPlayers.map((p) => {
+                  const allPokemonKills =
+                    getAllPokemonKills(p.pokemon) +
+                    getAllPokemonKills(p.previousPokemon);
+                  const allPokemonFaints =
+                    getAllPokemonFaints(p.pokemon) +
+                    getAllPokemonFaints(p.previousPokemon);
+                  const totalDifferential = allPokemonKills - allPokemonFaints;
+                  return p.isHidden ? null : (
+                    <tr key={p.id}>
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                        {p.name}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-secondary-foreground">
+                        {Number(p.record.wins) + Number(p.record.loses)}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-secondary-foreground">
+                        {p.record.wins}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-secondary-foreground">
+                        {p.record.loses}
+                      </td>
+                      <td
+                        className={`whitespace-nowrap px-3 py-4 text-sm ${
+                          totalDifferential >= 0
+                            ? "text-lime-600"
+                            : "text-red-600"
+                        }`}
+                      >
+                        {totalDifferential}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <>
       <div className="px-4 sm:px-6 lg:px-8 my-4 rounded-md border drop-shadow-lg">
         <div className="flow-root">
           <div className="-mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -209,8 +313,7 @@ export default function Standings() {
           </div>
         </div>
       </div>
-      <Leaderboard pokemon={playersPokemon} />
-    </Fragment>
+    </>
   );
 }
 
@@ -250,7 +353,7 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
             <h3 className="mt-6 text-sm font-medium">{killLeader.name}</h3>
             <dl className="mt-1 flex flex-grow flex-col justify-between">
               <dt className="sr-only">Title</dt>
-              <dd className="text-sm text-secondary-foreground">Kill leader</dd>
+              <dd className="text-sm text-muted-foreground">Kill leader</dd>
               <dt className="sr-only">Role</dt>
               <dd className="mt-3">
                 <span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
@@ -289,7 +392,7 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
             <h3 className="mt-6 text-sm font-medium">{faintsLeader.name}</h3>
             <dl className="mt-1 flex flex-grow flex-col justify-between">
               <dt className="sr-only">Title</dt>
-              <dd className="text-sm text-gray-500">Faints leader</dd>
+              <dd className="text-sm text-muted-foreground">Faints leader</dd>
               <dt className="sr-only">Role</dt>
               <dd className="mt-3">
                 <span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">

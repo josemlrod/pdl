@@ -20,6 +20,12 @@ const groupBPlayerIds = [
   "245f9051-18e7-4d14-a339-9b005cdf4a7e",
 ];
 
+export const TournamentFormats = Object.freeze({
+  LEAGUE: "league",
+  KO: "ko",
+  LEAGUE_KO: "league_ko",
+});
+
 export function getGroupAPlayers(players: Player[]) {
   const p = players
     .map((p: Player) => (groupAPlayerIds.includes(p.id) && p) || null)
