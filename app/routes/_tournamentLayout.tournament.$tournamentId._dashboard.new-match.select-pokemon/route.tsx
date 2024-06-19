@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useFetcher, useLocation, useOutletContext } from "@remix-run/react";
 import { ActionFunctionArgs, json, redirect } from "@remix-run/node";
 import { v4 as uuidv4 } from "uuid";
+import moment from "moment-timezone";
+
 import { Button } from "@/components/ui/button";
 import {
   DialogFooter,
@@ -220,7 +222,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
     matchId,
     tournamentId: tournamentId ?? "",
     playerNames: [playerOneName, playerTwoName],
-    playedOn: new Date().toLocaleDateString(),
+    playedOn: moment().tz("America/New_York").format("L"), // Example: '06/18/2024'
     pokemonTeams: {
       [playerOneName]: [...playerOneTeam],
       [playerTwoName]: [...playerTwoTeam],
