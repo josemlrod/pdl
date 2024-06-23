@@ -34,7 +34,11 @@ export async function loader({ params }: LoaderFunctionArgs) {
       matches: Object.groupBy(matches, ({ playedOn }: Match) => playedOn),
     });
   } catch (e) {
-    getErrorMessage(e);
+    console.log(getErrorMessage(e));
+    return {
+      matches: [],
+      e: getErrorMessage(e),
+    };
   }
 }
 
