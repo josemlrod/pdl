@@ -20,7 +20,7 @@ import { getErrorMessage } from "~/services/utils";
 import { ModeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 import MatchCard from "./MatchCard";
-import { sortDates } from "./utils";
+import { groupMatchesByDate, sortDates } from "./utils";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const { tournamentId } = params;
@@ -30,11 +30,11 @@ export async function loader({ params }: LoaderFunctionArgs) {
       (await ReadMatches({
         tournamentId: String(tournamentId),
       })) || {};
+
     return json({
-      matches: Object.groupBy(matches, ({ playedOn }: Match) => playedOn),
+      matches: groupMatchesByDate(matches as Array<Match>),
     });
   } catch (e) {
-    console.log(getErrorMessage(e));
     return {
       matches: [],
       e: getErrorMessage(e),
