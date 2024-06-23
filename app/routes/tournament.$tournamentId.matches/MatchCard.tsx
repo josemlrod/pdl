@@ -104,8 +104,8 @@ export default function MatchCard({ match }: { match: Match }) {
           </div>
         </div>
       </button>
-      <div className="flex flex-col items-center justify-center opacity-0 hover:opacity-100 absolute rotate-y-180 w-full h-full bg-[#0F1823] bg-opacity-95 backdrop-visibility rounded-lg overflow-hidden px-4 text-neutral-300 space-y-5 backface-hidden">
-        <h3 className="text-xl font-semibold">Winner</h3>
+      <div className="flex flex-col items-center justify-center opacity-0 hover:opacity-100 absolute rotate-y-180 w-full h-full bg-[#d2d2d2] dark:bg-[#0F1823] bg-opacity-95 backdrop-visibility rounded-lg overflow-hidden px-4 text-neutral-300 space-y-5 backface-hidden">
+        <h3 className="text-xl font-semibold text-primary">Winner</h3>
         <div className="flex gap-2">
           <div className="flex flex-col items-center justify-center gap-2">
             <img className="w-44" src={TrainerSVG} alt="trainer" />
