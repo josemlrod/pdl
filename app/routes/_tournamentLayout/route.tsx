@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Dialog, Menu, Transition } from "@headlessui/react";
+import { Dialog, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   DocumentDuplicateIcon,
@@ -7,6 +7,7 @@ import {
   UsersIcon,
   XMarkIcon,
   FireIcon,
+  TableCellsIcon,
 } from "@heroicons/react/24/outline";
 
 import { NavLink, Outlet, useLoaderData } from "@remix-run/react";
@@ -25,6 +26,12 @@ const navigation = [
     name: "Transactions",
     href: "transactions",
     icon: DocumentDuplicateIcon,
+    current: false,
+  },
+  {
+    name: "Matches",
+    href: "matches",
+    icon: TableCellsIcon,
     current: false,
   },
   {
@@ -287,8 +294,6 @@ export default function TournamentLayout() {
             <span className="sr-only">Open sidebar</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
-          {/* Separator
-          <div className="h-6 w-px bg-primary xl:hidden" aria-hidden="true" /> */}
           <div className="flex w-full justify-center">
             <ModeToggle />
           </div>

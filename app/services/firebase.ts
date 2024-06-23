@@ -518,6 +518,24 @@ export async function ReadMatch({
   }
 }
 
+export async function ReadMatches({ tournamentId }: { tournamentId: string }) {
+  try {
+    const tournamentDocRef = doc(db, "tournaments", tournamentId);
+    const tournamentDocSnap = await getDoc(tournamentDocRef);
+    const tournament = tournamentDocSnap.data();
+    const matches =
+      tournament && Array.isArray(tournament.matches) && tournament.matches;
+
+    if (matches) {
+      return { success: true, data: matches };
+    } else {
+      return { success: true, data: [] };
+    }
+  } catch (error) {
+    getErrorMessage(error);
+  }
+}
+
 export async function ReadKoMatches({
   tournamentId,
 }: {
