@@ -1,9 +1,9 @@
 import React from "react";
 import { type LoaderFunctionArgs, json } from "@remix-run/node";
 import {
-  Link,
   useLoaderData,
   useNavigate,
+  useParams,
   useSearchParams,
 } from "@remix-run/react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -13,7 +13,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 import { Match, ReadMatches } from "~/services/firebase";
 import { getErrorMessage } from "~/services/utils";
@@ -35,20 +35,18 @@ export async function loader({ params }: LoaderFunctionArgs) {
       matches: groupMatchesByDate(matches as Array<Match>),
     });
   } catch (e) {
-    return {
-      matches: [],
-      e: getErrorMessage(e),
-    };
+    getErrorMessage(e);
   }
 }
 
 export default function Matches() {
-  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
+  const { tournamentId } = useParams();
   const { matches } = useLoaderData<typeof loader>();
   const matchDates = Object.keys(matches);
   const sortedDates = sortDates(matchDates);
 
+  const [searchParams, setSearchParams] = useSearchParams();
   const selectedMatchDate = searchParams.get("d");
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
@@ -110,7 +108,9 @@ export default function Matches() {
                     <Button
                       className="w-fit flex justify-center items-center flex-col rounded-lg"
                       variant="secondary"
-                      onClick={() => navigate(-1)}
+                      onClick={() =>
+                        navigate(`/tournament/${tournamentId}/dashboard`)
+                      }
                     >
                       <ArrowLeftIcon className="w-6" />
                     </Button>
@@ -163,7 +163,7 @@ export default function Matches() {
             <Button
               className="w-fit flex justify-center items-center flex-col rounded-lg"
               variant="secondary"
-              onClick={() => navigate(-1)}
+              onClick={() => navigate(`/tournament/${tournamentId}/dashboard`)}
             >
               <ArrowLeftIcon className="w-6" />
             </Button>
@@ -227,9 +227,11 @@ export default function Matches() {
               </div>
             ) : (
               <div className="grid min-[900px]:grid-cols-2 min-[1600px]:grid-cols-3 justify-items-center gap-4 py-8">
-                {selectedMatches.map((m: Match, i: number) => (
-                  <MatchCard key={`${i}-${m.winner.name}`} match={m} />
-                ))}
+                {selectedMatches
+                  ? selectedMatches.map((m: Match, i: number) => (
+                      <MatchCard key={`${i}-${m.winner.name}`} match={m} />
+                    ))
+                  : null}
               </div>
             )}
           </div>
