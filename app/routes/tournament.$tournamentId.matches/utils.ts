@@ -1,9 +1,12 @@
+import moment from "moment-timezone";
 import { type Match } from "~/services/firebase";
 
 export function sortDates(dateStrings: Array<string>) {
   const dateObjects = dateStrings.map((dateString) => new Date(dateString));
   dateObjects.sort((a: Date, b: Date) => a.valueOf() - b.valueOf());
-  return dateObjects.map((date) => date.toLocaleDateString());
+  return dateObjects.map((date) =>
+    moment(date).tz("America/New_York").format("L")
+  );
 }
 
 export function groupMatchesByDate(matches: Array<Match>) {
