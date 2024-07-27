@@ -79,7 +79,7 @@ export default function Transactions() {
                   <dt className="text-sm font-semibold leading-6 text-primary">
                     {name}
                   </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-accent">
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-muted-foreground">
                     {6 - Number(transactions)}
                   </dd>
                 </div>
