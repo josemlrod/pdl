@@ -154,7 +154,7 @@ export default function Transactions() {
         isAdmin={isAdmin}
         pathname={`new?selected_player=${playerName}`}
       />
-      <Outlet />
+      <Outlet context={{ transactionsPerPlayer }} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import {
   useFetcher,
   useLoaderData,
   useNavigate,
+  useOutletContext,
   useSearchParams,
 } from "@remix-run/react";
 import { v4 as uuidv4 } from "uuid";
@@ -86,6 +87,9 @@ export default function NewTransaction() {
   const navigate = useNavigate();
   const fetcher = useFetcher();
   const { data: players } = useLoaderData<typeof loader>();
+  const { transactionsPerPlayer } = useOutletContext<{
+    [key: string]: number;
+  }>();
   const playerNames = players.map((p: Player) => p.name);
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedPlayer = searchParams.get("selected_player");
@@ -138,11 +142,19 @@ export default function NewTransaction() {
                 <SelectContent>
                   <SelectGroup>
                     {playerNames
-                      ? playerNames.map((p: string, idx: number) => (
-                          <SelectItem key={idx} value={p}>
-                            {p}
-                          </SelectItem>
-                        ))
+                      ? playerNames.map((p: string, idx: number) => {
+                          const usedAllTransactions =
+                            transactionsPerPlayer[p] === 6;
+                          return (
+                            <SelectItem
+                              key={idx}
+                              value={p}
+                              disabled={usedAllTransactions}
+                            >
+                              {p}
+                            </SelectItem>
+                          );
+                        })
                       : null}
                   </SelectGroup>
                 </SelectContent>
