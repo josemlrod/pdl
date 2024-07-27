@@ -47,10 +47,10 @@ export default function Standings() {
   );
 
   return (
-    <Fragment>
+    <div className="grid grid-cols-1 xl:grid-cols-2">
       <LeagueTable players={players} tournamentFormat={tournamentFormat} />
       <Leaderboard pokemon={playersPokemon} />
-    </Fragment>
+    </div>
   );
 }
 
@@ -69,7 +69,7 @@ function LeagueTable({
   const sortedPlayersGroupB = sortPlayers(playersGroupB);
 
   return tournamentFormat === TournamentFormats.LEAGUE ? (
-    <div className="px-4 sm:px-6 lg:px-8 my-4 rounded-md border drop-shadow-lg">
+    <div className="px-4 sm:px-6 lg:px-8 my-4 rounded-md border drop-shadow-lg h-fit">
       <div className="flow-root">
         <div className="-mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -339,10 +339,10 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
 
   return (
     (havePlayedAnyGames && (
-      <ul className="grid grid-cols-2 gap-6 border-primary">
+      <ul className="grid grid-cols-1 gap-6 border-primary">
         <li
           key={killLeader.id}
-          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2"
+          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2 h-fit"
         >
           <div className="flex flex-1 flex-col p-8">
             <img
@@ -370,7 +370,9 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
                   key={p.id}
                   className="overflow-hidden rounded-md bg-primary-foreground px-6 py-4 shadow flex justify-between"
                 >
-                  <p className="text-sm font-medium">{p.name}</p>
+                  <p className="text-sm font-medium xl:max-w-[100px] xl:truncate 2xl:max-w-[unset]">
+                    {p.name}
+                  </p>
                   <p className="text-xs font-medium text-green-700">
                     {p.record.kills}
                   </p>
@@ -381,7 +383,7 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
         </li>
         <li
           key={faintsLeader.id}
-          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2"
+          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2 h-fit"
         >
           <div className="flex flex-1 flex-col p-8">
             <img
@@ -408,7 +410,9 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
                   key={p.id}
                   className="overflow-hidden rounded-md bg-primary-foreground px-6 py-4 shadow flex justify-between"
                 >
-                  <p className="text-sm font-medium">{p.name}</p>
+                  <p className="text-sm font-medium xl:max-w-[100px] xl:truncate 2xl:max-w-[unset]">
+                    {p.name}
+                  </p>
                   <p className="text-xs font-medium text-green-700">
                     {p.record.faints}
                   </p>
