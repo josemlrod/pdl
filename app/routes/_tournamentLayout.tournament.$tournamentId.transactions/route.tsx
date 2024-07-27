@@ -150,10 +150,7 @@ export default function Transactions() {
         </div>
       </div>
 
-      <FloatingActionButton
-        isAdmin={isAdmin}
-        pathname={`new?selected_player=${playerName}`}
-      />
+      <FloatingActionButton isAdmin={isAdmin} pathname="new" />
       <Outlet context={{ transactionsPerPlayer }} />
     </div>
   );

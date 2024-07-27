@@ -1,9 +1,9 @@
+import { useState } from "react";
 import {
   useFetcher,
   useLoaderData,
   useNavigate,
   useOutletContext,
-  useSearchParams,
 } from "@remix-run/react";
 import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
@@ -42,7 +42,6 @@ import { getErrorMessage, getIsAdmin } from "~/services/utils";
 import { authCookie } from "~/sessions.server";
 import Data from "../../data.json";
 import type { Pokemon } from "../_tournamentLayout.tournament.$tournamentId.dashboard/pokemon-list";
-import { useEffect, useState } from "react";
 
 export const TransactionTypes = Object.freeze({
   TERA_CAPTAIN: "tera_captain",
@@ -65,7 +64,6 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
   if (tournamentId && isAdmin) {
     try {
       const readPlayersResponse = await ReadPlayers({ tournamentId });
-      console.log(readPlayersResponse.data);
       const players =
         readPlayersResponse &&
         readPlayersResponse.data &&
@@ -91,9 +89,8 @@ export default function NewTransaction() {
     [key: string]: number;
   }>();
   const playerNames = players.map((p: Player) => p.name);
-  const [searchParams, setSearchParams] = useSearchParams();
-  const selectedPlayer = searchParams.get("selected_player");
 
+  const [selectedPlayer, setSelectedPlayer] = useState(playerNames[0]);
   const [incomingPokemonQuery, setIncomingPokemonQuery] = useState("");
 
   const { data } = Data;
@@ -131,9 +128,7 @@ export default function NewTransaction() {
                 name="player_name"
                 required
                 onValueChange={(value) => {
-                  const params = new URLSearchParams();
-                  params.set("selected_player", value);
-                  setSearchParams(params, { preventScrollReset: true });
+                  setSelectedPlayer(value);
                 }}
               >
                 <SelectTrigger className="w-[180px]">
