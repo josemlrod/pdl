@@ -311,7 +311,7 @@ export default function TournamentLayout() {
           className="overflow-y-scroll flex px-4 sm:px-6 lg:px-8"
           style={{ height: `calc(100dvh - 64px)` }}
         >
-          <div className="grow">
+          <div className="w-full grow">
             {navigating ? (
               <div
                 role="status"
