@@ -47,7 +47,7 @@ export default function Standings() {
   );
 
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2">
+    <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-4">
       <LeagueTable players={players} tournamentFormat={tournamentFormat} />
       <Leaderboard pokemon={playersPokemon} />
     </div>
@@ -339,12 +339,12 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
 
   return (
     (havePlayedAnyGames && (
-      <ul className="grid grid-cols-1 gap-6 border-primary">
+      <ul className="grid grid-cols-1 gap-6 border-primary my-4 content-between">
         <li
           key={killLeader.id}
-          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2 h-fit"
+          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2 h-fit bg-primary-foreground"
         >
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-4">
             <img
               className="mx-auto h-32 w-32 flex-shrink-0 rounded-full"
               src={killLeaderSpriteUrl}
@@ -363,12 +363,12 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
             </dl>
           </div>
 
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-4">
             <ul role="list" className="space-y-3">
               {remainingKillLeaders.map((p) => (
                 <li
                   key={p.id}
-                  className="overflow-hidden rounded-md bg-primary-foreground px-6 py-4 shadow flex justify-between"
+                  className="overflow-hidden rounded-md bg-accent px-6 py-4 shadow flex justify-between"
                 >
                   <p className="text-sm font-medium xl:max-w-[100px] xl:truncate 2xl:max-w-[unset]">
                     {p.name}
@@ -383,9 +383,9 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
         </li>
         <li
           key={faintsLeader.id}
-          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2 h-fit"
+          className="col-span-1 rounded-lg text-center shadow grid grid-cols-1 sm:grid-cols-2 h-fit bg-primary-foreground"
         >
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-4">
             <img
               className="mx-auto h-32 w-32 flex-shrink-0 rounded-full"
               src={faintsLeaderSpriteUrl}
@@ -403,12 +403,12 @@ function Leaderboard({ pokemon }: { pokemon: Pokemon[] }) {
               </dd>
             </dl>
           </div>
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-4">
             <ul role="list" className="space-y-3">
               {remainingFaintsLeaders.map((p) => (
                 <li
                   key={p.id}
-                  className="overflow-hidden rounded-md bg-primary-foreground px-6 py-4 shadow flex justify-between"
+                  className="overflow-hidden rounded-md bg-accent px-6 py-4 shadow flex justify-between"
                 >
                   <p className="text-sm font-medium xl:max-w-[100px] xl:truncate 2xl:max-w-[unset]">
                     {p.name}
