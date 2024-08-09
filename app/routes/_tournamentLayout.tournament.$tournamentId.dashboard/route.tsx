@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ActionFunctionArgs, LoaderFunctionArgs, json } from "@remix-run/node";
-import { NavLink, useLoaderData, useMatches } from "@remix-run/react";
+import { NavLink, Outlet, useLoaderData, useMatches } from "@remix-run/react";
 import { cn } from "@/lib/utils";
 import { AddPlayer, ReadUser, type Player } from "~/services/firebase";
 import { buttonVariants } from "@/components/ui/button";
@@ -130,7 +130,7 @@ export default function TournamentDashboard() {
                   className={cn(buttonVariants({ variant: "ghost" }))}
                   preventScrollReset
                   relative="path"
-                  to={`../previous-pokemon/${p.id}`}
+                  to={`previous-pokemon/${p.id}`}
                 >
                   See previous Pokemon
                 </NavLink>
@@ -170,6 +170,7 @@ export default function TournamentDashboard() {
       })}
       <Search open={openSearch} setOpen={setOpenSearch} player={searchPlayer} />
       <FloatingActionButton isAdmin={isAdmin} pathname="../new-player" />
+      <Outlet context={{ players: tournament.players }} />
     </div>
   );
 }
