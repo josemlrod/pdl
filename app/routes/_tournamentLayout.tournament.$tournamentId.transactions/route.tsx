@@ -2,7 +2,13 @@ import { Fragment } from "react";
 import { Outlet, useLoaderData, useSearchParams } from "@remix-run/react";
 import { type LoaderFunctionArgs, json, redirect } from "@remix-run/node";
 
-import { ReadPlayers, ReadTransactions, ReadUser } from "~/services/firebase";
+import {
+  type Player,
+  ReadPlayers,
+  ReadTransactions,
+  ReadUser,
+  Transaction,
+} from "~/services/firebase";
 import FloatingActionButton from "@/components/floating-action-button";
 import { authCookie } from "~/sessions.server";
 import { type User, getIsAdmin } from "~/services/utils";
@@ -54,23 +60,27 @@ export default function Transactions() {
   const { isAdmin, transactions, players } = useLoaderData<typeof loader>();
   const [{ name: playerName }] = players;
 
-  const transactionsPerPlayer = transactions?.reduce((acc, cur) => {
-    if (acc[cur.player_name]) {
-      acc[cur.player_name] += 1;
+  const transactionsPerPlayer = players.reduce(
+    (acc: { [key: string]: number }, curr: Player) => {
+      return { ...acc, [curr.name]: 6 };
+    },
+    {}
+  );
+
+  const remainingTransactionsPerPlayer = transactions?.reduce(
+    (acc: { [key: string]: number }, curr: Transaction) => {
+      acc[curr.player_name]--;
       return acc;
-    }
-
-    acc[cur.player_name] = 1;
-
-    return acc;
-  }, {});
+    },
+    transactionsPerPlayer
+  );
 
   return (
     <div className="py-4">
       <h3 className="text-2xl font-semibold pb-2">Transactions left</h3>
       <dl className="grid grid-cols-3 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-6 lg:grid-cols-9 pb-2">
-        {transactionsPerPlayer
-          ? Object.entries(transactionsPerPlayer).map(
+        {remainingTransactionsPerPlayer
+          ? Object.entries(remainingTransactionsPerPlayer).map(
               ([name, transactions], idx) => (
                 <div
                   key={`${idx}-name`}
@@ -80,7 +90,7 @@ export default function Transactions() {
                     {name}
                   </dt>
                   <dd className="order-first text-3xl font-semibold tracking-tight text-muted-foreground">
-                    {6 - Number(transactions)}
+                    {Number(transactions)}
                   </dd>
                 </div>
               )

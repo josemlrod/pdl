@@ -74,7 +74,7 @@ type UpdatePlayerPokemonProps = {
   pokemon: Partial<Pokemon>;
 };
 
-type Transaction = {
+export type Transaction = {
   in: string;
   out: string;
   player_name: string;
