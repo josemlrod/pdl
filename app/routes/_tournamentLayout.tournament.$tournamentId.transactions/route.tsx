@@ -13,19 +13,6 @@ import FloatingActionButton from "@/components/floating-action-button";
 import { authCookie } from "~/sessions.server";
 import { type User, getIsAdmin } from "~/services/utils";
 
-const stats = [
-  { id: 1, name: "Creators on the platform", value: "8,000+" },
-  { id: 2, name: "Flat platform fee", value: "3%" },
-  { id: 3, name: "Uptime guarantee", value: "99.9%" },
-  { id: 4, name: "Paid out to creators", value: "$70M" },
-  { id: 1, name: "Creators on the platform", value: "8,000+" },
-  { id: 2, name: "Flat platform fee", value: "3%" },
-  { id: 3, name: "Uptime guarantee", value: "99.9%" },
-  { id: 4, name: "Paid out to creators", value: "$70M" },
-  { id: 1, name: "Creators on the platform", value: "8,000+" },
-  { id: 2, name: "Flat platform fee", value: "3%" },
-];
-
 export async function loader({ params, request }: LoaderFunctionArgs) {
   const { tournamentId } = params;
   const session = await authCookie.getSession(request.headers.get("Cookie"));

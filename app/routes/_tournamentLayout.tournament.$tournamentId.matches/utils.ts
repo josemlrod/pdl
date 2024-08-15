@@ -1,5 +1,5 @@
 import moment from "moment-timezone";
-import { type Match } from "~/services/firebase";
+import { type Player, type Match } from "~/services/firebase";
 
 export function sortDates(dateStrings: Array<string>) {
   const dateObjects = dateStrings.map((dateString) => new Date(dateString));
@@ -21,4 +21,8 @@ export function groupMatchesByDate(matches: Array<Match>) {
   }
 
   return result;
+}
+
+export function getPlayerNames(players: Player[]) {
+  return players.map((p) => p.name);
 }
