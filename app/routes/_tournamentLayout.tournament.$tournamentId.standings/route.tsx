@@ -47,7 +47,7 @@ export default function Standings() {
   );
 
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-4">
+    <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-4 px-4 sm:px-6 lg:px-8">
       <LeagueTable players={players} tournamentFormat={tournamentFormat} />
       <Leaderboard pokemon={playersPokemon} />
     </div>

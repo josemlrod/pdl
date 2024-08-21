@@ -63,7 +63,7 @@ export default function Transactions() {
   );
 
   return (
-    <div className="py-4">
+    <div className="py-4 px-4 sm:px-6 lg:px-8">
       <h3 className="text-2xl font-semibold pb-2">Transactions left</h3>
       <dl className="grid grid-cols-3 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-6 lg:grid-cols-9 pb-2">
         {remainingTransactionsPerPlayer

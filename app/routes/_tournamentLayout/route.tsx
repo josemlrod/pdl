@@ -308,7 +308,7 @@ export default function TournamentLayout() {
         </div>
 
         <main
-          className="overflow-y-scroll flex px-4 sm:px-6 lg:px-8"
+          className="overflow-y-scroll flex"
           style={{ height: `calc(100dvh - 64px)` }}
         >
           <div className="w-full grow">

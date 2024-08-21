@@ -79,7 +79,7 @@ export default function Knockout() {
 
   return noPlayers ? null : (
     <>
-      <section className="h-full w-full flex flex-col py-4">
+      <section className="h-full w-full flex flex-col py-4 px-4 sm:px-6 lg:px-8">
         <div className="container flex gap-2 md:gap-4 flex-wrap max-w-[1200px]">
           {/* Quarter finals column */}
           <div className="grow flex flex-col justify-center items-center min-w-[185px] gap-4">
