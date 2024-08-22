@@ -39,6 +39,13 @@ export function getGroupBPlayers(players: Player[]) {
     .filter(Boolean);
 }
 
+export function getTableTopPlayers(players: Player[]) {
+  const [firstPl, secondPl, thirdPl, fourthPl, fifthPl, sixthPl] = sortPlayers([
+    ...players,
+  ]);
+  return [firstPl, secondPl, thirdPl, fourthPl, fifthPl, sixthPl];
+}
+
 export function getGroupTopPlayers(players: Player[]) {
   const [firstPl, secondPl, thirdPl, fourthPl] = sortPlayers(players);
   return {

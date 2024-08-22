@@ -8,6 +8,7 @@ import {
   getGroupAPlayers,
   getGroupBPlayers,
   getGroupTopPlayers,
+  getTableTopPlayers,
 } from "../_tournamentLayout.tournament.$tournamentId.standings/utils";
 import { authCookie } from "~/sessions.server";
 import { getIsAdmin } from "~/services/utils";
@@ -57,25 +58,32 @@ export default function Knockout() {
   const { isAdmin, koMatches, players } = useLoaderData<typeof loader>();
   const groupAPlayers = getGroupAPlayers(players);
   const groupBPlayers = getGroupBPlayers(players);
+  const tableTopPlayers = getTableTopPlayers(players);
+  const [firstPl, secondPl, thirdPl, fourthPl, fifthPl, sixthPl] =
+    tableTopPlayers;
 
   const qfMatches = koMatches[KoRounds.QF];
   const sfMatches = koMatches[KoRounds.SF];
   const fMatch = koMatches[KoRounds.F];
 
-  const {
-    firstPl: aFirstPl,
-    secondPl: aSecondPl,
-    thirdPl: aThirdPl,
-    fourthPl: aFourthPl,
-  } = getGroupTopPlayers(groupAPlayers);
-  const {
-    firstPl: bFirstPl,
-    secondPl: bSecondPl,
-    thirdPl: bThirdPl,
-    fourthPl: bFourthPl,
-  } = getGroupTopPlayers(groupBPlayers);
+  // const {
+  //   firstPl: aFirstPl,
+  //   secondPl: aSecondPl,
+  //   thirdPl: aThirdPl,
+  //   fourthPl: aFourthPl,
+  // } = getGroupTopPlayers(groupAPlayers);
+  // const {
+  //   firstPl: bFirstPl,
+  //   secondPl: bSecondPl,
+  //   thirdPl: bThirdPl,
+  //   fourthPl: bFourthPl,
+  // } = getGroupTopPlayers(groupBPlayers);
 
-  const noPlayers = !groupAPlayers.length && !groupBPlayers.length;
+  // const noPlayers = !groupAPlayers.length && !groupBPlayers.length;
+  const noPlayers = !tableTopPlayers.length;
+
+  console.log(firstPl);
+  console.log(secondPl);
 
   return noPlayers ? null : (
     <>
@@ -112,29 +120,29 @@ export default function Knockout() {
             ) : (
               <>
                 <Match
-                  matchId={`${KoRounds.QF}-${aFirstPl.name}-${bFourthPl.name}`}
+                  matchId={`${KoRounds.QF}-${sixthPl.name}-${thirdPl}`}
                   matchRound={KoRounds.QF}
-                  playerOneName={aFirstPl.name}
-                  playerTwoName={bFourthPl.name}
+                  playerOneName={sixthPl.name}
+                  playerTwoName={thirdPl.name}
                 />
                 <Match
-                  matchId={`${KoRounds.QF}-${aSecondPl.name}-${bThirdPl.name}`}
+                  matchId={`${KoRounds.QF}-${fourthPl.name}-${fifthPl.name}`}
                   matchRound={KoRounds.QF}
-                  playerOneName={aSecondPl.name}
-                  playerTwoName={bThirdPl.name}
+                  playerOneName={fourthPl.name}
+                  playerTwoName={fifthPl.name}
                 />
-                <Match
-                  matchId={`${KoRounds.QF}-${bFirstPl.name}-${aFourthPl.name}`}
-                  matchRound={KoRounds.QF}
-                  playerOneName={bFirstPl.name}
-                  playerTwoName={aFourthPl.name}
-                />
-                <Match
-                  matchId={`${KoRounds.QF}-${bSecondPl.name}-${aThirdPl.name}`}
-                  matchRound={KoRounds.QF}
-                  playerOneName={bSecondPl.name}
-                  playerTwoName={aThirdPl.name}
-                />
+                {/* <Match
+                 matchId={`${KoRounds.QF}-${bFirstPl.name}-${aFourthPl.name}`}
+                 matchRound={KoRounds.QF}
+                 playerOneName={bFirstPl.name}
+                 playerTwoName={aFourthPl.name}
+               />
+               <Match
+                 matchId={`${KoRounds.QF}-${bSecondPl.name}-${aThirdPl.name}`}
+                 matchRound={KoRounds.QF}
+                 playerOneName={bSecondPl.name}
+                 playerTwoName={aThirdPl.name}
+               /> */}
               </>
             )}
           </div>
@@ -187,13 +195,13 @@ export default function Knockout() {
               <>
                 <Match
                   matchRound={KoRounds.SF}
-                  playerOneName="Quarters 1 winner"
-                  playerTwoName="Quarters 2 winner"
+                  playerOneName={firstPl.name}
+                  playerTwoName="Quarters 1 winner"
                 />
                 <Match
                   matchRound={KoRounds.SF}
-                  playerOneName="Quarters 3 winner"
-                  playerTwoName="Quarters 4 winner"
+                  playerOneName={secondPl.name}
+                  playerTwoName="Quarters 2 winner"
                 />
               </>
             )}
